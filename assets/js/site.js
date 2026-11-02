@@ -1,6 +1,9 @@
 // Progressive enhancements for AI Data Foundation (matching kubedaily.com)
 
 export function initSite() {
+  // Mobile responsive navigation drawer toggle
+  initMobileNav();
+
   // Reading-width preference persists across visits.
   const readingToggle = document.querySelector('[data-reading-toggle]');
   if (readingToggle) {
@@ -190,7 +193,7 @@ export function initSite() {
   // GitHub stars counter
   const starCounters = document.querySelectorAll("#kube-github-stars, #adf-github-stars");
   if (starCounters.length > 0) {
-    fetch("https://api.github.com/repos/aidatafoundation/aidatafoundation.github.io", {
+    fetch("https://api.github.com/repos/inferencecollective/inferencecollective.github.io", {
       signal: AbortSignal.timeout(5000)
     })
       .then((res) => (res.ok ? res.json() : null))
@@ -205,4 +208,63 @@ export function initSite() {
       .catch(() => {});
   }
 }
+
+export function initMobileNav() {
+  const toggleBtn = document.getElementById("mobile-nav-toggle");
+  const menu = document.getElementById("mobile-nav-menu");
+  const overlay = document.getElementById("mobile-nav-overlay");
+  const iconOpen = document.getElementById("mobile-nav-icon-open");
+  const iconClose = document.getElementById("mobile-nav-icon-close");
+
+  if (!toggleBtn || !menu) return;
+
+  const setOpen = (open) => {
+    toggleBtn.setAttribute("aria-expanded", String(open));
+    toggleBtn.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+    if (open) {
+      menu.classList.remove("hidden");
+      if (overlay) overlay.classList.remove("hidden");
+      if (iconOpen) iconOpen.classList.add("hidden");
+      if (iconClose) iconClose.classList.remove("hidden");
+      document.body.classList.add("overflow-hidden");
+    } else {
+      menu.classList.add("hidden");
+      if (overlay) overlay.classList.add("hidden");
+      if (iconOpen) iconOpen.classList.remove("hidden");
+      if (iconClose) iconClose.classList.add("hidden");
+      document.body.classList.remove("overflow-hidden");
+    }
+  };
+
+  if (!toggleBtn.dataset.bound) {
+    toggleBtn.dataset.bound = "true";
+    toggleBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = toggleBtn.getAttribute("aria-expanded") === "true";
+      setOpen(!isOpen);
+    });
+
+    if (overlay) {
+      overlay.addEventListener("click", () => setOpen(false));
+    }
+
+    menu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => setOpen(false));
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && toggleBtn.getAttribute("aria-expanded") === "true") {
+        setOpen(false);
+        toggleBtn.focus();
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth >= 1024 && toggleBtn.getAttribute("aria-expanded") === "true") {
+        setOpen(false);
+      }
+    });
+  }
+}
+
 

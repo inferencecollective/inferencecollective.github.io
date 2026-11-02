@@ -12,6 +12,9 @@ defmodule AiDataFoundationWeb.PageControllerTest do
     assert html_response(conn, 200) =~ "Graduated Stage"
     assert html_response(conn, 200) =~ "Inference Collective"
     assert html_response(conn, 200) =~ ~s(alt="Inference Collective")
+    assert html_response(conn, 200) =~ ~s(id="mobile-nav-toggle")
+    assert html_response(conn, 200) =~ ~s(id="mobile-nav-menu")
+    assert html_response(conn, 200) =~ ~s(id="mobile-nav-overlay")
   end
 
   test "GET /tools renders tools catalog container", %{conn: conn} do

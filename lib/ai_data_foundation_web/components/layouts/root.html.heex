@@ -66,10 +66,11 @@
 
     <!-- Standard AI Data Foundation Header -->
     <header class="kube-site-header sticky top-0 z-50 backdrop-blur-xl bg-[#070A0F]/90 border-b border-slate-800/80 transition-colors">
-      <div class="kube-header-inner max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+      <div class="kube-header-inner max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-3">
+        <!-- Brand Logo -->
         <a
           href="/"
-          class="kube-brand flex items-center gap-3 group"
+          class="kube-brand flex items-center gap-2.5 sm:gap-3 group shrink-0"
           aria-label="Inference Collective Home"
         >
           <img
@@ -77,54 +78,57 @@
             alt="Inference Collective"
             width="160"
             height="48"
-            class="h-9 sm:h-10 w-auto transition-transform duration-200 group-hover:scale-[1.02]"
+            class="h-8 sm:h-9 md:h-10 w-auto transition-transform duration-200 group-hover:scale-[1.02]"
           />
         </a>
 
+        <!-- Desktop Navigation Bar (hidden lg:flex) -->
         <nav
-          class="kube-nav-menu hidden md:flex items-center gap-1 p-1 rounded-full bg-slate-900/80 border border-slate-800 shadow-xs"
+          class="kube-nav-menu hidden lg:flex items-center gap-1 p-1 rounded-full bg-slate-900/80 border border-slate-800 shadow-xs"
           aria-label="Main Navigation"
         >
           <a
             href="/"
-            class="kube-nav-link px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-white dark:hover:bg-slate-800 transition-all"
+            class="kube-nav-link px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition-all"
           >Home</a>
           <a
             href="/tools"
-            class="kube-nav-link px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-white dark:hover:bg-slate-800 transition-all"
+            class="kube-nav-link px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition-all"
           >Tools</a>
           <a
             href="/models"
-            class="kube-nav-link px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-white dark:hover:bg-slate-800 transition-all"
+            class="kube-nav-link px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition-all"
           >Models &amp; VRAM</a>
           <a
             href="/labs"
-            class="kube-nav-link px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-white dark:hover:bg-slate-800 transition-all"
+            class="kube-nav-link px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition-all"
           >Labs</a>
           <a
             href="/blog"
-            class="kube-nav-link px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-white dark:hover:bg-slate-800 transition-all"
+            class="kube-nav-link px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition-all"
           >Blog</a>
           <a
             href="/roadmap"
-            class="kube-nav-link px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-white dark:hover:bg-slate-800 transition-all"
+            class="kube-nav-link px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition-all"
           >Roadmap</a>
           <a
             href="/security"
-            class="kube-nav-link px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-white dark:hover:bg-slate-800 transition-all"
+            class="kube-nav-link px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition-all"
           >Security</a>
           <a
             href="/about"
-            class="kube-nav-link px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-white dark:hover:bg-slate-800 transition-all"
+            class="kube-nav-link px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition-all"
           >About</a>
         </nav>
 
-        <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Right Action Controls -->
+        <div class="flex items-center gap-1.5 sm:gap-2.5">
+          <!-- Theme Toggle -->
           <button
             type="button"
             id="theme-toggle"
             aria-label="Toggle Dark Mode"
-            class="p-2 rounded-xl text-slate-500 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-400 dark:hover:text-white dark:hover:bg-slate-800 border border-transparent hover:border-slate-200 dark:hover:border-slate-700 transition cursor-pointer"
+            class="p-2 rounded-xl text-slate-300 hover:text-white bg-slate-900/80 hover:bg-slate-800 border border-slate-800 transition cursor-pointer"
           >
             <svg
               id="theme-sun"
@@ -156,13 +160,15 @@
             </svg>
           </button>
 
+          <!-- GitHub Link -->
           <a
-            href="https://github.com/aidatafoundation/aidatafoundation.github.io"
+            href="https://github.com/inferencecollective"
             target="_blank"
             rel="noopener noreferrer"
-            class="kube-header-github inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900 text-white dark:bg-slate-800 dark:hover:bg-slate-700 hover:bg-slate-800 text-xs font-semibold shadow-xs transition-all border border-slate-700/50"
+            class="kube-header-github inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl bg-slate-900 text-white dark:bg-slate-800 dark:hover:bg-slate-700 hover:bg-slate-800 text-xs font-semibold shadow-xs transition-all border border-slate-700/50"
+            aria-label="GitHub Repository"
           >
-            <svg class="w-4 h-4 fill-current inline-block" viewBox="0 0 24 24">
+            <svg class="w-4 h-4 fill-current shrink-0 inline-block" viewBox="0 0 24 24">
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -171,43 +177,355 @@
             </svg>
             <span class="hidden sm:inline">GitHub</span>
           </a>
+
+          <!-- Mobile Hamburger Toggle Button (lg:hidden) -->
+          <button
+            type="button"
+            id="mobile-nav-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-nav-menu"
+            class="lg:hidden p-2 rounded-xl text-slate-300 hover:text-white bg-slate-900/80 hover:bg-slate-800 border border-slate-800 transition cursor-pointer flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
+          >
+            <!-- Hamburger Icon (bars) -->
+            <svg
+              id="mobile-nav-icon-open"
+              class="w-5 h-5 block"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"
+              />
+            </svg>
+            <!-- Close Icon (X) -->
+            <svg
+              id="mobile-nav-icon-close"
+              class="w-5 h-5 hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
         </div>
       </div>
 
-      <!-- Mobile Navigation Drawer Strip -->
-      <div class="md:hidden flex items-center gap-1 px-4 py-2 overflow-x-auto border-t border-slate-200/60 dark:border-slate-800/60 bg-slate-50/50 dark:bg-slate-900/50 text-xs font-medium text-slate-600 dark:text-slate-400">
-        <a
-          href="/"
-          class="kube-nav-link whitespace-nowrap px-2.5 py-1 rounded-md hover:bg-white dark:hover:bg-slate-800"
-        >Home</a>
-        <a
-          href="/tools"
-          class="kube-nav-link whitespace-nowrap px-2.5 py-1 rounded-md hover:bg-white dark:hover:bg-slate-800"
-        >Tools</a>
-        <a
-          href="/models"
-          class="kube-nav-link whitespace-nowrap px-2.5 py-1 rounded-md hover:bg-white dark:hover:bg-slate-800"
-        >Models &amp; VRAM</a>
-        <a
-          href="/labs"
-          class="kube-nav-link whitespace-nowrap px-2.5 py-1 rounded-md hover:bg-white dark:hover:bg-slate-800"
-        >Labs</a>
-        <a
-          href="/blog"
-          class="kube-nav-link whitespace-nowrap px-2.5 py-1 rounded-md hover:bg-white dark:hover:bg-slate-800"
-        >Blog</a>
-        <a
-          href="/roadmap"
-          class="kube-nav-link whitespace-nowrap px-2.5 py-1 rounded-md hover:bg-white dark:hover:bg-slate-800"
-        >Roadmap</a>
-        <a
-          href="/security"
-          class="kube-nav-link whitespace-nowrap px-2.5 py-1 rounded-md hover:bg-white dark:hover:bg-slate-800"
-        >Security</a>
-        <a
-          href="/about"
-          class="kube-nav-link whitespace-nowrap px-2.5 py-1 rounded-md hover:bg-white dark:hover:bg-slate-800"
-        >About</a>
+      <!-- Backdrop Overlay for Mobile Drawer -->
+      <div
+        id="mobile-nav-overlay"
+        class="hidden fixed inset-0 z-40 bg-black/75 backdrop-blur-sm transition-opacity lg:hidden"
+        aria-hidden="true"
+      >
+      </div>
+
+      <!-- Mobile Navigation Drawer Panel (lg:hidden) -->
+      <div
+        id="mobile-nav-menu"
+        class="hidden fixed top-[53px] sm:top-[61px] inset-x-0 bottom-0 z-50 bg-[#070A0F]/98 backdrop-blur-2xl border-t border-slate-800/80 overflow-y-auto px-4 py-5 flex flex-col justify-between lg:hidden shadow-2xl transition-all"
+        aria-label="Mobile Navigation"
+      >
+        <div class="space-y-4 max-w-md mx-auto w-full">
+          <!-- Header Badge inside drawer -->
+          <div class="flex items-center justify-between px-1 pb-2 border-b border-slate-800/60">
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-slate-400">Navigation</span>
+            <span class="inline-flex items-center gap-1.5 text-[11px] font-medium text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              All Catalogs Operational
+            </span>
+          </div>
+
+          <!-- Links Grid/List -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <!-- Home -->
+            <a
+              href="/"
+              class="kube-nav-link group flex items-center justify-between p-3 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800/80 transition-all text-left"
+            >
+              <div class="flex items-center gap-3">
+                <span class="mobile-nav-icon-box p-2 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:bg-emerald-500/20 transition-colors">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <div class="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">
+                    Home
+                  </div>
+                  <div class="text-[11px] text-slate-400">Foundation Overview</div>
+                </div>
+              </div>
+              <svg
+                class="w-4 h-4 text-slate-500 group-hover:text-emerald-400 transition-colors"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+
+            <!-- Tools -->
+            <a
+              href="/tools"
+              class="kube-nav-link group flex items-center justify-between p-3 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800/80 transition-all text-left"
+            >
+              <div class="flex items-center gap-3">
+                <span class="mobile-nav-icon-box p-2 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:bg-emerald-500/20 transition-colors">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <div class="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">
+                    Tools &amp; Ecosystem
+                  </div>
+                  <div class="text-[11px] text-slate-400">70+ Hosted AI Projects</div>
+                </div>
+              </div>
+              <span class="text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-full border border-emerald-500/20">70+</span>
+            </a>
+
+            <!-- Models & VRAM -->
+            <a
+              href="/models"
+              class="kube-nav-link group flex items-center justify-between p-3 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800/80 transition-all text-left"
+            >
+              <div class="flex items-center gap-3">
+                <span class="mobile-nav-icon-box p-2 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:bg-emerald-500/20 transition-colors">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <div class="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">
+                    Models &amp; VRAM
+                  </div>
+                  <div class="text-[11px] text-slate-400">Benchmarks &amp; Calculators</div>
+                </div>
+              </div>
+              <span class="text-[10px] font-semibold bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded-full border border-blue-500/20">VRAM</span>
+            </a>
+
+            <!-- Labs -->
+            <a
+              href="/labs"
+              class="kube-nav-link group flex items-center justify-between p-3 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800/80 transition-all text-left"
+            >
+              <div class="flex items-center gap-3">
+                <span class="mobile-nav-icon-box p-2 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:bg-emerald-500/20 transition-colors">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <div class="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">
+                    Labs
+                  </div>
+                  <div class="text-[11px] text-slate-400">Interactive Runbooks</div>
+                </div>
+              </div>
+              <span class="text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-full border border-emerald-500/20">5 Labs</span>
+            </a>
+
+            <!-- Blog -->
+            <a
+              href="/blog"
+              class="kube-nav-link group flex items-center justify-between p-3 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800/80 transition-all text-left"
+            >
+              <div class="flex items-center gap-3">
+                <span class="mobile-nav-icon-box p-2 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:bg-emerald-500/20 transition-colors">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <div class="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">
+                    Blog
+                  </div>
+                  <div class="text-[11px] text-slate-400">Engineering &amp; Research</div>
+                </div>
+              </div>
+              <svg
+                class="w-4 h-4 text-slate-500 group-hover:text-emerald-400 transition-colors"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+
+            <!-- Roadmap -->
+            <a
+              href="/roadmap"
+              class="kube-nav-link group flex items-center justify-between p-3 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800/80 transition-all text-left"
+            >
+              <div class="flex items-center gap-3">
+                <span class="mobile-nav-icon-box p-2 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:bg-emerald-500/20 transition-colors">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <div class="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">
+                    Roadmap
+                  </div>
+                  <div class="text-[11px] text-slate-400">Milestones &amp; RFCs</div>
+                </div>
+              </div>
+              <svg
+                class="w-4 h-4 text-slate-500 group-hover:text-emerald-400 transition-colors"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+
+            <!-- Security -->
+            <a
+              href="/security"
+              class="kube-nav-link group flex items-center justify-between p-3 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800/80 transition-all text-left"
+            >
+              <div class="flex items-center gap-3">
+                <span class="mobile-nav-icon-box p-2 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:bg-emerald-500/20 transition-colors">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <div class="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">
+                    Security
+                  </div>
+                  <div class="text-[11px] text-slate-400">Threat Matrix &amp; Audits</div>
+                </div>
+              </div>
+              <span class="text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-full border border-emerald-500/20">Shield</span>
+            </a>
+
+            <!-- About -->
+            <a
+              href="/about"
+              class="kube-nav-link group flex items-center justify-between p-3 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800/80 transition-all text-left"
+            >
+              <div class="flex items-center gap-3">
+                <span class="mobile-nav-icon-box p-2 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:bg-emerald-500/20 transition-colors">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <div class="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">
+                    About
+                  </div>
+                  <div class="text-[11px] text-slate-400">Charter &amp; Governance</div>
+                </div>
+              </div>
+              <svg
+                class="w-4 h-4 text-slate-500 group-hover:text-emerald-400 transition-colors"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Bottom Actions inside drawer -->
+          <div class="pt-4 mt-2 border-t border-slate-800/80 space-y-3">
+            <a
+              href="https://github.com/inferencecollective"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-center gap-2.5 w-full py-2.5 px-4 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-white text-xs font-semibold border border-slate-700/60 shadow-xs transition"
+            >
+              <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                />
+              </svg>
+              <span>View Organization on GitHub</span>
+            </a>
+            <div class="text-center text-[11px] text-slate-400">
+              Inference Collective · Open Community AI Tooling
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
