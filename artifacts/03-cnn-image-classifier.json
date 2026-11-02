@@ -3,7 +3,7 @@
   "has_keras": true,
   "backend": "torch",
   "test_accuracy": 1.0,
-  "test_loss": 0.0087,
+  "test_loss": 0.0113,
   "epochs": 20,
   "input_shape": [
     24,

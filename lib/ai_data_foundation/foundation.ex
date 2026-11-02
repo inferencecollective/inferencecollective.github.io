@@ -166,7 +166,7 @@ defmodule AiDataFoundation.Foundation do
   @agents [
     %{
       "name" => "OpenClaw",
-      "maintainer" => "OpenClaw Community",
+      "maintainer" => "Inference Collective",
       "type" => "Ready-to-Use",
       "stars" => "334,201",
       "forks" => "65,178",
@@ -270,7 +270,7 @@ defmodule AiDataFoundation.Foundation do
 
   defp enrich_model(model) do
     name = model["Model Name"] || model["name"] || ""
-    maintainer = model["Maintainer"] || model["maintainer"] || "Community"
+    maintainer = model["Maintainer"] || model["maintainer"] || "Inference Collective"
     size = model["Size"] || model["parameters"] || "N/A"
     raw_score = model["Score"] || model["score"] || "0.6"
     score_pct = parse_score_pct(raw_score)

@@ -10,6 +10,8 @@ defmodule AiDataFoundationWeb.PageControllerTest do
     assert html_response(conn, 200) =~ "76.0%"
     assert html_response(conn, 200) =~ "LF AI &amp; Data Foundation Projects"
     assert html_response(conn, 200) =~ "Graduated Stage"
+    assert html_response(conn, 200) =~ "Inference Collective"
+    assert html_response(conn, 200) =~ ~s(alt="Inference Collective")
   end
 
   test "GET /tools renders tools catalog container", %{conn: conn} do
@@ -25,6 +27,7 @@ defmodule AiDataFoundationWeb.PageControllerTest do
     assert html_response(conn, 200) =~ "Qwen 32B"
     assert html_response(conn, 200) =~ "DeepSeek V3"
     assert html_response(conn, 200) =~ "OpenClaw"
+    assert html_response(conn, 200) =~ "Inference Collective"
     assert html_response(conn, 200) =~ "vram-params"
   end
 

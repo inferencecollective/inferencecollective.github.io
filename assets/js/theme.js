@@ -5,7 +5,8 @@ export function initTheme() {
       const stored = localStorage.getItem("adf_theme");
       if (stored) return stored;
     } catch {}
-    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    // Default to dark theme to preserve high-contrast dark background for white text
+    return "dark";
   };
 
   const applyTheme = (theme) => {
