@@ -1,14 +1,15 @@
 <!-- AI Data Foundation About Hero -->
-<section class="kube-tools-hero">
-  <div class="max-w-7xl mx-auto px-4 py-16 sm:py-24 sm:px-6 lg:px-8 relative z-10">
+<section class="kube-tools-hero relative overflow-hidden bg-[#070A0F] border-b border-slate-800/80">
+  <div class="max-w-7xl mx-auto px-4 py-16 sm:py-20 sm:px-6 lg:px-8 relative z-10">
     <div class="kube-tools-hero-copy max-w-4xl">
-      <span class="kube-label">
-        Our Mission · Open Core
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-4">
+        Our Mission &middot; Open Core
       </span>
-      <h1>
-        Democratizing Artificial Intelligence <span>Knowledge & Tools.</span>
+      <h1 class="text-4xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+        Democratizing Artificial Intelligence
+        <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Knowledge &amp; Tools.</span>
       </h1>
-      <p>
+      <p class="mt-4 text-lg text-slate-300 max-w-3xl leading-relaxed">
         The AI Data Foundation (ADF) is an independent open-source initiative committed to curating, validating, and publishing developer tools, reproducible labs, and transparent benchmark leaderboards for the global artificial intelligence community.
       </p>
       <div class="mt-8 flex flex-wrap gap-4">
@@ -18,13 +19,16 @@
           rel="noopener noreferrer"
           class="kube-button"
         >
-          Join us on GitHub →
+          Join us on GitHub &rarr;
         </a>
         <a href="/labs" class="kube-button kube-button-outline">
-          Explore Security Labs →
+          Explore Security Labs &rarr;
         </a>
-        <a href="/security" class="kube-button kube-button-outline">
-          View Security Hub →
+        <a
+          href="/security"
+          class="text-slate-400 hover:text-white transition-colors flex items-center gap-1.5 px-3 py-2 text-sm font-semibold"
+        >
+          View Security Hub &rarr;
         </a>
       </div>
     </div>
@@ -34,80 +38,182 @@
 <!-- Guiding Pillars for AI Data Foundation -->
 <section class="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 space-y-16">
   <div>
-    <div class="kube-home-section-heading mb-8">
+    <div class="kube-home-section-heading mb-10">
       <div>
         <span class="kube-kicker">Core Principles</span>
-        <h2 class="text-3xl font-black tracking-tight text-slate-900 [data-theme=dark]:text-white mt-1">
+        <h2 class="text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-1">
           What We Stand For
         </h2>
       </div>
-      <p class="text-slate-500 max-w-md">
+      <p class="text-slate-600 dark:text-slate-400 max-w-md">
         Five guiding principles directing every tutorial, benchmark evaluation, and catalog entry published by the foundation.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="kube-learning-card">
-        <span class="kube-learning-step">Pillar 01 · Interoperability</span>
-        <h3>Open Protocols & Tooling</h3>
-        <p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="p-6 rounded-2xl border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xs hover:border-emerald-500/40 transition-all flex flex-col">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-2">Pillar 01 &middot; Interoperability</span>
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+          Open Protocols & Tooling
+        </h3>
+        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
           We champion standards like the Model Context Protocol (MCP) and open-source frameworks to ensure AI systems remain modular, interoperable, and free from proprietary vendor lock-in.
         </p>
       </div>
 
-      <div class="kube-learning-card">
-        <span class="kube-learning-step">Pillar 02 · Transparency</span>
-        <h3>Reproducible Benchmarks</h3>
-        <p>
+      <div class="p-6 rounded-2xl border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xs hover:border-emerald-500/40 transition-all flex flex-col">
+        <span class="text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-2">Pillar 02 &middot; Transparency</span>
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+          Reproducible Benchmarks
+        </h3>
+        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
           Evaluation matters. We provide transparent scoring, hardware VRAM requirements, and quantization benchmarks so engineers make data-driven decisions when deploying models.
         </p>
       </div>
 
-      <div class="kube-learning-card">
-        <span class="kube-learning-step">Pillar 03 · Practice</span>
-        <h3>Hands-on, Self-Paced Labs</h3>
-        <p>
+      <div class="p-6 rounded-2xl border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xs hover:border-emerald-500/40 transition-all flex flex-col">
+        <span class="text-xs font-bold uppercase tracking-wider text-cyan-600 dark:text-cyan-400 mb-2">Pillar 03 &middot; Practice</span>
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+          Hands-on, Self-Paced Labs
+        </h3>
+        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
           Real understanding comes from building. Our labs walk through concrete implementations: setting up local vector stores, chaining LLM agents, and measuring data quality.
         </p>
       </div>
 
-      <div class="kube-learning-card">
-        <span class="kube-learning-step">Pillar 04 · Security</span>
-        <h3>AI Safety & Data Protection</h3>
-        <p>
+      <div class="p-6 rounded-2xl border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xs hover:border-emerald-500/40 transition-all flex flex-col">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-2">Pillar 04 &middot; Security</span>
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+          AI Safety &amp; Data Protection
+        </h3>
+        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
           Security is foundational. We prioritize prompt injection defense, model watermarking, automated red-teaming, data provenance, and regulatory compliance in every tool, lab, and benchmark we publish.
         </p>
       </div>
 
-      <div class="kube-learning-card">
-        <span class="kube-learning-step">Pillar 05 · Open Core</span>
-        <h3>Community & Open Governance</h3>
-        <p>
+      <div class="p-6 rounded-2xl border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xs hover:border-emerald-500/40 transition-all flex flex-col">
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 mb-2">Pillar 05 &middot; Open Core</span>
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+          Community &amp; Open Governance
+        </h3>
+        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
           All foundation assets, markdown documentation, tool directories, and static files are released under the Apache 2.0 license and managed openly on GitHub.
         </p>
       </div>
     </div>
   </div>
 
-  <div class="kube-contribute p-8 sm:p-12 rounded-2xl border border-slate-200 bg-white [data-theme=dark]:border-slate-800 [data-theme=dark]:bg-slate-900 flex flex-col md:flex-row items-center justify-between gap-8">
+  <!-- Project Maturity Lifecycle (CNCF & LF AI Style) -->
+  <div class="border-t border-slate-200/80 dark:border-slate-800/80 pt-16">
+    <div class="kube-home-section-heading mb-10">
+      <div>
+        <span class="kube-kicker">Foundation Governance</span>
+        <h2 class="text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-1">
+          Project Maturity Lifecycle
+        </h2>
+      </div>
+      <p class="text-slate-600 dark:text-slate-400 max-w-xl">
+        Modelled after the CNCF and Linux Foundation AI &amp; Data governance standards, our projects transition through clear maturity stages to guarantee neutral ownership, vendor independence, and production reliability.
+      </p>
+    </div>
+
+    <!-- Architecture Diagram rendered by Pele -->
+    <div class="mb-10 p-6 rounded-2xl border border-slate-200/90 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 shadow-xs">
+      <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100 dark:border-slate-800 text-xs">
+        <span class="font-bold text-slate-700 dark:text-slate-300">Project Promotion Flow</span>
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-mono text-[11px] font-semibold">
+          ⚡ Pele Mermaid Diagram
+        </span>
+      </div>
+      <div class="mermaid">
+        flowchart LR
+        Sandbox["🌱 Sandbox\n(Early innovation & incubation)"] -->|TAC Review & Adoption| Incubating["🚀 Incubating\n(Production & diverse committers)"]
+        Incubating -->|Security Audit & Governance| Graduated["⭐ Graduated\n(Industry standard infrastructure)"]
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 rounded-2xl border border-emerald-200/80 dark:border-emerald-800/50 bg-emerald-50/30 dark:bg-emerald-950/20 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-800 dark:text-emerald-300">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Graduated Stage
+            </span>
+            <span class="text-xs font-bold text-emerald-700 dark:text-emerald-400">13 Projects</span>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+            Battle-Tested Production Standards
+          </h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Graduated projects represent the highest tier of stability. They have multi-organization adoption in mission-critical environments, a diverse committer base, formal security audits, and strict open governance.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-emerald-200/60 dark:border-emerald-800/40 text-xs text-slate-600 dark:text-slate-400 font-mono">
+          Milvus &middot; ONNX &middot; Docling &middot; Flyte &middot; Kedro &middot; Pyro &middot; ART &middot; Marquez
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-sky-200/80 dark:border-sky-800/50 bg-sky-50/30 dark:bg-sky-950/20 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-sky-500/20 text-sky-800 dark:text-sky-300">
+              <span class="w-2 h-2 rounded-full bg-sky-500"></span> Incubating Stage
+            </span>
+            <span class="text-xs font-bold text-sky-700 dark:text-sky-400">22 Projects</span>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+            Proven Growth &amp; Ecosystem Track
+          </h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Incubating projects have established production use cases, active development cadence, growing cross-company contributor communities, and healthy technical roadmaps overseen by foundation working groups.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-sky-200/60 dark:border-sky-800/40 text-xs text-slate-600 dark:text-slate-400 font-mono">
+          Ludwig &middot; Delta Lake &middot; Feast &middot; FATE &middot; JanusGraph &middot; BeeAI &middot; AIF360
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-amber-200/80 dark:border-amber-800/50 bg-amber-50/30 dark:bg-amber-950/20 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-800 dark:text-amber-300">
+              <span class="w-2 h-2 rounded-full bg-amber-500"></span> Sandbox Stage
+            </span>
+            <span class="text-xs font-bold text-amber-700 dark:text-amber-400">22 Projects</span>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+            Early-Stage Innovation &amp; Incubation
+          </h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            The entry gateway for emerging open-source technologies. The foundation provides neutral IP ownership, CI/CD assistance, trademark protection, and community discovery to foster rapid iteration.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-amber-200/60 dark:border-amber-800/40 text-xs text-slate-600 dark:text-slate-400 font-mono">
+          Unity Catalog &middot; Recommenders &middot; IREE &middot; LakeSoul &middot; OPEA &middot; OpenFL
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-8 sm:p-12 rounded-2xl border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xs">
     <div class="space-y-2 max-w-2xl">
-      <span class="kube-kicker">Architecture & Foundation</span>
-      <h3 class="text-2xl font-bold text-slate-900 [data-theme=dark]:text-white">
-        Open Engineering & High-Performance Architecture
+      <span class="kube-kicker">Architecture &amp; Foundation</span>
+      <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
+        Open Engineering &amp; High-Performance Architecture
       </h3>
-      <p class="text-sm text-slate-600 [data-theme=dark]:text-slate-400 leading-relaxed">
+      <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
         This platform is engineered using Elixir and the Phoenix framework for blazingly fast response times, high reliability, and reproducible open intelligence. Every lab, benchmark dataset, tool catalogue, article, and open-source asset is curated for the global AI community.
       </p>
     </div>
     <div class="flex flex-wrap gap-3">
       <a href="/tools" class="kube-button text-sm">
-        Browse Tools →
+        Browse Tools &rarr;
       </a>
       <a href="/labs" class="kube-button kube-button-outline text-sm">
-        Browse Labs →
+        Browse Labs &rarr;
       </a>
       <a href="/security" class="kube-button kube-button-outline text-sm">
-        Security Hub →
+        Security Hub &rarr;
       </a>
     </div>
   </div>

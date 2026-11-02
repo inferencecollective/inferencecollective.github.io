@@ -16,6 +16,16 @@
 
 export const mcpEntries = [
   {
+    "title": "ECC (Everything Claude Code)",
+    "link": "https://github.com/affaan-m/ecc",
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, OpenCode, and Cursor.",
+    "githubUsername": "affaan-m",
+    "githubRepo": "ecc",
+    "stars": 294482,
+    "downloads": 0,
+    "tag": "MCP AI"
+  },
+  {
     "title": "Filesystem",
     "link": "https://github.com/modelcontextprotocol/servers/tree/HEAD/src/filesystem",
     "description": "Read, write, and manipulate local files through a controlled API.",

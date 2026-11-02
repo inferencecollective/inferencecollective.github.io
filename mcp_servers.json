@@ -1345,6 +1345,18 @@
       "EXPERIMENTAL_ai_generated_description": "This MCP server enables language models to perform web searches through SearXNG, a privacy-focused metasearch engine. Built with TypeScript and the Model Context Protocol SDK, it provides a clean interface for sending search queries with customizable parameters like categories, time ranges, and pagination. The server includes caching functionality to improve performance and can be configured via environment variables for connection settings. It's designed to run either directly via Node.js or as a Docker container, making it flexible for various deployment scenarios."
     },
     {
+      "name": "ECC (Everything Claude Code)",
+      "url": "https://www.pulsemcp.com/servers/affaan-m-ecc",
+      "external_url": "https://ecc.tools",
+      "short_description": "The agent harness performance optimization system with memory MCP server, skills, instincts, and security guardrails for Claude Code, Codex, OpenCode, and Cursor.",
+      "source_code_url": "https://github.com/affaan-m/ecc",
+      "github_stars": 294482,
+      "package_registry": "npm",
+      "package_name": "ecc-universal",
+      "package_download_count": null,
+      "EXPERIMENTAL_ai_generated_description": "ECC (Everything Claude Code) is an agent harness performance optimization system and engineering toolkit for autonomous coding agents. It provides a coordinated system of specialized subagents, reusable skills, memory MCP servers, hooks, rules, and AgentShield security scanning across Claude Code, Codex, OpenCode, and Cursor."
+    },
+    {
       "name": "Academic Paper Search",
       "url": "https://www.pulsemcp.com/servers/afrise-academic-search",
       "external_url": null,

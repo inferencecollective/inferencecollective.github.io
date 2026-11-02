@@ -1,0 +1,15 @@
+{
+  "lab": "05_backend_portability",
+  "has_keras": true,
+  "backend": "torch",
+  "saved_model_path": "artifacts/portable_model.keras",
+  "max_difference": 0.0,
+  "parity_verified": true,
+  "samples_evaluated": 8,
+  "predictions_sample": [
+    0.368,
+    0.5458,
+    0.4779,
+    0.4859
+  ]
+}

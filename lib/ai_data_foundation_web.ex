@@ -18,7 +18,7 @@ defmodule AiDataFoundationWeb do
   """
 
   def static_paths,
-    do: ~w(assets fonts images aidatafoundation favicon.ico robots.txt sitemap.xml)
+    do: ~w(assets fonts images aidatafoundation favicon.ico favicon.svg robots.txt sitemap.xml)
 
   def router do
     quote do

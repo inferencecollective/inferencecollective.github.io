@@ -1,0 +1,15 @@
+{
+  "lab": "03_cnn_image_classifier",
+  "has_keras": true,
+  "backend": "torch",
+  "test_accuracy": 1.0,
+  "test_loss": 0.0087,
+  "epochs": 20,
+  "input_shape": [
+    24,
+    24,
+    1
+  ],
+  "train_samples": 200,
+  "test_samples": 60
+}

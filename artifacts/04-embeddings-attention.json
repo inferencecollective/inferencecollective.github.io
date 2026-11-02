@@ -1,0 +1,12 @@
+{
+  "lab": "04_embeddings_attention",
+  "has_keras": true,
+  "backend": "torch",
+  "test_accuracy": 1.0,
+  "test_loss": 0.0,
+  "epochs": 20,
+  "vocab_size": 32,
+  "target_token": 7,
+  "train_samples": 320,
+  "test_samples": 80
+}

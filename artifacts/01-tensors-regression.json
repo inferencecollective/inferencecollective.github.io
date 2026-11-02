@@ -1,0 +1,11 @@
+{
+  "lab": "01_tensors_regression",
+  "has_keras": true,
+  "backend": "torch",
+  "test_rmse": 0.5204,
+  "test_mse": 0.2708,
+  "true_slope": 2.5,
+  "true_intercept": -0.8,
+  "epochs": 60,
+  "final_train_loss": 0.1229
+}

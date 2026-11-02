@@ -1,0 +1,11 @@
+{
+  "lab": "02_keras_classification",
+  "has_tf": false,
+  "test_accuracy": 0.97,
+  "test_loss": 0.0645,
+  "epochs": 60,
+  "n_train_samples": 400,
+  "n_test_samples": 100,
+  "final_train_loss": 0.0256,
+  "final_val_loss": 0.0645
+}

@@ -3,15 +3,20 @@ defmodule AiDataFoundationWeb.PageControllerTest do
 
   test "GET / renders home page", %{conn: conn} do
     conn = get(conn, ~p"/")
-    assert html_response(conn, 200) =~ "AI &amp; Open Data"
-    assert html_response(conn, 200) =~ "Featured Hands-on Labs"
-    assert html_response(conn, 200) =~ "Featured Model Benchmarks"
+    assert html_response(conn, 200) =~ "Defend your AI"
+    assert html_response(conn, 200) =~ "Featured Security Labs"
+    assert html_response(conn, 200) =~ "Open Weight Model Benchmarks"
+    assert html_response(conn, 200) =~ "Qwen 32B"
+    assert html_response(conn, 200) =~ "76.0%"
+    assert html_response(conn, 200) =~ "LF AI &amp; Data Foundation Projects"
+    assert html_response(conn, 200) =~ "Graduated Stage"
   end
 
   test "GET /tools renders tools catalog container", %{conn: conn} do
     conn = get(conn, ~p"/tools")
     assert html_response(conn, 200) =~ "modern AI systems"
     assert html_response(conn, 200) =~ "kube-tools"
+    assert html_response(conn, 200) =~ "LF AI &amp; Data Foundation"
   end
 
   test "GET /models renders open model leaderboard, VRAM calculator, and agents", %{conn: conn} do
@@ -31,6 +36,58 @@ defmodule AiDataFoundationWeb.PageControllerTest do
     conn_detail = get(conn, ~p"/labs/LangChain-Practical-Labs")
     assert html_response(conn_detail, 200) =~ "LangChain Practical Labs"
     assert html_response(conn_detail, 200) =~ "Interactive Runbook"
+
+    conn_mpl = get(conn, ~p"/labs/matplotlib-complete-guide")
+    assert html_response(conn_mpl, 200) =~ "Matplotlib Complete Guide"
+    assert html_response(conn_mpl, 200) =~ "Interactive Runbook"
+
+    conn_sns = get(conn, ~p"/labs/seaborn-complete-guide")
+    assert html_response(conn_sns, 200) =~ "Seaborn Complete Guide"
+    assert html_response(conn_sns, 200) =~ "Interactive Runbook"
+
+    conn_skl = get(conn, ~p"/labs/scikit-learn-complete-guide")
+    assert html_response(conn_skl, 200) =~ "Scikit-learn Complete Guide"
+    assert html_response(conn_skl, 200) =~ "Interactive Runbook"
+
+    conn_xgb = get(conn, ~p"/labs/xgboost-complete-guide")
+    assert html_response(conn_xgb, 200) =~ "XGBoost Complete Guide"
+    assert html_response(conn_xgb, 200) =~ "Interactive Runbook"
+
+    conn_lgb = get(conn, ~p"/labs/lightgbm-complete-guide")
+    assert html_response(conn_lgb, 200) =~ "LightGBM Complete Learning Guide"
+    assert html_response(conn_lgb, 200) =~ "Interactive Runbook"
+
+    conn_cat = get(conn, ~p"/labs/catboost-complete-guide")
+    assert html_response(conn_cat, 200) =~ "CatBoost Complete Guide"
+    assert html_response(conn_cat, 200) =~ "Interactive Runbook"
+
+    conn_pil = get(conn, ~p"/labs/pillow-complete-guide")
+    assert html_response(conn_pil, 200) =~ "Complete Pillow Guide"
+    assert html_response(conn_pil, 200) =~ "Interactive Runbook"
+
+    conn_cv = get(conn, ~p"/labs/opencv-complete-guide")
+    assert html_response(conn_cv, 200) =~ "OpenCV Python Complete Guide"
+    assert html_response(conn_cv, 200) =~ "Interactive Runbook"
+
+    conn_ski = get(conn, ~p"/labs/scikit-image-complete-guide")
+    assert html_response(conn_ski, 200) =~ "scikit-image Complete Guide"
+    assert html_response(conn_ski, 200) =~ "Interactive Runbook"
+
+    conn_torch = get(conn, ~p"/labs/pytorch-complete-guide")
+    assert html_response(conn_torch, 200) =~ "PyTorch Complete Guide"
+    assert html_response(conn_torch, 200) =~ "Interactive Runbook"
+
+    conn_tv = get(conn, ~p"/labs/torchvision-complete-guide")
+    assert html_response(conn_tv, 200) =~ "TorchVision Complete Guide"
+    assert html_response(conn_tv, 200) =~ "Interactive Runbook"
+
+    conn_tf = get(conn, ~p"/labs/tensorflow-complete-guide")
+    assert html_response(conn_tf, 200) =~ "TensorFlow Complete Guide"
+    assert html_response(conn_tf, 200) =~ "Interactive Runbook"
+
+    conn_keras = get(conn, ~p"/labs/keras-complete-guide")
+    assert html_response(conn_keras, 200) =~ "Keras 3 Complete Guide"
+    assert html_response(conn_keras, 200) =~ "Interactive Runbook"
   end
 
   test "GET /blog and GET /blog/:id", %{conn: conn} do
@@ -53,7 +110,8 @@ defmodule AiDataFoundationWeb.PageControllerTest do
   test "GET /about renders mission and pillars", %{conn: conn} do
     conn = get(conn, ~p"/about")
     assert html_response(conn, 200) =~ "Democratizing Artificial Intelligence"
-    assert html_response(conn, 200) =~ "Open Protocols &amp; Tooling"
+    assert html_response(conn, 200) =~ "Open Protocols & Tooling"
+    assert html_response(conn, 200) =~ "Project Maturity Lifecycle"
   end
 
   test "GET /sitemap.xml and GET /rss.xml", %{conn: conn} do

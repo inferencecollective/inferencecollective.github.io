@@ -1,29 +1,64 @@
 <!-- AI Data Foundation Tools Hero -->
-<section class="kube-tools-hero">
-  <div class="max-w-7xl mx-auto px-4 py-16 sm:py-24 sm:px-6 lg:px-8 relative z-10">
+<section class="kube-tools-hero relative overflow-hidden bg-[#070A0F] border-b border-slate-800/80">
+  <div class="max-w-7xl mx-auto px-4 py-16 sm:py-20 sm:px-6 lg:px-8 relative z-10">
     <div class="kube-tools-hero-copy max-w-4xl">
-      <span class="kube-label">
-        Curated Index
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-4">
+        LF AI &amp; Data Foundation &middot; 62 Hosted Projects &middot; 480+ Landscape Items
       </span>
-      <h1>
-        Explore the tools that power <span>modern AI systems.</span>
+      <h1 class="text-4xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+        Explore the tools that power
+        <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">modern AI systems.</span>
       </h1>
-      <p>
-        Browse 500+ curated open-source AI projects across Large Language Models, Model Context Protocol (MCP) servers, vector databases, synthetic data generation, and evaluation frameworks.
+      <p class="mt-5 text-lg text-slate-300 leading-relaxed max-w-3xl">
+        Explore the complete LF AI &amp; Data Foundation ecosystem — featuring graduated, incubating, and sandbox technologies alongside curated open-source AI frameworks, Model Context Protocol (MCP) servers, and vector databases.
       </p>
-      <div class="mt-8">
+
+      <div class="mt-8 flex flex-wrap items-center gap-4">
         <a
           href="https://github.com/aidatafoundation/aidatafoundation.github.io"
           target="_blank"
           rel="noopener noreferrer"
-          class="kube-tools-star"
+          class="inline-flex items-center gap-3 px-4 py-2.5 rounded-xl border border-slate-700 bg-slate-900/80 hover:bg-slate-800 hover:border-emerald-500/40 text-white transition-all shadow-sm"
         >
-          <span class="text-amber-400 font-bold text-xl">&starf;</span>
-          <div>
-            <strong id="kube-github-stars">Star AI Data Foundation on GitHub</strong>
-            <small>Community supported &middot; Open source under Apache-2.0</small>
+          <span class="text-amber-400 font-bold text-lg">&starf;</span>
+          <div class="text-left">
+            <strong id="kube-github-stars" class="block text-xs font-bold text-slate-200">Star AI Data Foundation on GitHub</strong>
+            <small class="text-[11px] text-slate-400">Community supported &middot; Open source under Apache-2.0</small>
           </div>
         </a>
+        <a
+          href="https://lfai.landscape2.io"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition"
+        >
+          <span>Official LF AI Landscape2</span>
+          <span aria-hidden="true">&nearr;</span>
+        </a>
+      </div>
+
+      <!-- Quick Tiers Summary Bar -->
+      <div class="mt-8 pt-6 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
+        <div>
+          <span class="text-slate-400 block font-medium">Graduated</span>
+          <strong class="text-white text-base font-bold">13 Projects</strong>
+          <p class="text-[11px] text-emerald-400">Milvus, ONNX, Docling, Flyte</p>
+        </div>
+        <div>
+          <span class="text-slate-400 block font-medium">Incubating</span>
+          <strong class="text-white text-base font-bold">22 Projects</strong>
+          <p class="text-[11px] text-sky-400">Ludwig, Delta Lake, Feast, BeeAI</p>
+        </div>
+        <div>
+          <span class="text-slate-400 block font-medium">Sandbox</span>
+          <strong class="text-white text-base font-bold">22 Projects</strong>
+          <p class="text-[11px] text-amber-400">Unity Catalog, IREE, Recommenders</p>
+        </div>
+        <div>
+          <span class="text-slate-400 block font-medium">Total Landscape</span>
+          <strong class="text-white text-base font-bold">480+ Items</strong>
+          <p class="text-[11px] text-teal-400">14 Technical Categories</p>
+        </div>
       </div>
     </div>
   </div>
@@ -33,26 +68,26 @@
 <section class="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
   <div class="kube-tools-directory-heading flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
     <div>
-      <span class="kube-kicker">Interactive Catalog</span>
-      <h2 class="text-3xl font-black tracking-tight text-slate-900 [data-theme=dark]:text-white mt-1">
-        Directory Catalog
+      <span class="kube-kicker">Interactive CNCF-Style Landscape</span>
+      <h2 class="text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-1">
+        Projects &amp; Landscape Directory
       </h2>
     </div>
-    <p class="text-sm text-slate-500 max-w-md">
-      Filter by category, search by keywords, or sort by name. The URL updates automatically to make your query shareable.
+    <p class="text-sm text-slate-600 dark:text-slate-400 max-w-md">
+      Filter by project maturity stage, browse by 14 technical categories, or sort by GitHub stars.
     </p>
   </div>
 
   <div id="kube-tools" class="min-h-[400px]">
     <div class="py-20 text-center text-slate-500">
-      <div class="inline-block w-8 h-8 border-4 border-violet-600 border-t-transparent rounded-full animate-spin mb-4">
+      <div class="inline-block w-8 h-8 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin mb-4">
       </div>
-      <p>Loading AI tools directory...</p>
+      <p class="text-sm font-medium">Loading AI tools directory...</p>
     </div>
   </div>
 
   <noscript>
-    <div class="p-8 rounded-xl border border-amber-300 bg-amber-50 text-amber-900 [data-theme=dark]:border-amber-800 [data-theme=dark]:bg-amber-950/40 [data-theme=dark]:text-amber-200">
+    <div class="p-8 rounded-2xl border border-amber-300 bg-amber-50 text-amber-900 dark:border-amber-800/80 dark:bg-amber-950/40 dark:text-amber-200">
       <h3 class="font-bold text-lg mb-2">JavaScript Required for Interactive Filtering</h3>
       <p>
         Please enable JavaScript to search and filter the live tools directory, or view our <a
@@ -68,15 +103,15 @@
 </section>
 
 <!-- Contribution Section for AI Data Foundation -->
-<section class="border-t border-slate-200 [data-theme=dark]:border-slate-800 bg-slate-100/50 [data-theme=dark]:bg-slate-900/40 py-16">
+<section class="border-t border-slate-200/80 dark:border-slate-800/80 bg-slate-100/40 dark:bg-slate-950/40 py-16">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="kube-contribute p-8 sm:p-12 rounded-2xl border border-slate-200 bg-white [data-theme=dark]:border-slate-800 [data-theme=dark]:bg-slate-900 flex flex-col md:flex-row items-center justify-between gap-8">
+    <div class="p-8 sm:p-12 rounded-2xl border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xs">
       <div class="space-y-2 max-w-2xl">
         <span class="kube-kicker">Expand the Ecosystem</span>
-        <h3 class="text-2xl font-bold text-slate-900 [data-theme=dark]:text-white">
+        <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
           Know an open AI tool that should be listed?
         </h3>
-        <p class="text-sm text-slate-600 [data-theme=dark]:text-slate-400 leading-relaxed">
+        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
           Submit a pull request to add your open-source model, MCP server, embedding pipeline, or evaluation benchmark to the foundation directory.
         </p>
       </div>

@@ -27,6 +27,13 @@ import topbar from "../vendor/topbar"
 import {initTheme} from "./theme"
 import {initPickup} from "./pickup"
 import {initSite} from "./site"
+import {initDiagrams, render as renderDiagram, mount as mountDiagram} from "./diagram"
+import {initMath, katex} from "./math"
+
+// Expose Pele and KaTeX globally for interactive diagramming and mathematics
+window.Pele = {render: renderDiagram, mount: mountDiagram, initDiagrams}
+window.katex = katex
+window.initMath = initMath
 
 // Initialize theme immediately to prevent flashing
 initTheme()
@@ -36,10 +43,14 @@ if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", () => {
     initPickup()
     initSite()
+    initDiagrams()
+    initMath()
   })
 } else {
   initPickup()
   initSite()
+  initDiagrams()
+  initMath()
 }
 
 const csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
@@ -56,6 +67,8 @@ window.addEventListener("phx:page-loading-stop", _info => {
   topbar.hide()
   initSite()
   initPickup()
+  initDiagrams()
+  initMath()
 })
 
 // connect if there are any LiveViews on the page

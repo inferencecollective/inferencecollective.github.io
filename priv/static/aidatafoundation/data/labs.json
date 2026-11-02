@@ -6,8 +6,15 @@
       "description": "LangChain is a framework for building LLM applications. Learn to connect LLMs to tools, memory, and custom data sources.",
       "category": "LLM",
       "path": "/labs/LangChain-Practical-Labs.md",
-      "contributors": ["Sangam Biradar"],
-      "tags": ["LLM", "LangChain", "Python", "Agents"],
+      "contributors": [
+        "Sangam Biradar"
+      ],
+      "tags": [
+        "LLM",
+        "LangChain",
+        "Python",
+        "Agents"
+      ],
       "image": "/images/LangChain.svg"
     },
     {
@@ -16,8 +23,15 @@
       "description": "Install Weaviate locally with Docker and Ollama, generate embeddings, and build semantic search workflows.",
       "category": "Vector DB",
       "path": "/labs/AI-native-database.md",
-      "contributors": ["Sangam Biradar"],
-      "tags": ["Vector DB", "Weaviate", "Ollama", "Embeddings"]
+      "contributors": [
+        "Sangam Biradar"
+      ],
+      "tags": [
+        "Vector DB",
+        "Weaviate",
+        "Ollama",
+        "Embeddings"
+      ]
     },
     {
       "id": "data-quality-metrics",
@@ -25,8 +39,16 @@
       "description": "A comprehensive framework for assessing and improving the quality of training data for large language models.",
       "category": "Data Quality",
       "path": "/labs/data-quality-metrics.md",
-      "contributors": ["Alex Chen", "Maria Rodriguez"],
-      "tags": ["Data Quality", "Metrics", "LLM", "Assessment"]
+      "contributors": [
+        "Alex Chen",
+        "Maria Rodriguez"
+      ],
+      "tags": [
+        "Data Quality",
+        "Metrics",
+        "LLM",
+        "Assessment"
+      ]
     },
     {
       "id": "ethical-synthetic-data",
@@ -34,8 +56,16 @@
       "description": "Addressing privacy, bias, and fairness concerns in the creation and use of synthetic datasets for AI training.",
       "category": "Ethics",
       "path": "/labs/ethical-synthetic-data.md",
-      "contributors": ["James Wilson", "Aisha Patel"],
-      "tags": ["Ethics", "Synthetic Data", "Privacy", "Fairness"]
+      "contributors": [
+        "James Wilson",
+        "Aisha Patel"
+      ],
+      "tags": [
+        "Ethics",
+        "Synthetic Data",
+        "Privacy",
+        "Fairness"
+      ]
     },
     {
       "id": "llm-evaluation",
@@ -43,8 +73,15 @@
       "description": "Open source methodology for evaluating large language models across accuracy, reasoning, and domain benchmarks.",
       "category": "Evaluation",
       "path": "/labs/llm-evaluation.md",
-      "contributors": ["Robin Zhang"],
-      "tags": ["Evaluation", "LLM", "Benchmarks", "Methodology"]
+      "contributors": [
+        "Robin Zhang"
+      ],
+      "tags": [
+        "Evaluation",
+        "LLM",
+        "Benchmarks",
+        "Methodology"
+      ]
     },
     {
       "id": "reinforcement-learning",
@@ -52,8 +89,16 @@
       "description": "Developing intelligent agents that learn optimal decision-making strategies through interaction with their environment.",
       "category": "Reinforcement Learning",
       "path": "/labs/reinforcement-learning.md",
-      "contributors": ["Alex Kumar", "Olivia Chen"],
-      "tags": ["Reinforcement Learning", "RL", "Agents", "Decision Making"]
+      "contributors": [
+        "Alex Kumar",
+        "Olivia Chen"
+      ],
+      "tags": [
+        "Reinforcement Learning",
+        "RL",
+        "Agents",
+        "Decision Making"
+      ]
     },
     {
       "id": "ml-101",
@@ -62,8 +107,415 @@
       "category": "ML Basics",
       "path": "/labs/ml-101.md",
       "notebook": "/notebooks/ml-101.ipynb",
-      "contributors": ["AI Data Foundation"],
-      "tags": ["Machine Learning", "Basics", "Tutorial", "Scikit-Learn"]
+      "contributors": [
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "Machine Learning",
+        "Basics",
+        "Tutorial",
+        "Scikit-Learn"
+      ]
+    },
+    {
+      "id": "data-science-libraries",
+      "title": "Data Science & ML Core Libraries Architecture",
+      "description": "Comprehensive guide to modern Python data science libraries: NumPy, Pandas, Scikit-learn, XGBoost, LightGBM, CatBoost, CV, PyTorch, and Keras 3 with Pele architecture diagrams.",
+      "category": "ML Basics",
+      "path": "/labs/data-science-libraries.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "Data Science",
+        "Python",
+        "PyTorch",
+        "GBDT",
+        "Architecture"
+      ]
+    },
+    {
+      "id": "numpy-in-depth",
+      "title": "Complete NumPy Tutorial: Beginner to Advanced with Python Labs",
+      "description": "Learn NumPy with simple Python examples, practical exercises, and modern 2.x APIs: ndarrays, slicing, broadcasting, random distributions, linear algebra, memory performance, and attention math.",
+      "category": "ML Basics",
+      "path": "/labs/numpy-in-depth.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "NumPy",
+        "Python",
+        "SIMD",
+        "Broadcasting",
+        "Einsum",
+        "Attention",
+        "Linear Algebra",
+        "Memory Architecture"
+      ]
+    },
+    {
+      "id": "before-gpu-engineering",
+      "title": "Before GPU Engineering: Hardware Architecture, Memory Physics & The Roofline Model",
+      "description": "Deconstruct GPU engineering from first principles: silicon die allocation, memory hierarchy latencies, arithmetic intensity, warp execution, and why LLM decoding is memory-bound.",
+      "category": "Hardware & Performance",
+      "path": "/labs/before-gpu-engineering.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "GPU",
+        "CUDA",
+        "Hardware",
+        "Memory Hierarchy",
+        "Roofline Model",
+        "vLLM"
+      ]
+    },
+    {
+      "id": "scipy-complete-guide",
+      "title": "SciPy Complete Guide: Beginner to Intermediate Scientific Python",
+      "description": "Master numerical computing with SciPy: optimization, linear algebra, integration, ODEs, interpolation, hypothesis testing, FFT signal processing, sparse arrays, and spatial KDTree.",
+      "category": "Scientific Computing",
+      "path": "/labs/scipy-complete-guide.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "SciPy",
+        "Python",
+        "Scientific Computing",
+        "Optimization",
+        "Linear Algebra",
+        "ODEs",
+        "Signal Processing",
+        "FFT",
+        "Sparse"
+      ]
+    },
+    {
+      "id": "pandas-complete-guide",
+      "title": "Pandas Complete Guide: From DataFrames to SQL Joins and Analytics",
+      "description": "Master tabular data analytics with pandas: loc/iloc, CSV cleaning, GroupBy aggregations, SQL-style joins, time series resampling, pivot/melt, SQLite comparison, and Copy-on-Write.",
+      "category": "Data Analytics",
+      "path": "/labs/pandas-complete-guide.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "Pandas",
+        "Python",
+        "Data Analytics",
+        "SQL",
+        "DataFrames",
+        "GroupBy",
+        "Joins",
+        "Time Series",
+        "Polars"
+      ]
+    },
+    {
+      "id": "matplotlib-complete-guide",
+      "title": "Matplotlib Complete Guide: Python Charts, Figures & Five Hands-On Labs",
+      "description": "Master visual storytelling with Matplotlib: Figure and Axes anatomy, lines, scatter, bar charts, distributions, subplot mosaics, tick formatting, heatmaps, and publication export.",
+      "category": "Data Visualization",
+      "path": "/labs/matplotlib-complete-guide.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "Matplotlib",
+        "Python",
+        "Data Visualization",
+        "Subplots",
+        "Heatmaps",
+        "Plotting",
+        "Charts"
+      ]
+    },
+    {
+      "id": "seaborn-complete-guide",
+      "title": "Seaborn Complete Guide: Statistical Visualizations and Five Python Labs",
+      "description": "Master high-level statistical graphics with Seaborn: distributions (histplot, KDE, ECDF), categorical variance (box, strip, violin), bivariate associations, correlation heatmaps, FacetGrid, and themes.",
+      "category": "Data Visualization",
+      "path": "/labs/seaborn-complete-guide.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "Seaborn",
+        "Python",
+        "Statistical Graphics",
+        "Data Visualization",
+        "KDE",
+        "ECDF",
+        "FacetGrid",
+        "Heatmaps"
+      ]
+    },
+    {
+      "id": "scikit-learn-complete-guide",
+      "title": "Scikit-learn Complete Guide: Beginner to Intermediate",
+      "description": "Master classical machine learning with scikit-learn: Estimator API (fit/predict/transform), stratified splits, precision/recall/ROC AUC, Ridge regression diagnostics, ColumnTransformer pipelines, GridSearchCV tuning, KMeans, PCA, and production safety.",
+      "category": "Machine Learning",
+      "path": "/labs/scikit-learn-complete-guide.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "Scikit-learn",
+        "Python",
+        "Machine Learning",
+        "Classification",
+        "Regression",
+        "Pipelines",
+        "GridSearchCV",
+        "KMeans",
+        "PCA"
+      ]
+    },
+    {
+      "id": "xgboost-complete-guide",
+      "title": "XGBoost Complete Guide: 10 Lessons + 5 Python Labs",
+      "description": "Master gradient-boosted decision trees with XGBoost: objective optimization, binary classification, regression residuals, native DMatrix, early stopping without data leakage, hist vs exact tree methods, native categoricals, and JSON model deployment.",
+      "category": "Machine Learning",
+      "path": "/labs/xgboost-complete-guide.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "XGBoost",
+        "Python",
+        "Gradient Boosting",
+        "Machine Learning",
+        "DMatrix",
+        "Early Stopping",
+        "Hist",
+        "Categoricals"
+      ]
+    },
+    {
+      "id": "lightgbm-complete-guide",
+      "title": "LightGBM Complete Learning Guide: 10 Lessons + 5 Python Labs",
+      "description": "Master gradient-boosted decision trees with LightGBM: histogram binning, leaf-wise vs level-wise growth, LGBMClassifier, LGBMRegressor, native Dataset and Booster, leakage-free early stopping callbacks, native pandas categorical features, GridSearchCV tuning, and Booster text model serialization.",
+      "category": "Machine Learning",
+      "path": "/labs/lightgbm-complete-guide.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "LightGBM",
+        "Python",
+        "Gradient Boosting",
+        "Machine Learning",
+        "Leaf-Wise",
+        "Histogram Binning",
+        "Early Stopping",
+        "Categoricals"
+      ]
+    },
+    {
+      "id": "catboost-complete-guide",
+      "title": "CatBoost Complete Guide: Python Tutorial, Pool, Categories & Five ML Labs",
+      "description": "Master gradient-boosted decision trees with CatBoost: oblivious/symmetric decision trees, native Pool container, robust string categorical feature encoding, missing value imputation, leakage-free early stopping, manual StratifiedKFold CV tuning, and native CBM model serialization.",
+      "category": "Machine Learning",
+      "path": "/labs/catboost-complete-guide.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "CatBoost",
+        "Python",
+        "Gradient Boosting",
+        "Machine Learning",
+        "Categoricals",
+        "Pool",
+        "Early Stopping",
+        "Cross Validation"
+      ]
+    },
+    {
+      "id": "pillow-complete-guide",
+      "title": "Complete Pillow Guide \u2014 Python Image Processing, Examples and Labs",
+      "description": "Master raster image processing in Python with Pillow: open/save across PNG/JPEG/WebP, proportional resizing with contain, fit and pad, RGBA alpha compositing, spatial filters and ImageEnhance, ImageDraw typography, EXIF normalization, batch processing, and defensive upload validation.",
+      "category": "Computer Vision",
+      "path": "/labs/pillow-complete-guide.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "Pillow",
+        "PIL",
+        "Python",
+        "Image Processing",
+        "Computer Vision",
+        "JPEG",
+        "PNG",
+        "WebP",
+        "Alpha Compositing",
+        "ImageDraw"
+      ]
+    },
+    {
+      "id": "opencv-complete-guide",
+      "title": "OpenCV Python Complete Guide — 10 Lessons and 5 Computer Vision Labs",
+      "description": "Master computer vision in Python with OpenCV: BGR/RGB/HSV/LAB color spaces, Gaussian and median spatial filters, Sobel and Canny edge detection, Otsu thresholding and contour hierarchies, four-point perspective homography transforms, and multi-frame video object tracking.",
+      "category": "Computer Vision",
+      "path": "/labs/opencv-complete-guide.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "OpenCV",
+        "cv2",
+        "Python",
+        "Computer Vision",
+        "Image Processing",
+        "Edge Detection",
+        "Contours",
+        "Perspective Transform",
+        "Video Tracking",
+        "Morphology"
+      ]
+    },
+    {
+      "id": "scikit-image-complete-guide",
+      "title": "scikit-image Complete Guide: Scientific Image Processing in Python",
+      "description": "Master scientific image processing in Python with scikit-image: RGB vs grayscale conversions, floating-point dynamic range normalization, Gaussian and Canny edge filtering, Otsu thresholding, footprint morphology, connected component regionprops morphometry, distance transform watershed segmentation, and 3D volumetric analysis.",
+      "category": "Computer Vision",
+      "path": "/labs/scikit-image-complete-guide.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "scikit-image",
+        "skimage",
+        "Python",
+        "Scientific Computing",
+        "Image Processing",
+        "Computer Vision",
+        "Microscopy",
+        "Watershed",
+        "Morphometry",
+        "Regionprops",
+        "3D Segmentation"
+      ]
+    },
+    {
+      "id": "pytorch-complete-guide",
+      "title": "PyTorch Complete Guide — Tensors, Autograd, Neural Networks & Transformer Basics",
+      "description": "Master deep learning fundamentals in PyTorch: tensor striding and memory layout, dynamic autograd computation graphs, nn.Module layer construction, mini-batch DataLoader pipelines, 2D CNN image classification, token embedding NLP with masked mean pooling, and causal multihead self-attention transformer blocks.",
+      "category": "Deep Learning",
+      "path": "/labs/pytorch-complete-guide.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "PyTorch",
+        "torch",
+        "Deep Learning",
+        "Tensors",
+        "Autograd",
+        "Neural Networks",
+        "CNN",
+        "NLP",
+        "Embeddings",
+        "Transformer",
+        "Causal Attention"
+      ]
+    },
+    {
+      "id": "torchvision-complete-guide",
+      "title": "TorchVision Complete Guide — 10 Lessons and 5 Hands-on Labs",
+      "description": "Master computer vision engineering with TorchVision: CHW tensor representations, ImageFolder dataset hierarchies, modern transforms.v2 compositions, data augmentation without label leakage, make_grid visual debugging, TinyVisionCNN training and validation checkpointing, Model Zoo weight inspection, and TVTensors synchronized bounding boxes and masks.",
+      "category": "Computer Vision",
+      "path": "/labs/torchvision-complete-guide.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "TorchVision",
+        "PyTorch",
+        "Computer Vision",
+        "ImageFolder",
+        "transforms.v2",
+        "TVTensors",
+        "BoundingBoxes",
+        "Segmentation Mask",
+        "CNN",
+        "Model Zoo",
+        "Pretrained Weights"
+      ]
+    },
+    {
+      "id": "tensorflow-complete-guide",
+      "title": "TensorFlow Complete Guide — Beginner to Deployment",
+      "description": "Master deep learning systems with TensorFlow 2.x and Keras 3: static vs dynamic computational graphs, tf.Tensor and NHWC memory layouts, tf.GradientTape automatic differentiation, Keras Sequential and Functional architectures, high-performance tf.data pipelines (batch, prefetch, map), early stopping and validation splits, 2D CNN classification on synthetic shapes, SavedModel serialization with serving signatures, and LiteRT (TFLite) mobile and edge deployment with dynamic-range quantization.",
+      "category": "Deep Learning",
+      "path": "/labs/tensorflow-complete-guide.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "TensorFlow",
+        "Keras",
+        "Deep Learning",
+        "Tensors",
+        "GradientTape",
+        "Autograd",
+        "tf.data",
+        "CNN",
+        "SavedModel",
+        "TensorFlow Serving",
+        "LiteRT",
+        "TFLite",
+        "Quantization"
+      ]
+    },
+    {
+      "id": "keras-complete-guide",
+      "title": "Keras 3 Complete Guide — From Python Tensors to Multi-Backend AI",
+      "description": "Master deep learning architecture with Keras 3 multi-backend execution across PyTorch, JAX, and TensorFlow, symbolic KerasTensor vs concrete backend tensors, backend-agnostic mathematical operations with keras.ops, Sequential vs Functional model graphs, reliable 3-way dataset partitioning (train/val/test) with EarlyStopping, 2D CNN classification on channels-last synthetic vision fixtures, token embeddings and multi-head self-attention, backend-neutral custom layers with @register_keras_serializable, safe .keras model persistence, and deployment export pathways.",
+      "category": "Deep Learning",
+      "path": "/labs/keras-complete-guide.md",
+      "contributors": [
+        "Sangam Biradar",
+        "AI Data Foundation"
+      ],
+      "tags": [
+        "Keras",
+        "Keras 3",
+        "PyTorch",
+        "JAX",
+        "TensorFlow",
+        "Multi-Backend",
+        "Deep Learning",
+        "Sequential",
+        "Functional API",
+        "keras.ops",
+        "CNN",
+        "Attention",
+        "Embeddings",
+        "EarlyStopping",
+        "Serialization"
+      ]
     }
   ]
 }

@@ -1,0 +1,6 @@
+customer_id,name,segment,tier
+C001,Alice Smith,Consumer,pro
+C002,Bob Jones,Corporate,basic
+C003,Charlie Brown,Consumer,pro
+C004,Diana Prince,Corporate,pro
+C005,Evan Wright,Consumer,basic

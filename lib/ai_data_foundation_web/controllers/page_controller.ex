@@ -11,14 +11,21 @@ defmodule AiDataFoundationWeb.PageController do
       featured_labs: Enum.take(Foundation.labs(), 3),
       featured_posts: Enum.take(Foundation.posts(), 3),
       featured_models: Enum.take(Foundation.models(), 5),
-      roadmap_tracks: Foundation.content_roadmap()
+      roadmap_tracks: Foundation.content_roadmap(),
+      graduated_projects: Foundation.graduated_projects(),
+      incubating_projects: Foundation.incubating_projects(),
+      sandbox_projects: Foundation.sandbox_projects(),
+      all_projects: Foundation.projects()
     )
   end
 
   def tools(conn, _params) do
     render(conn, :tools,
-      page_title: "AI & LLM Tools Directory · AI Data Foundation",
-      stats: Foundation.stats()
+      page_title: "LF AI & Data Foundation Projects & Ecosystem Landscape · AI Data Foundation",
+      stats: Foundation.stats(),
+      graduated_projects: Foundation.graduated_projects(),
+      incubating_projects: Foundation.incubating_projects(),
+      sandbox_projects: Foundation.sandbox_projects()
     )
   end
 
@@ -109,9 +116,7 @@ defmodule AiDataFoundationWeb.PageController do
   end
 
   def security(conn, _params) do
-    render(conn, :security,
-      page_title: "AI Safety & Data Security · AI Data Foundation"
-    )
+    render(conn, :security, page_title: "AI Safety & Data Security · AI Data Foundation")
   end
 
   def sitemap(conn, _params) do

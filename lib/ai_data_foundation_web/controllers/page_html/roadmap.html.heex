@@ -1,16 +1,19 @@
 <!-- AI Data Foundation Roadmap Hero -->
-<section class="kube-roadmap-hero">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div class="kube-roadmap-hero-copy">
-      <span class="kube-kicker">Editorial Curriculum</span>
-      <h1>
-        1,000 practical titles for the <span>AI &amp; LLM ecosystem.</span>
+<section class="kube-roadmap-hero relative overflow-hidden bg-[#070A0F] border-b border-slate-800/80">
+  <div class="max-w-7xl mx-auto px-4 py-16 sm:py-20 sm:px-6 lg:px-8 relative z-10">
+    <div class="kube-roadmap-hero-copy max-w-4xl">
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-4">
+        Editorial Curriculum &middot; Structured Progression
+      </span>
+      <h1 class="text-4xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+        1,000 practical titles for the
+        <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">AI &amp; LLM ecosystem.</span>
       </h1>
-      <p>
+      <p class="mt-4 text-lg text-slate-300 max-w-3xl leading-relaxed">
         A structured, public curriculum covering foundational math, transformer architectures, agentic protocols, vector data engineering, and evaluation benchmarks.
       </p>
 
-      <div class="kube-roadmap-stats">
+      <div class="kube-home-proof max-w-2xl mt-8">
         <div>
           <strong>{@blog_count}</strong>
           <span>Planned Guides</span>
@@ -33,47 +36,58 @@
   <div class="kube-tools-directory-heading flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
     <div>
       <span class="kube-kicker">Structured Progression</span>
-      <h2 class="text-3xl font-black tracking-tight text-slate-900 [data-theme=dark]:text-white mt-1">
+      <h2 class="text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-1">
         One Ecosystem. Clear Learning Tracks.
       </h2>
     </div>
-    <p class="text-sm text-slate-500 max-w-lg">
+    <p class="text-sm text-slate-600 dark:text-slate-400 max-w-lg">
       Click on any learning track below to explore the detailed roadmap of scheduled blogs, technical breakdowns, and reproducible lab exercises.
     </p>
   </div>
 
-  <div class="kube-roadmap-tracks">
+  <div class="space-y-4">
     <%= for {track, index} <- Enum.with_index(@roadmap, 1) do %>
-      <details class="kube-roadmap-track" open={index == 1}>
-        <summary>
-          <span class="kube-roadmap-track-number">0{index}</span>
-          <div class="kube-roadmap-track-copy">
-            <strong>{track.title}</strong>
-            <small>{track.description}</small>
+      <details
+        class="group rounded-2xl border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xs overflow-hidden transition-all duration-200"
+        open={index == 1}
+      >
+        <summary class="flex items-center justify-between p-6 cursor-pointer select-none bg-slate-50/50 dark:bg-slate-900/40 hover:bg-slate-100/60 dark:hover:bg-slate-800/50 transition-colors">
+          <div class="flex items-center gap-4">
+            <span class="font-mono text-xs font-bold px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">0{index}</span>
+            <div>
+              <strong class="text-base sm:text-lg font-bold text-slate-900 dark:text-white block">{track.title}</strong>
+              <small class="text-xs text-slate-500 dark:text-slate-400 block mt-0.5">{track.description}</small>
+            </div>
           </div>
-          <span class="kube-roadmap-track-count">
-            {track.blogs} blogs &middot; {track.labs} labs
-          </span>
-          <span class="kube-roadmap-track-toggle" aria-hidden="true">+</span>
+          <div class="flex items-center gap-3">
+            <span class="hidden sm:inline-block text-xs font-mono px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
+              {track.blogs} blogs &middot; {track.labs} labs
+            </span>
+            <span class="w-6 h-6 rounded-full flex items-center justify-center text-slate-400 group-open:rotate-45 transition-transform duration-200 text-lg font-bold">+</span>
+          </div>
         </summary>
-        <div class="kube-roadmap-track-body">
+        <div class="p-6 border-t border-slate-100 dark:border-slate-800/80 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <span class="kube-kicker block mb-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 block mb-3">
               {track.blogs} Planned Articles &amp; Architecture Guides
             </span>
-            <ol class="kube-roadmap-title-list">
+            <ol class="space-y-2 text-sm text-slate-700 dark:text-slate-300 list-decimal list-inside leading-relaxed">
               <%= for title <- track.blog_titles do %>
-                <li>{title}</li>
+                <li class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                  {title}
+                </li>
               <% end %>
             </ol>
           </div>
           <div>
-            <span class="kube-kicker block mb-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400 block mb-3">
               {track.labs} Planned Hands-on Exercises
             </span>
-            <ol class="kube-roadmap-title-list">
+            <ol class="space-y-2 text-sm text-slate-700 dark:text-slate-300 list-decimal list-inside leading-relaxed">
               <%= for title <- track.lab_titles do %>
-                <li>{title}</li>
+                <li class="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
+                  {title}
+                </li>
               <% end %>
             </ol>
           </div>
@@ -84,15 +98,15 @@
 </section>
 
 <!-- Community Suggestion Footer -->
-<section class="border-t border-slate-200 [data-theme=dark]:border-slate-800 bg-slate-100/50 [data-theme=dark]:bg-slate-900/40 py-16">
+<section class="border-t border-slate-200/80 dark:border-slate-800/80 bg-slate-100/40 dark:bg-slate-950/40 py-16">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="kube-contribute p-8 sm:p-12 rounded-2xl border border-slate-200 bg-white [data-theme=dark]:border-slate-800 [data-theme=dark]:bg-slate-900 flex flex-col md:flex-row items-center justify-between gap-8">
+    <div class="p-8 sm:p-12 rounded-2xl border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xs">
       <div class="space-y-2 max-w-2xl">
         <span class="kube-kicker">Propose a Topic</span>
-        <h3 class="text-2xl font-bold text-slate-900 [data-theme=dark]:text-white">
+        <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
           Want a specific lab or guide written?
         </h3>
-        <p class="text-sm text-slate-600 [data-theme=dark]:text-slate-400 leading-relaxed">
+        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
           Open a GitHub issue with the title or tool you would like added to the foundation curriculum.
         </p>
       </div>

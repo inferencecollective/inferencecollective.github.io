@@ -1,0 +1,227 @@
+{
+  "organizations": {
+    "acquisitions": {
+      "2021": 104,
+      "2022": 84,
+      "2023": 57,
+      "2024": 62,
+      "2025": 95,
+      "2026": 91
+    },
+    "acquisitions_price": {
+      "2021": 91160819928,
+      "2022": 84363651877,
+      "2023": 35119000000,
+      "2024": 20681271508,
+      "2025": 97931281668,
+      "2026": 65737498707
+    },
+    "funding_rounds": {
+      "2022": 50,
+      "2023": 71,
+      "2024": 55,
+      "2025": 58,
+      "2026": 46
+    },
+    "funding_rounds_money_raised": {
+      "2022": 12471535046,
+      "2023": 30899129874,
+      "2024": 71163232683,
+      "2025": 230080519121,
+      "2026": 375628917251
+    }
+  },
+  "projects": {
+    "category": {
+      "Data": {
+        "projects": 20,
+        "subcategories": {
+          "Feature Engineering": 2,
+          "Governance": 4,
+          "Lineage": 3,
+          "Operations": 2,
+          "Pipeline Management": 1,
+          "Store & Format": 7,
+          "Stream Processing": 1
+        }
+      },
+      "Deep Learning": {
+        "projects": 4,
+        "subcategories": {
+          "Framework": 3,
+          "Tool": 1
+        }
+      },
+      "Distributed Computing": {
+        "projects": 4,
+        "subcategories": {
+          "Computing & Management": 2,
+          "Interface": 2
+        }
+      },
+      "Generative AI": {
+        "projects": 4,
+        "subcategories": {
+          "Models": 2,
+          "Tools": 2
+        }
+      },
+      "Machine Learning": {
+        "projects": 10,
+        "subcategories": {
+          "Framework": 3,
+          "Library": 5,
+          "Platform": 2
+        }
+      },
+      "Model": {
+        "projects": 12,
+        "subcategories": {
+          "Federated Learning": 3,
+          "Format & Interface": 1,
+          "Inference": 1,
+          "Marketplace": 1,
+          "Tool": 1,
+          "Training": 2,
+          "Workflow": 3
+        }
+      },
+      "Natural Language Processing": {
+        "projects": 1,
+        "subcategories": {
+          "Natural Language Processing": 1
+        }
+      },
+      "Notebook Environment": {
+        "projects": 1,
+        "subcategories": {
+          "Notebook Environment": 1
+        }
+      },
+      "Programming": {
+        "projects": 2,
+        "subcategories": {
+          "Programming": 2
+        }
+      },
+      "Trusted & Responsible AI": {
+        "projects": 4,
+        "subcategories": {
+          "Adversarial": 1,
+          "Bias & Fairness": 2,
+          "Explainability": 1
+        }
+      }
+    },
+    "maturity": {
+      "archived": 5,
+      "graduated": 13,
+      "incubating": 21,
+      "incubation": 1,
+      "sandbox": 22
+    },
+    "projects": 62
+  },
+  "repositories": {
+    "bytes": 7754897378,
+    "contributors": 154680,
+    "languages": {
+      "C": 105,
+      "C++": 119,
+      "CMake": 81,
+      "CSS": 146,
+      "HTML": 185,
+      "Java": 130,
+      "JavaScript": 175,
+      "Jupyter Notebook": 104,
+      "Python": 336,
+      "TypeScript": 96
+    },
+    "languages_bytes": {
+      "C": 253386236,
+      "C#": 126964939,
+      "C++": 1921252486,
+      "Go": 383198806,
+      "HTML": 141228925,
+      "Java": 1548957835,
+      "Jupyter Notebook": 618474416,
+      "Python": 1628111724,
+      "Scala": 169425959,
+      "TypeScript": 331290058
+    },
+    "licenses": {
+      "Apache 2.0": 21,
+      "Apache License 2.0": 246,
+      "BSD 2-Clause \"Simplified\" License": 4,
+      "BSD 3-Clause \"New\" or \"Revised\" License": 21,
+      "Creative Commons Attribution 4.0 International": 2,
+      "GNU Affero General Public License v3.0": 2,
+      "GNU General Public License v3.0": 1,
+      "GNU Lesser General Public License v2.1": 2,
+      "GNU Lesser General Public License v3.0": 2,
+      "GPL 3.0": 1,
+      "ISC License": 1,
+      "MIT": 5,
+      "MIT License": 49,
+      "Mozilla Public License 2.0": 1,
+      "Other": 45,
+      "Unlicense": 1
+    },
+    "participation_stats": [
+      4716,
+      4884,
+      4192,
+      4354,
+      3785,
+      4667,
+      4667,
+      4581,
+      2215,
+      2839,
+      4647,
+      4476,
+      4957,
+      4921,
+      4895,
+      5025,
+      4895,
+      5106,
+      5512,
+      5977,
+      5647,
+      5437,
+      5369,
+      5278,
+      5468,
+      5728,
+      5592,
+      6482,
+      5704,
+      5085,
+      5782,
+      5873,
+      5866,
+      5592,
+      5577,
+      5328,
+      5719,
+      5608,
+      5841,
+      5645,
+      5185,
+      5620,
+      5957,
+      5978,
+      5355,
+      6268,
+      6553,
+      6160,
+      6864,
+      7180,
+      7189,
+      7230
+    ],
+    "repositories": 414,
+    "stars": 4439269
+  }
+}

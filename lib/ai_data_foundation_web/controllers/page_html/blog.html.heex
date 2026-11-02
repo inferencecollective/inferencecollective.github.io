@@ -1,71 +1,94 @@
 <div data-content-library>
   <!-- AI Data Foundation Journal Header -->
-  <section class="kube-library-header">
-    <div class="kube-library-container">
-      <span class="kube-kicker">The ADF Journal</span>
-      <h1>
-        Understand more. <span>Build with confidence.</span>
+  <section class="kube-library-header relative overflow-hidden bg-[#070A0F] border-b border-slate-800/80">
+    <div class="kube-library-container max-w-7xl mx-auto px-4 py-16 sm:py-20 sm:px-6 lg:px-8 relative z-10">
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-4">
+        The ADF Journal &middot; Research &amp; Field Notes
+      </span>
+      <h1 class="text-4xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+        Understand more.
+        <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Build with confidence.</span>
       </h1>
-      <p class="kube-library-intro">
+      <p class="mt-4 text-lg text-slate-300 max-w-3xl leading-relaxed">
         Practical explanations of Large Language Models, Model Context Protocol (MCP), vector retrieval pipelines, and the engineering decisions behind reliable production AI systems.
       </p>
-      <div class="kube-library-links">
-        <a href="#guide-library">Browse {length(@posts)} guides &darr;</a>
-        <a href="/labs">Prefer hands-on practice? Explore labs &rarr;</a>
-        <a href="/roadmap">View roadmap &rarr;</a>
+      <div class="mt-8 flex flex-wrap gap-4 text-sm font-semibold">
+        <a href="#guide-library" class="kube-button">
+          Browse {length(@posts)} guides &darr;
+        </a>
+        <a href="/labs" class="kube-button kube-button-outline">
+          Prefer hands-on practice? Explore labs &rarr;
+        </a>
+        <a
+          href="/roadmap"
+          class="text-slate-400 hover:text-white transition-colors flex items-center gap-1.5 px-3 py-2"
+        >
+          View roadmap &rarr;
+        </a>
       </div>
     </div>
   </section>
 
   <!-- Guide Catalog Section -->
-  <div class="kube-library-section">
-    <div class="kube-library-container">
-      <div class="kube-library-toolbar" id="guide-library">
+  <div class="kube-library-section py-12">
+    <div class="kube-library-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8"
+        id="guide-library"
+      >
         <div>
           <span class="kube-kicker">Research &amp; Field Notes</span>
-          <h2>The Guide Library</h2>
+          <h2 class="text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-1">
+            The Guide Library
+          </h2>
         </div>
-        <div class="kube-library-search" data-library-controls>
-          <label for="blog-library-search">Filter guides by title, category, or author</label>
+        <div class="w-full md:w-80" data-library-controls>
+          <label for="blog-library-search" class="sr-only">Filter guides by title, category, or author</label>
           <input
             id="blog-library-search"
             type="search"
             data-library-search
             placeholder="Search Qwen, MCP, benchmarks, tools…"
             autocomplete="off"
+            class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 py-2.5 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/40"
           />
         </div>
       </div>
 
-      <p class="kube-library-count" data-library-count>
+      <p class="text-xs font-mono text-slate-500 mb-6" data-library-count>
         {length(@posts)} of {length(@posts)} shown
       </p>
 
-      <div class="kube-blog-grid">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <%= for post <- @posts do %>
-          <article class="kube-blog-card" data-library-card>
-            <div class="kube-lab-card-meta">
-              <span class="kube-label">{post["category"]}</span>
+          <article
+            class="p-6 rounded-2xl border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xs hover:shadow-md hover:border-emerald-500/40 transition-all flex flex-col group"
+            data-library-card
+          >
+            <div class="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800/80">
+              <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">{post[
+                "category"
+              ]}</span>
               <span class="text-xs text-slate-400">{post["date"]}</span>
             </div>
-            <h3>
+            <h3 class="text-lg font-bold mt-4 mb-2 text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
               <a href={~p"/blog/#{post["id"]}"}>
                 {post["title"]}
               </a>
             </h3>
-            <p>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4 flex-1">
               {post["description"] || post["excerpt"]}
             </p>
-            <div class="kube-tag-list mb-4">
+            <div class="flex flex-wrap gap-1.5 mb-5">
               <%= for tag <- Enum.take(post["tags"] || [], 3) do %>
-                <span class="kube-tag">{tag}</span>
+                <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">{tag}</span>
               <% end %>
             </div>
-            <div class="kube-lab-card-footer pt-4 border-t border-slate-100 [data-theme=dark]:border-slate-800 flex items-center justify-between mt-auto">
-              <span class="text-xs text-slate-500">By {post["author"]}</span>
+            <div class="pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between mt-auto text-xs">
+              <span class="text-slate-500">By {post["author"]}</span>
               <a
                 href={~p"/blog/#{post["id"]}"}
-                class="text-sm font-bold text-violet-600 [data-theme=dark]:text-violet-400 hover:underline"
+                class="font-bold text-emerald-600 dark:text-emerald-400 hover:underline"
               >
                 Read Guide &rarr;
               </a>
@@ -79,10 +102,10 @@
       </p>
 
       <!-- Contribute Footer -->
-      <div class="kube-library-footer mt-12 pt-8 border-t border-slate-200 [data-theme=dark]:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-6">
         <div>
           <span class="kube-kicker">Open Insights</span>
-          <h2 class="text-xl font-bold text-slate-900 [data-theme=dark]:text-white mt-1">
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white mt-1">
             Have insights to share with the AI practitioner community?
           </h2>
           <p class="text-sm text-slate-500 mt-1">

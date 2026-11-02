@@ -14,7 +14,16 @@
 import { llmEntries } from './llm-entries.js';
 import { aiEntries } from './ai-entries.js';
 import { mcpEntries } from './mcp-entries.js';
+import { lfaiEntries } from './lfai-entries.js';
 
-// Combine all entries
-export const entries = [...aiEntries, ...llmEntries, ...mcpEntries];
+// Combine all entries with hosted LF AI & Data projects prioritized
+const seen = new Set();
+const all = [...lfaiEntries, ...mcpEntries, ...llmEntries, ...aiEntries];
+
+export const entries = all.filter(entry => {
+  const key = (entry.title || "").toLowerCase().trim();
+  if (!key || seen.has(key)) return false;
+  seen.add(key);
+  return true;
+});
 

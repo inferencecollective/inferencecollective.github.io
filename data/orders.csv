@@ -1,0 +1,12 @@
+order_id,customer_id,order_date,amount,quantity,region,channel,status
+O001,C001,2026-01-01,$150,2,East,web,paid
+O002,C002,2026-01-03,$200,1,West,mobile,paid
+O003,C003,2026-01-07,$180,3,East,web,paid
+O004,C004,2026-01-10,$220,1,West,mobile,paid
+O005,C005,2026-02-02,$180,2,East,web,paid
+O006,C006,2026-02-05,$300,1,North,web,paid
+O007,C001,2026-01-05,$50,1,East,web,pending
+O008,C002,2026-01-08,$75,1,West,web,refunded
+O009,C003,invalid-date,$100,1,East,web,paid
+O010,C004,2026-01-15,N/A,1,West,web,paid
+O011,C005,2026-01-20,corrupt,1,East,web,paid

@@ -1,0 +1,4483 @@
+{
+  "finances_available": true,
+  "foundation": "LF AI & Data",
+  "qr_code": "images/qr_code.svg",
+  "url": "https://lfai.landscape2.io",
+  "categories": [
+    {
+      "name": "Machine Learning",
+      "normalized_name": "machine-learning",
+      "subcategories": [
+        {
+          "name": "Framework",
+          "normalized_name": "framework"
+        },
+        {
+          "name": "Platform",
+          "normalized_name": "platform"
+        },
+        {
+          "name": "Library",
+          "normalized_name": "library"
+        }
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "normalized_name": "deep-learning",
+      "subcategories": [
+        {
+          "name": "Framework",
+          "normalized_name": "framework"
+        },
+        {
+          "name": "Platform",
+          "normalized_name": "platform"
+        },
+        {
+          "name": "Library",
+          "normalized_name": "library"
+        },
+        {
+          "name": "Tool",
+          "normalized_name": "tool"
+        }
+      ]
+    },
+    {
+      "name": "Data",
+      "normalized_name": "data",
+      "subcategories": [
+        {
+          "name": "Education",
+          "normalized_name": "education"
+        },
+        {
+          "name": "Lineage",
+          "normalized_name": "lineage"
+        },
+        {
+          "name": "Relational DB",
+          "normalized_name": "relational-db"
+        },
+        {
+          "name": "Store & Format",
+          "normalized_name": "store-format"
+        },
+        {
+          "name": "Versioning",
+          "normalized_name": "versioning"
+        },
+        {
+          "name": "Operations",
+          "normalized_name": "operations"
+        },
+        {
+          "name": "Feature Engineering",
+          "normalized_name": "feature-engineering"
+        },
+        {
+          "name": "Stream Processing",
+          "normalized_name": "stream-processing"
+        },
+        {
+          "name": "SQL Engine",
+          "normalized_name": "sql-engine"
+        },
+        {
+          "name": "Visualization",
+          "normalized_name": "visualization"
+        },
+        {
+          "name": "Pipeline Management",
+          "normalized_name": "pipeline-management"
+        },
+        {
+          "name": "Labeling & Annotation",
+          "normalized_name": "labeling-annotation"
+        },
+        {
+          "name": "Governance",
+          "normalized_name": "governance"
+        }
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "normalized_name": "reinforcement-learning",
+      "subcategories": [
+        {
+          "name": "Reinforcement Learning",
+          "normalized_name": "reinforcement-learning"
+        }
+      ]
+    },
+    {
+      "name": "Generative AI",
+      "normalized_name": "generative-ai",
+      "subcategories": [
+        {
+          "name": "Models",
+          "normalized_name": "models"
+        },
+        {
+          "name": "Tools",
+          "normalized_name": "tools"
+        }
+      ]
+    },
+    {
+      "name": "Natural Language Processing",
+      "normalized_name": "natural-language-processing",
+      "subcategories": [
+        {
+          "name": "Natural Language Processing",
+          "normalized_name": "natural-language-processing"
+        }
+      ]
+    },
+    {
+      "name": "Model",
+      "normalized_name": "model",
+      "subcategories": [
+        {
+          "name": "Inference",
+          "normalized_name": "inference"
+        },
+        {
+          "name": "Federated Learning",
+          "normalized_name": "federated-learning"
+        },
+        {
+          "name": "Training",
+          "normalized_name": "training"
+        },
+        {
+          "name": "Parameter",
+          "normalized_name": "parameter"
+        },
+        {
+          "name": "Format & Interface",
+          "normalized_name": "format-interface"
+        },
+        {
+          "name": "Marketplace",
+          "normalized_name": "marketplace"
+        },
+        {
+          "name": "Workflow",
+          "normalized_name": "workflow"
+        },
+        {
+          "name": "Benchmarking",
+          "normalized_name": "benchmarking"
+        },
+        {
+          "name": "Tool",
+          "normalized_name": "tool"
+        }
+      ]
+    },
+    {
+      "name": "Programming",
+      "normalized_name": "programming",
+      "subcategories": [
+        {
+          "name": "Programming",
+          "normalized_name": "programming"
+        }
+      ]
+    },
+    {
+      "name": "Distributed Computing",
+      "normalized_name": "distributed-computing",
+      "subcategories": [
+        {
+          "name": "Computing & Management",
+          "normalized_name": "computing-management"
+        },
+        {
+          "name": "Interface",
+          "normalized_name": "interface"
+        }
+      ]
+    },
+    {
+      "name": "Trusted & Responsible AI",
+      "normalized_name": "trusted-responsible-ai",
+      "subcategories": [
+        {
+          "name": "Explainability",
+          "normalized_name": "explainability"
+        },
+        {
+          "name": "Adversarial",
+          "normalized_name": "adversarial"
+        },
+        {
+          "name": "Bias & Fairness",
+          "normalized_name": "bias-fairness"
+        }
+      ]
+    },
+    {
+      "name": "Notebook Environment",
+      "normalized_name": "notebook-environment",
+      "subcategories": [
+        {
+          "name": "Notebook Environment",
+          "normalized_name": "notebook-environment"
+        }
+      ]
+    },
+    {
+      "name": "Security & Privacy",
+      "normalized_name": "security-privacy",
+      "subcategories": [
+        {
+          "name": "Security & Privacy",
+          "normalized_name": "security-privacy"
+        }
+      ]
+    },
+    {
+      "name": "LF AI & Data Member Company",
+      "normalized_name": "lf-ai-data-member-company",
+      "subcategories": [
+        {
+          "name": "Premier",
+          "normalized_name": "premier"
+        },
+        {
+          "name": "General",
+          "normalized_name": "general"
+        },
+        {
+          "name": "Associate",
+          "normalized_name": "associate"
+        }
+      ]
+    },
+    {
+      "name": "Hosting Companies",
+      "normalized_name": "hosting-companies",
+      "subcategories": [
+        {
+          "name": "Hosting Companies",
+          "normalized_name": "hosting-companies"
+        }
+      ]
+    }
+  ],
+  "categories_overridden": [
+    "LF AI & Data Member Company"
+  ],
+  "colors": {
+    "color1": "rgba(41, 19, 131, 1)",
+    "color2": "rgba(76, 135, 252, 1)",
+    "color3": "rgba(103, 44, 226, 1)",
+    "color4": "rgba(25, 0, 109, 0.7)",
+    "color5": "rgba(25, 0, 109, 0.7)",
+    "color6": "rgba(103, 44, 226, 0.7)",
+    "color7": "rgba(229, 227, 235, 1)"
+  },
+  "featured_items": [
+    {
+      "field": "maturity",
+      "options": [
+        {
+          "value": "graduated",
+          "label": "Graduated",
+          "order": 1
+        },
+        {
+          "value": "incubating",
+          "label": "Incubating",
+          "order": 2
+        },
+        {
+          "value": "sandbox",
+          "label": "Sandbox",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "field": "subcategory",
+      "options": [
+        {
+          "value": "Premier"
+        },
+        {
+          "value": "General"
+        },
+        {
+          "value": "Associate"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "links": {
+      "github": "https://github.com/lfai",
+      "homepage": "https://lfaidata.foundation",
+      "linkedin": "https://www.linkedin.com/company/lfai/",
+      "slack": "https://lfaifoundation.slack.com/",
+      "twitter": "https://twitter.com/LFAIDataFdn",
+      "youtube": "https://www.youtube.com/channel/UCfasaeqXJBCAJMNO9HcHfbA"
+    },
+    "logo": "images/logo_footer.svg",
+    "text": "<p>Copyright \u00a9 2024 The Linux Foundation\u00ae. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href=\"https://www.linuxfoundation.org/trademark-usage\">Trademark Usage page</a>. Linux is a registered trademark of Linus Torvalds. <a href=\"https://www.linuxfoundation.org/privacy\">Privacy Policy</a> and <a href=\"https://www.linuxfoundation.org/terms\">Terms of Use</a>. This website contains data received from Crunchbase. This data is not licensed pursuant to the Apache License. It is subject to Crunchbase's Data Access Terms, available at <a href=\"https://data.crunchbase.com/docs/terms\">https://data.crunchbase.com/docs/terms</a>, and is only permitted to be used with Linux Foundation landscape projects.</p>\n"
+  },
+  "grid_items_size": "medium",
+  "groups": [
+    {
+      "categories": [
+        "Machine Learning",
+        "Deep Learning",
+        "Reinforcement Learning",
+        "Programming",
+        "Data",
+        "Model",
+        "Trusted & Responsible AI",
+        "Distributed Computing",
+        "Security & Privacy",
+        "Natural Language Processing",
+        "Notebook Environment",
+        "Generative AI",
+        "Notebook Environment"
+      ],
+      "name": "Projects and products",
+      "normalized_name": "projects-and-products"
+    },
+    {
+      "categories": [
+        "LF AI & Data Member Company"
+      ],
+      "name": "Members",
+      "normalized_name": "members"
+    },
+    {
+      "categories": [
+        "Hosting Companies"
+      ],
+      "name": "Companies hosting projects",
+      "normalized_name": "companies-hosting-projects"
+    }
+  ],
+  "header": {
+    "links": {
+      "github": "https://github.com/lfai/landscape"
+    },
+    "logo": "images/logo_header.svg"
+  },
+  "hide_organization_section_in_projects": true,
+  "images": {
+    "favicon": "images/favicon.png",
+    "open_graph": "https://cncf.github.io/landscape2-sites/lfai/favicon.png"
+  },
+  "items": [
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--framework--accord-net",
+      "name": "Accord.NET",
+      "logo": "logos/a8a7e2aed884914fbb92ce92b1057a54fc2738bdbaf8554124713d33bbf3d256.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--framework--airseai",
+      "name": "AIRSEAI",
+      "logo": "logos/1079b50aa8aaf94d8ee63fc05ec707d18392cf5f21896088ba577d9a3e708680.svg",
+      "subcategory": "Framework",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--framework--autogen",
+      "name": "AutoGen",
+      "logo": "logos/8a391f46934ebf43a25ff88989734425f05a78039421dae73df83aef45ca6373.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--framework--candle",
+      "name": "Candle",
+      "logo": "logos/e0ac2c00aa03a303bcfae59b2707f1c0f0a8ce4bd724c1be5a5d57f0e39f0675.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--framework--data-prep-kit",
+      "name": "Data-Prep-Kit",
+      "logo": "logos/18b12107ee709d7d22b0151639fd9aef5a21c509ed2fe4a7df1805b338a93bfb.svg",
+      "subcategory": "Framework",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--framework--lightgbm",
+      "name": "LightGBM",
+      "logo": "logos/5c689770153e6d37e6e0ac937b0f433958a31e63d23834a08e4e3413c00928e8.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--framework--mahout",
+      "name": "Mahout",
+      "logo": "logos/c7226b8d0b86168e15d1a2110f66251ea370a245845a192ddd02721b0f384298.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--framework--ml-net",
+      "name": "ML.net",
+      "logo": "logos/ff4358f4d147af6a620fe7046fa93f6f01c8efac5fed1a13e9bee1549d0613c1.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--framework--oaax",
+      "name": "OAAX",
+      "logo": "logos/71c9409b490ab18285d05d8e665347fdda05074f9ad878cb066a4ce5b829981a.svg",
+      "subcategory": "Framework",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox"
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--framework--ray",
+      "name": "Ray",
+      "logo": "logos/3523b979dbc3a81be92f6be64675a26812f390bfd574b4765872d6e51f660caa.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--framework--zenml",
+      "name": "ZenML",
+      "logo": "logos/02d01e13deec6193a54f42d43302bd8175093181521be685f43ae9970eb9534c.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--platform--alink",
+      "name": "Alink",
+      "logo": "logos/f320746d2f66779008975f3ceb3b2c05cdb9141b96a954a224f3af69e6bd240e.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--platform--angel-ml",
+      "name": "Angel-ML",
+      "logo": "logos/a3731bc9233c00ec0d37eeae53afdbcbcbd3f10b6a6214641a6fc541d982f385.svg",
+      "subcategory": "Platform",
+      "featured": {
+        "label": "Graduated",
+        "order": 1
+      },
+      "maturity": "graduated",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--platform--apache-systemml",
+      "name": "Apache SystemML",
+      "logo": "logos/62140e1036e5609baead9d779d3cd7ca5c7d237d468970d1e4093dc7a27b432e.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--platform--ax",
+      "name": "AX",
+      "logo": "logos/f1682904b8240c4dba44947d917ff85b3d4fe25f0d6073a25d0239b2115b9c49.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--platform--cortex",
+      "name": "Cortex",
+      "logo": "logos/73d240a9ac48b71a0ceb599342b0061ab53e99a0f047354ab2f52665062872e0.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--platform--h2o-ai",
+      "name": "H2o.ai",
+      "logo": "logos/3c96da1fbdda3f1d2e1da13a55ac2e8a7ea879e481dce9be466a8b268463546a.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--platform--kserve",
+      "name": "KServe",
+      "logo": "logos/c15e376e2f22f76445c233b8bd51d34e40c32e62e009cb8044dd4f2baf8e7c4a.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--platform--kubeflow",
+      "name": "Kubeflow",
+      "logo": "logos/7d633b3edfff267c99e5cb38c875ca2b842b3b371fd13dfad598dcc07c24a62b.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--platform--metaflow",
+      "name": "Metaflow",
+      "logo": "logos/59d31d51ce3b57a564a21ed23da4b9e32a58a18af0a7be4e63d1be7aedf57445.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--platform--mlflow",
+      "name": "MLFlow",
+      "logo": "logos/1e406c7e26da918a02633444bebbebad52cd1434d797dc2127eccf53c40b74e4.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--platform--open-platform-for-enterprise-ai-opea",
+      "name": "Open Platform for Enterprise AI (OPEA)",
+      "logo": "logos/f704eb2902039d2ea1f6a008bd1b8e99cf6f395d87e3376341a8f37199a807b9.svg",
+      "subcategory": "Platform",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--platform--predictionio",
+      "name": "PredictionIO",
+      "logo": "logos/ad5f7fd9a51901702d5db59b011c21154fe8e58291194cee42b7f8692b29d2a8.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--platform--seldon",
+      "name": "Seldon",
+      "logo": "logos/15855d03abab4d5b25425f8341d784f2fbeb01dd6ae2cff2bbe10b7bd34067a9.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--platform--vowpal-wabbit",
+      "name": "Vowpal Wabbit",
+      "logo": "logos/2fb2bc786bdb38b01b80ae8fcfdf4f26cd27976dd6d3840a82c8590db40958e9.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--1chipml",
+      "name": "1chipML",
+      "logo": "logos/8dc206f2847909ee01c652e209f46bec725b73098ffb9475748387c6022e3425.svg",
+      "subcategory": "Library",
+      "maturity": "archived",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--autogluon",
+      "name": "AutoGluon",
+      "logo": "logos/e66a09f1b07d294b8358931679e422ab2e7ee8cab197fe3fd695cd465ef7f9fb.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--catboost",
+      "name": "CatBoost",
+      "logo": "logos/54cd6fe60ae2371b734e6bd746356a36d573cd6f5dceaf3f6ba9f2797388816e.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--deepcausality",
+      "name": "DeepCausality",
+      "logo": "logos/6d48b7c47289adaf23a950f7054e7803b0c62a1fdee2f5c16c27c741a8dab099.svg",
+      "subcategory": "Library",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--flashlight",
+      "name": "Flashlight",
+      "logo": "logos/ef64eb2d4fd852c0ae11c9a9302ed6b05f198cacc8e5519a21f3a138859fe062.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--iree",
+      "name": "IREE",
+      "logo": "logos/aac9593d73082b0f4c0a9b0774f72f221cd2c0d77a2a15474ca993426aa30731.svg",
+      "subcategory": "Library",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--mediapipe",
+      "name": "MediaPipe",
+      "logo": "logos/c36fe7eec947a28ca55de0b603ca83a7624b593f672f4ca238c3a7907bce727a.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--mlpack",
+      "name": "mlpack",
+      "logo": "logos/5a9fdb4dcfd234e69e2aa07139395363a32708941ef136e80a595a499b3a2897.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--nilearn",
+      "name": "Nilearn",
+      "logo": "logos/77485df52e39e1a8fb726e0f923ca6d006a5843ba61b6ce6b47039273cec5583.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--opencv",
+      "name": "OpenCV",
+      "logo": "logos/0fd63ec509fa186a77b0e799fac70d67d447eb741375bbc55dec3c659d63a28d.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--opennn",
+      "name": "OpenNN",
+      "logo": "logos/a243a50301a316dd15c11835f5ff15f486921aaa9a4a6cd778415d7c812ab026.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--pycaret",
+      "name": "PyCaret",
+      "logo": "logos/2d2f8a1c3266446e918112361e9cd95052e2a8b8b4d4880e9b0268cf1d16ae7e.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--recommenders",
+      "name": "Recommenders",
+      "logo": "logos/a6c6d5ef4c460ba1d15f0e1a48f9a0e5a0a792483c34849d7d46afef7b8f1330.svg",
+      "subcategory": "Library",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--sapientml",
+      "name": "SapientML",
+      "logo": "logos/cc4002fce274cbdc0b98dda914a2892003df5691c0eb7375c282ae0f0048b1c9.svg",
+      "subcategory": "Library",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--scikit-learn",
+      "name": "SciKit-learn",
+      "logo": "logos/01cd28ea9d5e9483c02f833d4bb3470bae180276d4f97b3d03147d88aedcd769.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--shogun",
+      "name": "Shogun",
+      "logo": "logos/7d71310e7f613474915a684fd1c00b6f0e7862d83b661ddc6e0a3a6333412865.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--sonnet",
+      "name": "Sonnet",
+      "logo": "logos/7c977c73c434f772cb92b8695753b81c2fd80ce4e43791b69c216d89d6f851da.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--transmogrifai",
+      "name": "TransmogrifAI",
+      "logo": "logos/81e2895645c51135ddaac052634362336bf22d95d99b51443789dc1c47536b2f.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--xgboost",
+      "name": "XGBoost",
+      "logo": "logos/2b14a8b9b3351a64808a07db282b99161dd00d45e270d034f016b368c4650ab1.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Machine Learning",
+      "id": "machine-learning--library--xlearn",
+      "name": "xLearn",
+      "logo": "logos/0064693c77ecc96d689ecc3b326e02f7d4eddebcad79b55f59c13e58894b56da.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--framework--apache-singa",
+      "name": "Apache SINGA",
+      "logo": "logos/bd30d4ddaa0d419b2ec34dabaf41a480c080f0155ec4b22d4fed724f3fc1ef0d.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--framework--chainer",
+      "name": "Chainer",
+      "logo": "logos/1e815b5278fda82bb8ba7b33537d879f152dc40eece5b8d6a3893b3d136eea8a.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--framework--cntk",
+      "name": "CNTK",
+      "logo": "logos/1d9d14c7554c14b91fed0caaf56608dc0a06acfcbf1934d1b9bce5499ba7a413.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--framework--deeprec",
+      "name": "DeepRec",
+      "logo": "logos/b31e69c85a0877784421d4b8551abeef556781568f3f5e6e3d15e7c7bb4c7758.svg",
+      "subcategory": "Framework",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--framework--dynamic-neural-network-toolkit",
+      "name": "Dynamic Neural Network Toolkit",
+      "logo": "logos/4e86f6ca3f2f3ba7f5952a79394fd1fff042d06b4bc138b05064135b1bc70bc6.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--framework--euler",
+      "name": "euler",
+      "logo": "logos/0d90bbfdbd8d221feb6b414ec8e138d9b162e8f6bc991d6b913a20d44ded7f7c.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--framework--mindspore",
+      "name": "MindSpore",
+      "logo": "logos/d00e31c7602c5fdc059cbe748791f648eff9d3698fc9279db73fad034883bd87.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--framework--mxnet",
+      "name": "MXNet",
+      "logo": "logos/f7ea9d5b00ae9461bd2792b8a28cf9ff8cf940e6cc682271554fad3561b4e9ec.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--framework--ncnn",
+      "name": "ncnn",
+      "logo": "logos/28ee4ed4154e25c3f01cee7ecff2d9260594d18050b7b58f75dc28a11ef8d029.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--framework--paddlepaddle",
+      "name": "PaddlePaddle",
+      "logo": "logos/a8c31f4b6c31f47a1f70352c2e6ad4fbdb4b1b0e8d3bcd9b0b2c59190db6717d.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--framework--pythia",
+      "name": "Pythia",
+      "logo": "logos/225ef6003c16034da40625a6f6b2eb623ff10026033d2a88fbbee0e53ddb8216.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--framework--pytorch",
+      "name": "PyTorch",
+      "logo": "logos/e91bbd1404a6f4b944cd2d178e2b0b421c82daba0bb1e1afe552778c268fddd1.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--framework--ryoma",
+      "name": "Ryoma",
+      "logo": "logos/ba226880e71da313f89c0ec99d9c795c22b23d1d88e87e49a04874110bf536fe.svg",
+      "subcategory": "Framework",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--framework--shadernn",
+      "name": "ShaderNN",
+      "logo": "logos/687113f973a2d2d8fa6ce08861541d0e516e189125e271c79025ae4185330309.svg",
+      "subcategory": "Framework",
+      "maturity": "archived",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--framework--tensorflow",
+      "name": "Tensorflow",
+      "logo": "logos/82e3226b7cb55ff32da5a747e8dc08c267bf4b95a471c324ff5d9933c2daf2a2.svg",
+      "subcategory": "Framework",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--platform--deepdetect",
+      "name": "DeepDetect",
+      "logo": "logos/2d175fb70dc6a72679960b238d89d14e4720013119208dcd4bb48a232ab7f38d.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--platform--determined-ai",
+      "name": "Determined AI",
+      "logo": "logos/6ce29e659b72ae5ed5bb1c2f80d1410d05bb2e69c37d5ce7211892f24e1805f7.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--platform--onepanel",
+      "name": "Onepanel",
+      "logo": "logos/86362752d0e466b582b23a833cb068918a38b1b67d36c0ca19ec3dafa337071e.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--platform--polyaxon",
+      "name": "Polyaxon",
+      "logo": "logos/4d882dbe10e8aabe951e44f2e5e3ff35f21d0f82e395900ede727de81975368b.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--platform--x-deeplearning",
+      "name": "X-DeepLearning",
+      "logo": "logos/ef9d01662981e54f7c6b7dd63137b75c7a8e0b324e6fe5e91f1b9ad5de9f9b42.svg",
+      "subcategory": "Platform",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--library--bigdl",
+      "name": "BigDL",
+      "logo": "logos/0ab4270dae0b7c3918a93e0812c101a1c4fd9571c4bb69753c01ad0102614c38.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--library--catalyst",
+      "name": "Catalyst",
+      "logo": "logos/98200ef61b07b2673c8b325aec35813a2ce7f0aa185faf7e42d7c225dac5192b.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--library--eclipse-deeplearning4j",
+      "name": "Eclipse Deeplearning4j",
+      "logo": "logos/0f433bcb01a226b17618858512bb809924ec50f22b60947d8e5c24694d02f5e8.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--library--fast-ai",
+      "name": "fast.ai",
+      "logo": "logos/046ad7f91ad9327813ea60cf38d5d9d440fe97727b29b9783e2fdab77cbaa363.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--library--keras",
+      "name": "Keras",
+      "logo": "logos/af95d7a76187276bf382abc5059e51e0aad82446026b25a22d9a0ff511c23b54.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--library--neural-network-libraries",
+      "name": "Neural Network Libraries",
+      "logo": "logos/3c838949eaf43790c5d3d06d3cd65e3e1939cfee106a7dc2c4597dfcaf40f4e0.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--library--pytorch-ignite",
+      "name": "PyTorch Ignite",
+      "logo": "logos/191cd03ac9b3cc2eb321d2e3ffb3b3f3c73842591c55248cb4c98b1e9a605512.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--library--pytorch-lightning",
+      "name": "PyTorch Lightning",
+      "logo": "logos/b75fd22abcd365c5064936dad30876956612f80c9f492a2a75fdd2fb599eb94a.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--library--pytorchvideo",
+      "name": "PyTorchVideo",
+      "logo": "logos/cd97efe444ef634eac17e18179b567b3a4a40598d537523bfd7a8919e3a12590.svg",
+      "subcategory": "Library",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--tool--beyondml",
+      "name": "BeyondML",
+      "logo": "logos/5c8c3704e1e0f2705cfc84a4c456a03be58b1fde4ace088cc9db6173c7f862d6.svg",
+      "subcategory": "Tool",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--tool--botorch",
+      "name": "BoTorch",
+      "logo": "logos/0ba41d36a5dab8e3d3d1f349037086166848ac530d292356b27d98ecc012d25d.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--tool--neural-network-distiller",
+      "name": "Neural Network Distiller",
+      "logo": "logos/390c62d36683d3f6efb1c70da35fde4cdf55e9a9e1f65b32d5d4e5870d36ecf8.svg",
+      "subcategory": "Tool"
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--tool--plaid-ml",
+      "name": "Plaid ML",
+      "logo": "logos/e62d196cfa1f9f792472688fa962317034e6836ad2d9d0ef0fa5211a6968ddf8.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--tool--pytorch-biggraph",
+      "name": "PyTorch BigGraph",
+      "logo": "logos/dd713edeb9123a79c61252de892fbf91510f5d4878eb0eff5e1fb87287b9c298.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--tool--pytorch-geometric",
+      "name": "PyTorch Geometric",
+      "logo": "logos/0e930d3949f563abccd4cb11e96be946351b2b50fd380bdb3516c95c0c7e9d8d.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Deep Learning",
+      "id": "deep-learning--tool--tvm",
+      "name": "TVM",
+      "logo": "logos/7b47de099fb3bc7a2dc598640cefc6700a6dadb36a271b3a20b0d93a8d6bb178.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--lineage--openbytes",
+      "name": "OpenBytes",
+      "logo": "logos/df68b2ff303a3af2629db863ab519e12494e52f35fa84884c2420b1f7f1cd5a2.svg",
+      "subcategory": "Lineage",
+      "maturity": "archived",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--lineage--opendataology",
+      "name": "OpenDataology",
+      "logo": "logos/bd7b37b3955fac8019999a853fc2011eae970393d43760806da92acb39b157a8.svg",
+      "subcategory": "Lineage",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--lineage--openlineage",
+      "name": "OpenLineage",
+      "logo": "logos/6085536cce4892ef5dbdb5aa0d6d3d7ae610adbc1a8dee13880cc7f91bb6f925.svg",
+      "subcategory": "Lineage",
+      "featured": {
+        "label": "Graduated",
+        "order": 1
+      },
+      "maturity": "graduated",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--relational-db--couchdb",
+      "name": "CouchDB",
+      "logo": "logos/4785f29bef944ab1ebf1d4b84a70d930d5f7b9d3cf365bae854b1f2eeaf70304.svg",
+      "subcategory": "Relational DB",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--relational-db--mysql",
+      "name": "MySQL",
+      "logo": "logos/4be175eb2ad70ea2e207ed21c715ca089cd217f52829e3d7d2e44cb701901545.svg",
+      "subcategory": "Relational DB",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--relational-db--postgres",
+      "name": "Postgres",
+      "logo": "logos/7bb3ea258820bcd217404f838a64501332e8a0cad749a02666e14c9587676ba0.svg",
+      "subcategory": "Relational DB",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--relational-db--tikv",
+      "name": "TiKV",
+      "logo": "logos/e427b78bdc406e92e537d4eb9304807f20be33d09925ec0e1bf52298a9c1d18e.svg",
+      "subcategory": "Relational DB",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--alluxio",
+      "name": "Alluxio",
+      "logo": "logos/02471da2f1c6a7cc5085c286de83fc95267afafc6fc33cb8bc2e159f106b4772.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--apache-iceberg",
+      "name": "Apache Iceberg",
+      "logo": "logos/5b8c15e469d79c6634cf49bd098250dde05e89af7a2654735bce91c674116a64.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--apache-orc",
+      "name": "Apache ORC",
+      "logo": "logos/e198ca09b5090a0ba5a56e142cba48213aadeb5bd6645600644d182605d82c69.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--aresdb",
+      "name": "AresDB",
+      "logo": "logos/65dcb7efcc59ef2210cb2be80b8b1c15c7b2af817e56c5c905da4ae421183d7d.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--arrow",
+      "name": "Arrow",
+      "logo": "logos/fd81cb0066076b59f99f65bee316a40170718de5ad107d5947381f89b13cdae7.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--avro",
+      "name": "Avro",
+      "logo": "logos/5f863b365966ce9c001514622862ba99b6861b6c131e0ff2849512173f9e3f7d.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--ceph",
+      "name": "Ceph",
+      "logo": "logos/247f2dc8f28f818b7558560267c4239be6536e2e1e29c448d4f616c375210949.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--docling",
+      "name": "Docling",
+      "logo": "logos/9d44b3470b9e33063c570ef5202c336bfecbd21a8fe9f5df49aba63a5e327de7.svg",
+      "subcategory": "Store & Format",
+      "featured": {
+        "label": "Graduated",
+        "order": 1
+      },
+      "maturity": "graduated",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--delta-lake",
+      "name": "Delta Lake",
+      "logo": "logos/b52a55b1ce3bec1177f86b4878b39120a2ce476dd0c5d6d591dcd8b89da2ed2c.svg",
+      "subcategory": "Store & Format",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--docarray",
+      "name": "Docarray",
+      "logo": "logos/61ad13af9d0f874996bf23ff188affa619ad3857a35fcac89fa85dcae05ef4d9.svg",
+      "subcategory": "Store & Format",
+      "featured": {
+        "label": "Graduated",
+        "order": 1
+      },
+      "maturity": "graduated",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--dragonfly",
+      "name": "Dragonfly",
+      "logo": "logos/6422bb4ef620efe837f52dbddaf3b55a34f7a54decd4ae28711023a546449bde.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--druid",
+      "name": "Druid",
+      "logo": "logos/cc35705e35ea4eef5ccba028f2cacac32044c82263fd2623fffe737bd8fe9ba6.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--hudi",
+      "name": "Hudi",
+      "logo": "logos/9fcb6f0b16da4ef21f484b55f81819e5133623b737f28ec1ed0a2e8b17a8fa75.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--hugegraph",
+      "name": "HugeGraph",
+      "logo": "logos/8e984ad6ec9b39f5b1a330e6eac8c487712a1d171f26b3fc55f68a737759f3b8.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--influxdb",
+      "name": "InfluxDB",
+      "logo": "logos/46b40e2ac73d8ed6571dfcf1e1de69340f676cc59a21b1e2ea5bdcdd87849509.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--janusgraph",
+      "name": "JanusGraph",
+      "logo": "logos/b4fcdacd992712b81c4ed4340f918ee457fd8b15844f507fe4890fd721a245d4.svg",
+      "subcategory": "Store & Format",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--lakesoul",
+      "name": "LakeSoul",
+      "logo": "logos/01f1f13f3e6501e261301ef2b8d0e2230333c405e3d6ba3d1bb57c68301f43d1.svg",
+      "subcategory": "Store & Format",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--milvus",
+      "name": "Milvus",
+      "logo": "logos/fe575e6ec12d7cc38be20f35320abfeae45c23c7222851a5223046fc061e64dc.svg",
+      "subcategory": "Store & Format",
+      "featured": {
+        "label": "Graduated",
+        "order": 1
+      },
+      "maturity": "graduated",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--nokv",
+      "name": "NoKV",
+      "logo": "logos/d57904a12ac0da3aef5eab8e460c7c1f5ae6aca0c74233820a6693cb01c730b3.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--pandas",
+      "name": "pandas",
+      "logo": "logos/6a7a82ba4f30e570044eaca35d697354daa75888ca918fca1b51530156cd1d23.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--parquet",
+      "name": "Parquet",
+      "logo": "logos/b37b104a885cbf27d13e4ff81e22ba537685519d94b233ca32dab9ae92362e34.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--pilosa",
+      "name": "Pilosa",
+      "logo": "logos/e09add11aa6fe0e631c445288759eba61a656782793ebc85a5416ee466d3e9de.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--starrocks",
+      "name": "StarRocks",
+      "logo": "logos/0a7740c62ea9bd4db2dc12b001f7fef60a7ee06d2f9102badeef3e8d9af152c5.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--vald",
+      "name": "Vald",
+      "logo": "logos/0f94fa619327334975fb4f254f76ea930a870531258a67202d602cf0291a7979.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--vearch",
+      "name": "VEARCH",
+      "logo": "logos/e7b3846a03e201dd7ccdc3a16adee64dc623064f5732dfe415509d8d9c944d48.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--vespa",
+      "name": "Vespa",
+      "logo": "logos/6b6ca076778f02f6be5a525e98814bbed2107988ab82b3b9a58c30d923f727ce.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--vineyard",
+      "name": "Vineyard",
+      "logo": "logos/56b0b5b743b3ef7b5366e800c6ce92d935aa8a7cede0f69e0cd89425d098b438.svg",
+      "subcategory": "Store & Format",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--store-format--vortex",
+      "name": "Vortex",
+      "logo": "logos/ba2cb4288164a38e372b754e1d1a326ad6ff823ef7d07fb86de40d11a0535a54.svg",
+      "subcategory": "Store & Format",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--versioning--dotmesh",
+      "name": "dotmesh",
+      "logo": "logos/ea3a45949143c3cbdca44f810b421d9bc4ba7d8387d8f09f1951f9f1f30e4b65.svg",
+      "subcategory": "Versioning",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--versioning--dvc",
+      "name": "DVC",
+      "logo": "logos/3bb064f169212111a2f16854f9fc8cc03edb0a5718cc9afce0ef7dcbd8060705.svg",
+      "subcategory": "Versioning",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--versioning--fasttrackml",
+      "name": "FastTrackML",
+      "logo": "logos/9b747bcdf29fa15eae66d3d50706db2d9114e1fc32ce7ad4c1f805e1963fc2ab.svg",
+      "subcategory": "Versioning",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--versioning--quilt-data",
+      "name": "Quilt Data",
+      "logo": "logos/586f9b382445aac4aee4203b06430c4efec1114337fc697122b0e32f20f4818b.svg",
+      "subcategory": "Versioning",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--operations--apache-hive",
+      "name": "Apache Hive",
+      "logo": "logos/a2e2030b3e71675d6ccde9a6ae6e2537632c8e3f99f5c2c90152040e989de004.svg",
+      "subcategory": "Operations",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--operations--ckan",
+      "name": "CKAN",
+      "logo": "logos/d54a4efe91debe406122fd5f954adcdac1d990e3cf7becec68cc9a1a5c1e622f.svg",
+      "subcategory": "Operations",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--operations--datahub",
+      "name": "DataHub",
+      "logo": "logos/d86cae28b86d87bfc01379b17df255bab7202a13f0b9e4433a03859d1c3ad300.svg",
+      "subcategory": "Operations",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--operations--datashim",
+      "name": "Datashim",
+      "logo": "logos/8677bc8ec63a5556ac5159d7074c11a626285e4a3630c09c8addd7ac2a4995a5.svg",
+      "subcategory": "Operations",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--operations--great-expectations",
+      "name": "great_expectations",
+      "logo": "logos/02673e16387d53df17bd3612b15d898d4e0e6f8043b2046cac733985c9c09255.svg",
+      "subcategory": "Operations",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--operations--marquez",
+      "name": "Marquez",
+      "logo": "logos/a47d7ea58c501a4e4a4f3699cb14fd68c2b078447b8133482fa86e0063368674.svg",
+      "subcategory": "Operations",
+      "featured": {
+        "label": "Graduated",
+        "order": 1
+      },
+      "maturity": "graduated",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--operations--mathesar",
+      "name": "Mathesar",
+      "logo": "logos/d3a39471c425938d46d1e6aa39df385bf8b6851252e097c17ba5e72cf1c6bd64.svg",
+      "subcategory": "Operations",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--operations--snorkel",
+      "name": "snorkel",
+      "logo": "logos/0e2c401a00a57504f20cf1e7381a8778d830b616609b1ef5c2ccdc3a3d511f61.svg",
+      "subcategory": "Operations",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--operations--whylogs",
+      "name": "whylogs",
+      "logo": "logos/e7bb1887c55c2a1820ca677fb1c9c75c0b4897fbe4f89403e5d148405452e00d.svg",
+      "subcategory": "Operations",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--feature-engineering--feast",
+      "name": "Feast",
+      "logo": "logos/cb053c87a423e875eeec8bd2adbf11c013be0d7583cc206393aea545f06f0f1c.svg",
+      "subcategory": "Feature Engineering",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--feature-engineering--feathr",
+      "name": "Feathr",
+      "logo": "logos/87df0b3cdfc990ef23863ae0c95707349f1e3c2a3b125d6aa2f66c96be87cd94.svg",
+      "subcategory": "Feature Engineering",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--feature-engineering--featuretools",
+      "name": "Featuretools",
+      "logo": "logos/0c23abfad5914338082a3b339792ae34e1ff6e1688d19443764603cd69d7d2d5.svg",
+      "subcategory": "Feature Engineering",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--feature-engineering--openmldb",
+      "name": "OpenMLDB",
+      "logo": "logos/b4a1c5cdbd239835f372604f769b3e910ef3dd4a49745a474f9c4d7e87ab083c.svg",
+      "subcategory": "Feature Engineering",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--feature-engineering--tsfresh",
+      "name": "tsfresh",
+      "logo": "logos/cc93953def9262e6acfc4d703a4513e38044cf26b6281f2181f159c103b1f247.svg",
+      "subcategory": "Feature Engineering",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--stream-processing--apache-rocketmq",
+      "name": "Apache RocketMQ",
+      "logo": "logos/e43a9eddeb1cb607c332d22e93280b6b8f69d489f980c23a04fe017ed1e0033d.svg",
+      "subcategory": "Stream Processing",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--stream-processing--beam",
+      "name": "Beam",
+      "logo": "logos/1ca726abab3e9ac9f80f9f2d2815fba1807d03c0f94c7273040709f0f1367a4f.svg",
+      "subcategory": "Stream Processing",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--stream-processing--brooklin",
+      "name": "Brooklin",
+      "logo": "logos/3a9ce652c23eab0ebe498ca6159ee6de7a1ef4073e47189995dc44af84c97749.svg",
+      "subcategory": "Stream Processing",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--stream-processing--faust",
+      "name": "faust",
+      "logo": "logos/2af6acea5f811c025d6c612b4b2cb035f11d7c2bc866124fbfa8e8ceda896435.svg",
+      "subcategory": "Stream Processing",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--stream-processing--flink",
+      "name": "Flink",
+      "logo": "logos/dc8bddffe976072bb9a9befaeab0a2f26643e298f33c32dd209ef6bcb69fce70.svg",
+      "subcategory": "Stream Processing",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--stream-processing--fluentd",
+      "name": "Fluentd",
+      "logo": "logos/82dc230bc4c95b5386b9551652806db967269f4111f1f4cf7513fb5471917138.svg",
+      "subcategory": "Stream Processing",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--stream-processing--kafka",
+      "name": "Kafka",
+      "logo": "logos/da7e183dc4254a532c204affa4bb41c183c7c908184f076135f0a3df02067ca5.svg",
+      "subcategory": "Stream Processing",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--stream-processing--logstash",
+      "name": "Logstash",
+      "logo": "logos/f3041272c2dfdd004276a728e23b1b42c820e11d7fd9d0e8a04d0fd84e95d55c.svg",
+      "subcategory": "Stream Processing",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--stream-processing--nnstreamer",
+      "name": "NNStreamer",
+      "logo": "logos/8b6e23e6740542e3d9c997aa20caf2e423e79e8387820987dd290fe1ae36dd4e.svg",
+      "subcategory": "Stream Processing",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--stream-processing--pravega",
+      "name": "Pravega",
+      "logo": "logos/54e5b0ad66a477a39ef64c66c97fc42e7eb23b2c02908a9e3be01a7daf68e60a.svg",
+      "subcategory": "Stream Processing",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--stream-processing--prefect",
+      "name": "PREFECT",
+      "logo": "logos/2933623673533025badcb80feb8dd3690748a0aeafb9ead1f53a68dbbca8f9ab.svg",
+      "subcategory": "Stream Processing",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--stream-processing--pulsar",
+      "name": "Pulsar",
+      "logo": "logos/8336f8008cdfa7fe45c067abe801c8cfcc272202a7ffeef329ca73fc224a3142.svg",
+      "subcategory": "Stream Processing",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--stream-processing--samza",
+      "name": "Samza",
+      "logo": "logos/39ce2f44eb552b5cb4ecaa9546e6c1522e32cf3f3a8bb5b54a8c0d9c84fc2f1a.svg",
+      "subcategory": "Stream Processing",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--stream-processing--ureplicator",
+      "name": "uReplicator",
+      "logo": "logos/fa96b5ac5a62a033877680b9af5d442ec53de86c0119e91c492a0e4f8e7b9e35.svg",
+      "subcategory": "Stream Processing",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--sql-engine--apache-drill",
+      "name": "Apache Drill",
+      "logo": "logos/2faf20636373676c941926f0177ceb421d0eba39eb2b4bece1711c7b5ddc18d4.svg",
+      "subcategory": "SQL Engine",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--sql-engine--hawq",
+      "name": "Hawq",
+      "logo": "logos/152bdcd737acc8c712b7e5c00dc5df1cb906c748edfb51ec4feff13a67f18a40.svg",
+      "subcategory": "SQL Engine",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--sql-engine--presto",
+      "name": "Presto",
+      "logo": "logos/154db8008566e2711d88a5ded741e472a7817f14b486440a716ae35895fc6bfd.svg",
+      "subcategory": "SQL Engine",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--sql-engine--sqlflow",
+      "name": "SQLFlow",
+      "logo": "logos/a79f28a7892915cea82a6845f7dcad52350456e576fc0c1b94f914b7ce9f7759.svg",
+      "subcategory": "SQL Engine",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--sql-engine--trino",
+      "name": "Trino",
+      "logo": "logos/008125b82108f19aea6b0004ce5f255b72bab5b5e5c169a302d7bf845edb8e6b.svg",
+      "subcategory": "SQL Engine",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--visualization--bokeh",
+      "name": "bokeh",
+      "logo": "logos/9bd5539b15a5d7e881daaec1f837864fc0aef97dbd19cff5644536826a3dc55c.svg",
+      "subcategory": "Visualization",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--visualization--carbon",
+      "name": "Carbon",
+      "logo": "logos/44cf2fe046d06e5bc257e4496da4d3e104893b7bca2b9a7a5a712255b3e74a9d.svg",
+      "subcategory": "Visualization",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--visualization--d3-data-driven-documents",
+      "name": "D3 (Data-Driven Documents)",
+      "logo": "logos/5f06c1877a13f23aa56d564dc96e84af0d62199c9645bda788852239635b7274.svg",
+      "subcategory": "Visualization",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--visualization--dash",
+      "name": "dash",
+      "logo": "logos/bfb5373d4eecff5cf9764c5a39823f4be41f801abbc74ffb64d854162397140f.svg",
+      "subcategory": "Visualization",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--visualization--deck-gl",
+      "name": "deck.gl",
+      "logo": "logos/11bfc75ed75ae45b8432db1e15343c2127c3ee6a9fdc8934c77e6981908ce73d.svg",
+      "subcategory": "Visualization",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--visualization--ecco",
+      "name": "ecco",
+      "logo": "logos/e1d54bb01d4d90951034885ac9477a45c66078ed7d84b3dbe07d5b1c3e03088a.svg",
+      "subcategory": "Visualization",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--visualization--facets",
+      "name": "Facets",
+      "logo": "logos/84fae3347d9c6e330fa45748381210777fd453272e4c726f55a4a2344db2284e.svg",
+      "subcategory": "Visualization",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--visualization--grafana",
+      "name": "Grafana",
+      "logo": "logos/bc16364989d62d7e6b0acfc54aeb2bf1e8be0f84b0210b7337467549b74cd086.svg",
+      "subcategory": "Visualization",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--visualization--metabase",
+      "name": "Metabase",
+      "logo": "logos/a5e91e76ecce05026a62c7f3076b921ccd6ff1d0de77a71f8c9688b48d74e2de.svg",
+      "subcategory": "Visualization",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--visualization--prometheus",
+      "name": "Prometheus",
+      "logo": "logos/93595f1048f4078d4c455b1c15c36a1a868506c31b44f552a4f4db26037ab0da.svg",
+      "subcategory": "Visualization",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--visualization--rcloud",
+      "name": "RCloud",
+      "logo": "logos/f0ed8b6a0a137cc15ec9ae67d82d36f92c9e37ccc54f0455cd1f5a0fce45b70c.svg",
+      "subcategory": "Visualization",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--visualization--redash",
+      "name": "redash",
+      "logo": "logos/843ce4a750ee6377ef82fae6c7067d097f1d711360ecfc7ffd02200ff3eae0ed.svg",
+      "subcategory": "Visualization",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--visualization--seaborn",
+      "name": "seaborn",
+      "logo": "logos/15cfe547e36218a99a1fd1ab7442849f106a2b7cbb34e894cd3c2c56ad916ffc.svg",
+      "subcategory": "Visualization",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--visualization--superset",
+      "name": "Superset",
+      "logo": "logos/1fb2b520450be518e224ffeef9d3b0a1b2eb3c31c64350241e4264abb5d71a66.svg",
+      "subcategory": "Visualization",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--visualization--tensorboard",
+      "name": "TensorBoard",
+      "logo": "logos/59b2ae7d90b694b08e61702cd687056134979410001c1dff4c90c6bf1e771b29.svg",
+      "subcategory": "Visualization",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--pipeline-management--analytics-zoo",
+      "name": "Analytics Zoo",
+      "logo": "logos/804e64ea8eab20df9ef8e3a7e39dfeb6ef8da80d74f37b5d3522b17c0291e573.svg",
+      "subcategory": "Pipeline Management",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--pipeline-management--apache-oozie",
+      "name": "Apache Oozie",
+      "logo": "logos/514f75414ec0c1fa8e7c3f72075876685c6bcb205ca01af1bb766194e2111067.svg",
+      "subcategory": "Pipeline Management",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--pipeline-management--artigraph",
+      "name": "Artigraph",
+      "logo": "logos/b702cc2533987d1cc97d880491e8540bd544fad5c95b6dadde90243b9ceb53a7.svg",
+      "subcategory": "Pipeline Management",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--pipeline-management--dagster",
+      "name": "DAGSTER",
+      "logo": "logos/bc171ad972c55110d692912af7e732a90a2fc4b0a317597e7c62cceee7f249d7.svg",
+      "subcategory": "Pipeline Management",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--pipeline-management--piflow",
+      "name": "PiFlow",
+      "logo": "logos/06324aab5396eb2d7e94c75fe3047175a88b12f84df33b1e035677432c3cbab5.svg",
+      "subcategory": "Pipeline Management"
+    },
+    {
+      "category": "Data",
+      "id": "data--pipeline-management--tekton-pipelines",
+      "name": "Tekton Pipelines",
+      "logo": "logos/e3414a34882a0a0fdf8d18e6a49b33a19adebd1fbbf8f7abe42d1ccdc51a0cb6.svg",
+      "subcategory": "Pipeline Management",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--pipeline-management--tpot",
+      "name": "TPOT",
+      "logo": "logos/2f366b2d9b0bffac9f53b7d94cf8a496b3ba45a3deba59148c617e9101f193b6.svg",
+      "subcategory": "Pipeline Management",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--labeling-annotation--computer-vision-annotation-tool-cvat",
+      "name": "Computer Vision Annotation Tool (CVAT)",
+      "logo": "logos/cea9d06a159636150e1cdd943492b64aa1e1401fd6fe5560671cb6503a298977.svg",
+      "subcategory": "Labeling & Annotation",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--labeling-annotation--doccano",
+      "name": "doccano",
+      "logo": "logos/0447696dc7b7c021f9a206f5c1eca0cd693f5718a1a7d71b52c290e832708e88.svg",
+      "subcategory": "Labeling & Annotation",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--labeling-annotation--label-studio",
+      "name": "Label Studio",
+      "logo": "logos/42a3888addb6fe825ffaf4661b72a491031ab1a432fad56dec6b24e6f6291571.svg",
+      "subcategory": "Labeling & Annotation",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--labeling-annotation--labelbox",
+      "name": "Labelbox",
+      "logo": "logos/a088e38bf79748428042108e913a9f8899e6777d49d53a2d89691412097cb429.svg",
+      "subcategory": "Labeling & Annotation"
+    },
+    {
+      "category": "Data",
+      "id": "data--labeling-annotation--labelimg",
+      "name": "LabelImg",
+      "logo": "logos/475b04ff996e04c5e3aadd69d0f53ea82471b2eeade8dd2d73bfa59141aa5a9c.svg",
+      "subcategory": "Labeling & Annotation",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--labeling-annotation--semantic-segmentation-editor",
+      "name": "Semantic Segmentation Editor",
+      "logo": "logos/ad89871a05a9f4aa5ceb673b39f5ff501444f4bd6bf5e3157b4b5ff02c55d8ca.svg",
+      "subcategory": "Labeling & Annotation",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--labeling-annotation--visual-object-tagging-tool-vott",
+      "name": "Visual Object Tagging Tool (VoTT)",
+      "logo": "logos/da25f15b08f4dc47aff6d116ffed39cc860c4b25af55be9466b77e100325930b.svg",
+      "subcategory": "Labeling & Annotation",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--governance--bitol",
+      "name": "Bitol",
+      "logo": "logos/2398bc2f37c3106a2cb3dfd4f94cb6a65e23dd9987aff09b1a0389724823970c.svg",
+      "subcategory": "Governance",
+      "featured": {
+        "label": "Graduated",
+        "order": 1
+      },
+      "maturity": "graduated",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--governance--agent-governance-toolkit",
+      "name": "Agent Governance Toolkit",
+      "logo": "logos/c341017316e2073f70893ec4a0bbaf3165e9829b03bc1f633abc33112aecc7ab.svg",
+      "subcategory": "Governance",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--governance--apicurio-registry",
+      "name": "Apicurio Registry",
+      "logo": "logos/cf9b99d31e9e40e422aec98985392f2ac941a209a85cee8b3e88fe2066bbb1db.svg",
+      "subcategory": "Governance",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--governance--community-data-license-agreement-cdla",
+      "name": "Community Data License Agreement (CDLA)",
+      "logo": "logos/b211fba51f40ffad744268b545e4cd90b620b60ebc7f1076b7cc17603c8a469d.svg",
+      "subcategory": "Governance",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--governance--croissant",
+      "name": "Croissant",
+      "logo": "logos/2487aa6212a807d29eb81d737a1602d1e7567008348ba10ff4f021e75be97cb3.svg",
+      "subcategory": "Governance",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--governance--data-package",
+      "name": "Data Package",
+      "logo": "logos/28914b2a921081df7850fdcf6f6e6bd985c67f1d06d8ac334edf5f16a9ea1481.svg",
+      "subcategory": "Governance",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--governance--egeria",
+      "name": "Egeria",
+      "logo": "logos/7258c5df9d3a9b9834ab527adc6ab5b65fcfab2647ec9bcd6571ebed1e01750a.svg",
+      "subcategory": "Governance",
+      "featured": {
+        "label": "Graduated",
+        "order": 1
+      },
+      "maturity": "graduated",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--governance--gravitino",
+      "name": "Gravitino",
+      "logo": "logos/4c1078eb843e4d7c8834ac1158619f7f92fba5f2e923a0213eb88b62d0e3979c.svg",
+      "subcategory": "Governance",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--governance--opensharing",
+      "name": "OpenSharing",
+      "logo": "logos/659be7ceeafd818b9931e84aaa893077104cf31728e3c438a28b130fe8409c89.svg",
+      "subcategory": "Governance",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Data",
+      "id": "data--governance--unity-catalog",
+      "name": "Unity Catalog",
+      "logo": "logos/1abcb4f52794f08a105060d30ccdd46707dcf5777c4b831787c9f8c927de9c64.svg",
+      "subcategory": "Governance",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Reinforcement Learning",
+      "id": "reinforcement-learning--reinforcement-learning--chainer-rl",
+      "name": "Chainer RL",
+      "logo": "logos/b9e6efe15c7ed17fc540d9890130c0b5d9fc943f4016ac6cbccc963c6bfc5a46.svg",
+      "subcategory": "Reinforcement Learning",
+      "oss": true
+    },
+    {
+      "category": "Reinforcement Learning",
+      "id": "reinforcement-learning--reinforcement-learning--cleanrl",
+      "name": "CleanRL",
+      "logo": "logos/095aa22733543681d279f0bbe81f862d19c71131593bc89156f5663b9b422fa8.svg",
+      "subcategory": "Reinforcement Learning",
+      "oss": true
+    },
+    {
+      "category": "Reinforcement Learning",
+      "id": "reinforcement-learning--reinforcement-learning--coach",
+      "name": "Coach",
+      "logo": "logos/62a29c9c596237669fce98d102a8a1947e97952287fb4619ec5db50813ff5f93.svg",
+      "subcategory": "Reinforcement Learning"
+    },
+    {
+      "category": "Reinforcement Learning",
+      "id": "reinforcement-learning--reinforcement-learning--deepmind-lab",
+      "name": "DeepMind Lab",
+      "logo": "logos/7765cfd0235418f233193f7d0280b93ddafe7dc5df1d748c3652bba588e74c3e.svg",
+      "subcategory": "Reinforcement Learning",
+      "oss": true
+    },
+    {
+      "category": "Reinforcement Learning",
+      "id": "reinforcement-learning--reinforcement-learning--dopamine",
+      "name": "Dopamine",
+      "logo": "logos/a332a5017d66d5a97518938d125d814fa8f5493e35877cb6802f85d8d01cde9b.svg",
+      "subcategory": "Reinforcement Learning",
+      "oss": true
+    },
+    {
+      "category": "Reinforcement Learning",
+      "id": "reinforcement-learning--reinforcement-learning--horizon",
+      "name": "Horizon",
+      "logo": "logos/5758d170c3731641009e86fcb617c32a2139a67428beecfb443459ec882f00b6.svg",
+      "subcategory": "Reinforcement Learning",
+      "oss": true
+    },
+    {
+      "category": "Reinforcement Learning",
+      "id": "reinforcement-learning--reinforcement-learning--openai-gym",
+      "name": "OpenAI Gym",
+      "logo": "logos/433452212787d215ac987bc77f8de7e38d68ce3bb3120b0d27904ab7778e68cc.svg",
+      "subcategory": "Reinforcement Learning",
+      "oss": true
+    },
+    {
+      "category": "Reinforcement Learning",
+      "id": "reinforcement-learning--reinforcement-learning--planet",
+      "name": "PlaNet",
+      "logo": "logos/f758f1de1f00a01acbe9a33e095b61386135676690795ae9ba70e61141dc5094.svg",
+      "subcategory": "Reinforcement Learning",
+      "oss": true
+    },
+    {
+      "category": "Reinforcement Learning",
+      "id": "reinforcement-learning--reinforcement-learning--seed-rl",
+      "name": "SEED RL",
+      "logo": "logos/23e6fed2e10aea2878632123dac9e036ba207480121ec2c2d04153200ebc522f.svg",
+      "subcategory": "Reinforcement Learning",
+      "oss": true
+    },
+    {
+      "category": "Reinforcement Learning",
+      "id": "reinforcement-learning--reinforcement-learning--stable-baselines",
+      "name": "Stable Baselines",
+      "logo": "logos/4eb8550e5e71810d8684e418e463f9d81bcafcdac4296c429119d4c43008d9ec.svg",
+      "subcategory": "Reinforcement Learning",
+      "oss": true
+    },
+    {
+      "category": "Generative AI",
+      "id": "generative-ai--models--open-model-initiative",
+      "name": "Open Model Initiative",
+      "logo": "logos/f741d1f797a687e6c816a1d4712d5e60f5e17d7ef638f2e5003772190f29f465.svg",
+      "subcategory": "Models",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Generative AI",
+      "id": "generative-ai--models--rwkv",
+      "name": "RWKV",
+      "logo": "logos/94ee04d0704a7f82a767fa0f924f2008d540a9181eefe791e92a032440567cd2.svg",
+      "subcategory": "Models",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Generative AI",
+      "id": "generative-ai--tools--beeai",
+      "name": "BeeAI",
+      "logo": "logos/32d5927b73c8c67d4c631f4f08e56a57138b3892ba53dfcc8cef41b77fa008f8.svg",
+      "subcategory": "Tools",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Generative AI",
+      "id": "generative-ai--tools--langchain",
+      "name": "Langchain",
+      "logo": "logos/878d27a10b3ffce71190f32639a0a4c29aad691db3dc84fcc17433ea31af4038.svg",
+      "subcategory": "Tools",
+      "oss": true
+    },
+    {
+      "category": "Generative AI",
+      "id": "generative-ai--tools--monocole",
+      "name": "Monocole",
+      "logo": "logos/cd12ab207bd43dbab095895e1c2a64c16d293ebd320782fef44deeb66193d75d.svg",
+      "subcategory": "Tools",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Generative AI",
+      "id": "generative-ai--tools--trulens",
+      "name": "TruLens",
+      "logo": "logos/3956702f2e3cd5376f62ab068ed3f25e13a2edc2719906f5918b06d0743c06c2.svg",
+      "subcategory": "Tools",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--albert",
+      "name": "ALBERT",
+      "logo": "logos/f8a862ed009bcfb209d683ef36ba54f3f7a4b706b521163ab20b162d21ef6f8a.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--allennlp",
+      "name": "AllenNLP",
+      "logo": "logos/559471c29c437ec2302174b6bd9a09909039b2e25d1c767a5c176d8255fc9d33.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--apache-uima",
+      "name": "Apache UIMA",
+      "logo": "logos/db4e04aa1b9697a046263b06140e1606baf54ed81d4c838a2ae89e3b8548cede.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--bert",
+      "name": "BERT",
+      "logo": "logos/07b16c325cb4ba78da23d9f0ba1ff8e2c95a3a1506817171c62d256ba8c304c5.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--corenlp",
+      "name": "CoreNLP",
+      "logo": "logos/ed2a7156920d3b3c7565f9a406e01c252ea2b5725b50c560d55b965d851bdd8a.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--deepspeech",
+      "name": "DeepSpeech",
+      "logo": "logos/5eed8121b4f3829394fa2c2a136406ef45155a9033125a2ba79e26543506486d.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--delta",
+      "name": "DELTA",
+      "logo": "logos/04c30a3795f62d279e107012b12a563f11e2cfb592f585c7233803f9f77d2fa0.svg",
+      "subcategory": "Natural Language Processing",
+      "maturity": "archived",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--fasttext",
+      "name": "fastText",
+      "logo": "logos/ad8d655882a5f37d78ef67b44f804723e6d2feafcdc2784f61abe58f91d76c3e.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--flair",
+      "name": "Flair",
+      "logo": "logos/cf8a5d16a6c68c90f5fc4802dcfdbfa8cbe48b07f6f869929863ba1914a023a0.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--gluon-nlp",
+      "name": "Gluon-NLP",
+      "logo": "logos/6b509c15605389651fa0cc8b58238ad7a472f901d3c64d5c04d35dd3b525e811.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--haystack",
+      "name": "Haystack",
+      "logo": "logos/8b975e96a9bed97d4abbc06308c141957d65001fca320bbf86707356dba4d556.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--kashgari",
+      "name": "Kashgari",
+      "logo": "logos/0c9a2550afbb38b7825f4760f12d7df5d1c17e6f5c441857e7dd28ecb75203d9.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--laser",
+      "name": "LASER",
+      "logo": "logos/baa3e4f60dbaaf867e0349ea1eb4e605bccccfe0a46086b7d67a842f4c54ab88.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--lucene",
+      "name": "Lucene",
+      "logo": "logos/1ba842c6a08525d0909658db454016e2f9c268f649af2cc1802e230e014edc92.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--mindmeld",
+      "name": "MindMeld",
+      "logo": "logos/add219012e290a6f7ba4187510a890de37c7a4b34d96f18f1a0fca29d6430330.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--nlp-architect",
+      "name": "NLP Architect",
+      "logo": "logos/011d4f6e64b08763142093d00766ed35cb5bfeca330695273da8b4c03ed9491d.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--opennlp",
+      "name": "OpenNLP",
+      "logo": "logos/44100ef3ce7c68a2eef23e91b650f93f399f0c893b4d39c96e0fe36efd8842c5.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--parlai",
+      "name": "ParlAI",
+      "logo": "logos/f4ddaa9579ef3225c6ea77070ced23572627b21b136cbdddab742398bfc76dde.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--pytext",
+      "name": "PyText",
+      "logo": "logos/8a15f870946e91fbcf65083683531d526f188e080ae558f9684fe26be53d7ac2.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--rasa-nlu",
+      "name": "RASA NLU",
+      "logo": "logos/c81fa3855e3ef326dad58ab4cd16fbe56bcaff5eb2bdab4b21b3744244b1d951.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--spacy",
+      "name": "spaCy",
+      "logo": "logos/b210a8a10343beecfe1900e9123eda4cc5d918c204bb87c74f78ea990ca8038a.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--spark-nlp",
+      "name": "Spark-NLP",
+      "logo": "logos/f1c3ea78e21eddb269f1b5a0dfc410d03d1b9bc4dd49a19ae913748feeda038a.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--transformers",
+      "name": "Transformers",
+      "logo": "logos/a2e1c52b60afd5f7524c8fc8d52ecb0fa63747d66abcf28e08e4f1f5919e3e70.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--xlm",
+      "name": "XLM",
+      "logo": "logos/9b678a67073225aa61496903d3f846eb413af933993c4a146d51e8f85815c058.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Natural Language Processing",
+      "id": "natural-language-processing--natural-language-processing--youtokentome",
+      "name": "YouTokenToMe",
+      "logo": "logos/00592ee38a86920f2fdb3b1bf1eb4739a132ba7cfb60bfe8b8eb5c081e6acd2e.svg",
+      "subcategory": "Natural Language Processing",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--inference--adlik",
+      "name": "Adlik",
+      "logo": "logos/2429f1d87c5ac72ce81d1fe5c234792592c2b69d0bf1a10f4f59ba7d3d90bdc2.svg",
+      "subcategory": "Inference",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--inference--causalml",
+      "name": "CausalML",
+      "logo": "logos/423686e3c1626f4c3eaf46c5f3b2ea9e682f1856eb98f0170ef3a1a60d768b45.svg",
+      "subcategory": "Inference",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--inference--mnn",
+      "name": "MNN",
+      "logo": "logos/7366a639925f6e4a15caaa9cfb2fc1cbe8ddbe55411a81d9b979fb2ead0e15ba.svg",
+      "subcategory": "Inference",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--inference--tensorrt",
+      "name": "TensorRT",
+      "logo": "logos/6cc4d645f7c9467a159e05229895689de5e751af2448c80189ea349976ae5883.svg",
+      "subcategory": "Inference",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--inference--tensorrt-inference-server",
+      "name": "TensorRT Inference Server",
+      "logo": "logos/d92a9650706e7acff6068817c922f3027681338877ca262c71da4f85d67d2579.svg",
+      "subcategory": "Inference",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--inference--text-generation-inference",
+      "name": "Text Generation Inference",
+      "logo": "logos/fcf566d946d30a5669f98f2895560705bac5543d9a20f94ce2ce876449732817.svg",
+      "subcategory": "Inference",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--inference--utensor",
+      "name": "uTensor",
+      "logo": "logos/fc869ec5244b7c49ffeed7c6a24a00fd33a565684a765952dc4f86c3efefe513.svg",
+      "subcategory": "Inference",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--federated-learning--fate",
+      "name": "FATE",
+      "logo": "logos/95e570a1597eb1d4a5f4c3d167463024864562c4cc6c144e4564913ffd070956.svg",
+      "subcategory": "Federated Learning",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--federated-learning--openfl",
+      "name": "OpenFL",
+      "logo": "logos/1169e18113f8d1ece90b01c2f37afa9f5bd1e461a08701a0fd4fb0d2288477ac.svg",
+      "subcategory": "Federated Learning",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--federated-learning--pysyft",
+      "name": "PySyft",
+      "logo": "logos/e06c4fad3bd4c60fa42807a980177d60cbba7f676691393bc601c2a82e7abeec.svg",
+      "subcategory": "Federated Learning",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--federated-learning--substra",
+      "name": "Substra",
+      "logo": "logos/be4eb38ae2967874613d3dbf1f9b56a6868534a2285c88eb5fb1bff2d8f1aed5.svg",
+      "subcategory": "Federated Learning",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--federated-learning--tensorflow-federated",
+      "name": "TensorFlow Federated",
+      "logo": "logos/ba5bae0cc4707367e7190f3eb24fd9556689cc922fcd15575d697a1999fad12f.svg",
+      "subcategory": "Federated Learning",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--federated-learning--flower",
+      "name": "Flower",
+      "logo": "logos/14589c2939160b4cc1db03bd1f7182245b625a0b9c54d0d192445a3d6bf6d61c.svg",
+      "subcategory": "Federated Learning",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--training--dlrover",
+      "name": "DLRover",
+      "logo": "logos/86f4b0b2d75678e7bb26566d92d855f37b997b3fc102a04af3e10804d875331e.svg",
+      "subcategory": "Training",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--training--embedded-learning-library",
+      "name": "Embedded Learning Library",
+      "logo": "logos/349d0bbcda3f712b266725db3d6de2a3118faeeb5206aca7c0d0729d83870f90.svg",
+      "subcategory": "Training",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--training--ludwig",
+      "name": "Ludwig",
+      "logo": "logos/dce2da56c68f55f968ac980ceed8b2cafca62610f648f38d4ddd5d0b42f96afc.svg",
+      "subcategory": "Training",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--training--petastorm",
+      "name": "Petastorm",
+      "logo": "logos/a0f3a28a1f9761855e552e030125373290afd76d37c4c0aaf28e3af29fc0a0df.svg",
+      "subcategory": "Training",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--training--torchrec",
+      "name": "TorchRec",
+      "logo": "logos/91d15353f4ca75aaeea4273248c9995544a457ef0ddb7481e5f484359e070580.svg",
+      "subcategory": "Training",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--parameter--hyperopt",
+      "name": "HyperOpt",
+      "logo": "logos/32f03372ca15c90ad0e32743afe8f307c3c3f2ace909f27c28c545ede26d946d.svg",
+      "subcategory": "Parameter",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--parameter--katib",
+      "name": "Katib",
+      "logo": "logos/49be510e911b2e5f354fc4f0825c577aadea4d9c61b5934d0cbc8cb269ae90ba.svg",
+      "subcategory": "Parameter",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--parameter--talos",
+      "name": "talos",
+      "logo": "logos/89ab8520ae18fe446579387f9ac4612e926c0ceed0834caf7410a7b453e44f78.svg",
+      "subcategory": "Parameter",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--format-interface--neuropod",
+      "name": "Neuropod",
+      "logo": "logos/8bfe14a7a52e14162490b7d3e9247a0cb850cbd25bbc0347b54498bc782df371.svg",
+      "subcategory": "Format & Interface",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--format-interface--onnx",
+      "name": "ONNX",
+      "logo": "logos/00e81757af5c54743ecebb70a603871898e87ca543188caa0623acef441a831e.svg",
+      "subcategory": "Format & Interface",
+      "featured": {
+        "label": "Graduated",
+        "order": 1
+      },
+      "maturity": "graduated",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--format-interface--semantic-kernel",
+      "name": "Semantic Kernel",
+      "logo": "logos/19d99da7d8d5f351d1609af2cd472762e5b313015b8b51634fa129cf8839fb6d.svg",
+      "subcategory": "Format & Interface",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--marketplace--acumos",
+      "name": "Acumos",
+      "logo": "logos/69045b81cfaab368258233604e03e765ccee9677926c1971841d781b59008b73.svg",
+      "subcategory": "Marketplace",
+      "maturity": "archived",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--marketplace--model-asset-exchange-max",
+      "name": "Model Asset eXchange (MAX)",
+      "logo": "logos/7fdcdf186e34493283b610f7f909cb5ed2b0ec574e3ac57b1cd4ccf17aca9e92.svg",
+      "subcategory": "Marketplace",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--apache-airflow",
+      "name": "Apache Airflow",
+      "logo": "logos/3600d9f1e0fe71cd4be48b4a19b685d2c5379f7c0e5c26cab5d2a158c31aebf5.svg",
+      "subcategory": "Workflow",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--apache-nifi",
+      "name": "Apache Nifi",
+      "logo": "logos/9ac972c1c0cf9ea4d295e895890d393842022234ea0f00a307191a903a77a060.svg",
+      "subcategory": "Workflow",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--argo",
+      "name": "Argo",
+      "logo": "logos/ab2a3d95beaa00c8a49b46e7ce0ed3f6a8b4cd355813ee5d010e078ccac2272d.svg",
+      "subcategory": "Workflow",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--azkaban",
+      "name": "Azkaban",
+      "logo": "logos/43a72f0c50009c547d86eb411b7508d121b5b30cb926e1630d0d4a1bd1506dc4.svg",
+      "subcategory": "Workflow",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--bentoml",
+      "name": "BentoML",
+      "logo": "logos/e3a482353ed107bd909fcc5a79f5791d3f0f8f7d54462c5aabedfb662fe8c61a.svg",
+      "subcategory": "Workflow",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--cadence",
+      "name": "Cadence",
+      "logo": "logos/c47ad4ed144ec4d632aaf200e785e4fc301f75ad2331587fe6343e59d4872116.svg",
+      "subcategory": "Workflow",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--claimed",
+      "name": "CLAIMED",
+      "logo": "logos/44a369978e187c3393714aa1c6cabaddbf4688beeaa365bfb56f83ec347a8dd4.svg",
+      "subcategory": "Workflow",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--couler",
+      "name": "Couler",
+      "logo": "logos/106a32871034a04f1b6062aa991e6fe411900afeba7e70bde85bb2338ac04878.svg",
+      "subcategory": "Workflow",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--cyclone",
+      "name": "Cyclone",
+      "logo": "logos/df10465f6850d3064bbc7fe12ed8c7caa67c98dea8b5d65a01a5d00df1b8ccd7.svg",
+      "subcategory": "Workflow",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--d6tflow",
+      "name": "d6tflow",
+      "logo": "logos/fc7257a3aa64db51c79af0d16997b717bd67775c2606db593cb79177c7b79c6c.svg",
+      "subcategory": "Workflow",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--flyte",
+      "name": "Flyte",
+      "logo": "logos/b6bb210370181e7508656146b5a126c426ed0943da463e95f51edd30b4bee9a5.svg",
+      "subcategory": "Workflow",
+      "featured": {
+        "label": "Graduated",
+        "order": 1
+      },
+      "maturity": "graduated",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--kedro",
+      "name": "Kedro",
+      "logo": "logos/67316a9bd73b4499de748b71b61ff1f3aa692590f25958bafee3a1d104aaefc6.svg",
+      "subcategory": "Workflow",
+      "featured": {
+        "label": "Graduated",
+        "order": 1
+      },
+      "maturity": "graduated",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--kestra",
+      "name": "Kestra",
+      "logo": "logos/1268a0dfe7646c64f1d8ae48ef0d159e645733d32b45f41fd8fd236f5b809019.svg",
+      "subcategory": "Workflow",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--luigi",
+      "name": "Luigi",
+      "logo": "logos/f0880cdbb1cce9ac18352e90df40439af25a0c9cfc6278daf08b8aa9609f004a.svg",
+      "subcategory": "Workflow",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--mleap",
+      "name": "mleap",
+      "logo": "logos/3fc2163494d5bba1c57daab8bef91e284dead1121d0ac4ed32eb84523118ab6e.svg",
+      "subcategory": "Workflow",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--orchest",
+      "name": "Orchest",
+      "logo": "logos/3376fcca094f40b837ad86714739851f3a483423bd7a26a77515c140827d1b03.svg",
+      "subcategory": "Workflow",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--prefect",
+      "name": "Prefect",
+      "logo": "logos/2933623673533025badcb80feb8dd3690748a0aeafb9ead1f53a68dbbca8f9ab.svg",
+      "subcategory": "Workflow",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--trains",
+      "name": "TRAINS",
+      "logo": "logos/7d045915d83ce7c795efef5dd7344429b98e2ba4b92c5243e413ca6249136820.svg",
+      "subcategory": "Workflow",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--workflow--volcano",
+      "name": "Volcano",
+      "logo": "logos/705f4dee8c791886db5908649140fc4daed64f1e4febfaadc7792e4bd5756662.svg",
+      "subcategory": "Workflow",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--benchmarking--dawnbench",
+      "name": "DAWNBench",
+      "logo": "logos/8e50416c47a292343e0c1d431f60b52a0c553309cb9e35462b7a95c824bca6b3.svg",
+      "subcategory": "Benchmarking"
+    },
+    {
+      "category": "Model",
+      "id": "model--benchmarking--mlperf",
+      "name": "MLPerf",
+      "logo": "logos/e289adc63906632dd2f5c136268f7c3a4cbebcfd3238f9564f40c3553d8c5c49.svg",
+      "subcategory": "Benchmarking",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--tool--aimet",
+      "name": "AIMET",
+      "logo": "logos/0dfa5063e1b1d192d3642c194aa1a0b0f6bbb7e3e33c3f285c3aae03d2672187.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--tool--clipper",
+      "name": "Clipper",
+      "logo": "logos/b539732f64179dae21d5de258c82d12b13778151a19c68ff3eabb679293b0e53.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--tool--dlrm",
+      "name": "dlrm",
+      "logo": "logos/85e9e89b0e38ca913eb095357b20fa70bfa6f117d473a309c88faa43fba3e260.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--tool--flagai",
+      "name": "FlagAI",
+      "logo": "logos/9767edb6cdb8ea390d6bf54d4840c3997c52aab803d039201f8b96ff3cb20f26.svg",
+      "subcategory": "Tool",
+      "featured": {
+        "label": "Sandbox",
+        "order": 3
+      },
+      "maturity": "sandbox",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--tool--flaml",
+      "name": "FLAML",
+      "logo": "logos/3c418b2d7042d325245c37eee406f8359a457cf8a7f65dfffab6189b26199661.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--tool--mmdnn",
+      "name": "MMdnn",
+      "logo": "logos/20e61bfd52feb8c50e6b121df055bbd76f5fe80695948c158f700967aec7202e.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--tool--model-server-for-apache-mxnet",
+      "name": "Model Server for Apache MXNet",
+      "logo": "logos/985818aa48b5f2b1874bda5201cc2939124bbd6820e1575c5c87348f8ec73189.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--tool--modeldb",
+      "name": "ModelDB",
+      "logo": "logos/c8cd7a8a6dcc22b7ba44f07e8a06c3639719cc28003325536bcddab9462699ab.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--tool--neo-ai",
+      "name": "Neo-AI",
+      "logo": "logos/c00c6f38fe214a39211d6e837a60a96910f67243dd66b535089ab1c6e2f21ba2.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--tool--netron",
+      "name": "Netron",
+      "logo": "logos/ac2312ef975665d1ca06ddeb414aa3c18918b9c3899ab8bd4f89f5076704c8f7.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--tool--onnx-runtime",
+      "name": "ONNX Runtime",
+      "logo": "logos/8d8187f4055f80637dfeb03a5bae99ca0ffae3baf91645b61cc20048685cd35b.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--tool--pipeline-ai",
+      "name": "Pipeline.ai",
+      "logo": "logos/e46c23038f958a2423cd9ff3b4d4aa625e57c6ad2836db53e5a3521853188f47.svg",
+      "subcategory": "Tool"
+    },
+    {
+      "category": "Model",
+      "id": "model--tool--studio-ml",
+      "name": "studio.ml",
+      "logo": "logos/46f4e50c4d16accedc589c48b0b4f8ac0b361c863840fe6761206fc2a7515dbe.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--tool--tensorflow-model-analysis",
+      "name": "TensorFlow Model Analysis",
+      "logo": "logos/a0dce1cd5bfba7d14aa4b5b488b500d51c40cc49657fa17e9d0a9c61d67f7fce.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--tool--torchserve",
+      "name": "TorchServe",
+      "logo": "logos/cd0182427cb8c097ef2e679698d789b3b50e520dea527ab38ca6d9f45cab3a0e.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Model",
+      "id": "model--tool--turi-create",
+      "name": "Turi Create",
+      "logo": "logos/b659d69890f0da06ede6330903edf40ac9dc7a23c94d7bcecbb0e590d2efde22.svg",
+      "subcategory": "Tool",
+      "oss": true
+    },
+    {
+      "category": "Programming",
+      "id": "programming--programming--dask",
+      "name": "Dask",
+      "logo": "logos/6ec2d804a4247efbf2bcfd238652cab0d2041a09a1e32b631039a7616c1b0e96.svg",
+      "subcategory": "Programming",
+      "oss": true
+    },
+    {
+      "category": "Programming",
+      "id": "programming--programming--infer-net",
+      "name": "Infer.net",
+      "logo": "logos/1d0cecde4756ac6dbe4a73f923420c84ee4319cb9554303d530f129357caaf11.svg",
+      "subcategory": "Programming",
+      "oss": true
+    },
+    {
+      "category": "Programming",
+      "id": "programming--programming--julia",
+      "name": "Julia",
+      "logo": "logos/a81c78149b09d8741ff32cee020cd7f3ddd57a1fc8821b924cac7c1371845195.svg",
+      "subcategory": "Programming",
+      "oss": true
+    },
+    {
+      "category": "Programming",
+      "id": "programming--programming--kompute",
+      "name": "Kompute",
+      "logo": "logos/5502d046cbe8595182f34bdacd4a8abded8f206bdb240068ffc04e7106c163d7.svg",
+      "subcategory": "Programming",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Programming",
+      "id": "programming--programming--mars",
+      "name": "MARS",
+      "logo": "logos/f2c27174920b9785c714ab6e919e87e12acad88c1ae7dbbc65ce28d9c11af27f.svg",
+      "subcategory": "Programming",
+      "oss": true
+    },
+    {
+      "category": "Programming",
+      "id": "programming--programming--numba",
+      "name": "Numba",
+      "logo": "logos/9034e047e7bc955021d3d93413b6788ab0c23e2a0800ef29f7a292c8789c5015.svg",
+      "subcategory": "Programming",
+      "oss": true
+    },
+    {
+      "category": "Programming",
+      "id": "programming--programming--numpy",
+      "name": "NumPy",
+      "logo": "logos/38f821c90cb1bde80377d53697f698fcc015395b2d5ce887f7b7728c4afe31c9.svg",
+      "subcategory": "Programming",
+      "oss": true
+    },
+    {
+      "category": "Programming",
+      "id": "programming--programming--nyoka",
+      "name": "Nyoka",
+      "logo": "logos/5e83df69c364c2d6f4083c2396ea273aabd3de692394aeb5b37dc74f15355441.svg",
+      "subcategory": "Programming",
+      "oss": true
+    },
+    {
+      "category": "Programming",
+      "id": "programming--programming--pomegranete",
+      "name": "Pomegranete",
+      "logo": "logos/b6dfe9d40dab853e98db30e5161801496b20b6ec3d2f3af6fa2f9ddd11a5d182.svg",
+      "subcategory": "Programming",
+      "oss": true
+    },
+    {
+      "category": "Programming",
+      "id": "programming--programming--pymc3",
+      "name": "PyMC3",
+      "logo": "logos/0a1e4d5e50b3cef9a3dd44d10dd875ad5fd0723d4f1c15ea4614629408750d38.svg",
+      "subcategory": "Programming",
+      "oss": true
+    },
+    {
+      "category": "Programming",
+      "id": "programming--programming--pyro",
+      "name": "Pyro",
+      "logo": "logos/b5b08b9853f4c85567da899c277269716c008817fa6b6035ae54d402eb828519.svg",
+      "subcategory": "Programming",
+      "featured": {
+        "label": "Graduated",
+        "order": 1
+      },
+      "maturity": "graduated",
+      "oss": true
+    },
+    {
+      "category": "Programming",
+      "id": "programming--programming--python",
+      "name": "Python",
+      "logo": "logos/ea03a4ae32053f7331450d146b80a54b512ff74199dc1e37d81f24d82db397e9.svg",
+      "subcategory": "Programming",
+      "oss": true
+    },
+    {
+      "category": "Programming",
+      "id": "programming--programming--rstudio-ide",
+      "name": "RStudio IDE",
+      "logo": "logos/6de327af85ec6de2fb90ac43c00511e2a667fa7f7bb61e50c6dbd3692cf1f278.svg",
+      "subcategory": "Programming",
+      "oss": true
+    },
+    {
+      "category": "Programming",
+      "id": "programming--programming--scipy",
+      "name": "SciPy",
+      "logo": "logos/e3550a9c42882f429d2be864763883bb5cc3839a25eac62b04ca498a9fc4ec1f.svg",
+      "subcategory": "Programming",
+      "oss": true
+    },
+    {
+      "category": "Programming",
+      "id": "programming--programming--skip-language",
+      "name": "SKIP Language",
+      "logo": "logos/09263ea66b46ce90a915e542db6e11fbe3bd91d9ec2ad0b5b34f158188c1b6f6.svg",
+      "subcategory": "Programming",
+      "oss": true
+    },
+    {
+      "category": "Programming",
+      "id": "programming--programming--stan",
+      "name": "Stan",
+      "logo": "logos/d594b6da8f35e05fdb25a72c1072fea50a78038681b4e986f9b05fb69eb38ecb.svg",
+      "subcategory": "Programming",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--computing-management--apache-ambari",
+      "name": "Apache Ambari",
+      "logo": "logos/a1f3ce19fccba374c73b5ad815d61ddffe83bd7c2fdb1699f5aa890baa349f85.svg",
+      "subcategory": "Computing & Management",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--computing-management--apache-bahir",
+      "name": "Apache Bahir",
+      "logo": "logos/2cbc2de4581e778fd9099e85d2391791db294573ecde00406fbb83d4dd1fd7ff.svg",
+      "subcategory": "Computing & Management",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--computing-management--apache-mesos",
+      "name": "Apache Mesos",
+      "logo": "logos/8f0dc33d8e065e2b814bdd461ffbac4fa9d58a44f030006f1c92d6846ae8b2f4.svg",
+      "subcategory": "Computing & Management",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--computing-management--apache-ranger",
+      "name": "Apache Ranger",
+      "logo": "logos/1f9f310f3e3856f13cc4f1f6d73966ae3819255f0bc22a4b5f54a36f24a1e06f.svg",
+      "subcategory": "Computing & Management",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--computing-management--apache-spark",
+      "name": "Apache Spark",
+      "logo": "logos/9b508ec940f8b2d4fdcfb1fd40f9bdf582c1c675b7acec659bed467c6f68dcc1.svg",
+      "subcategory": "Computing & Management",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--computing-management--apache-storm",
+      "name": "Apache Storm",
+      "logo": "logos/f5c4c3c30c3781f1f16da09c045ed5f639c5dcac1dd7495b05a0982b8caad266.svg",
+      "subcategory": "Computing & Management",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--computing-management--armada",
+      "name": "Armada",
+      "logo": "logos/25154a5d197c2a803e4018d5494e705feed4dcd321cdd05fe5e6b4764716a0f9.svg",
+      "subcategory": "Computing & Management",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--computing-management--elastic-deep-learning-edl",
+      "name": "Elastic Deep Learning (EDL)",
+      "logo": "logos/1037d8a87ab736d0aecd02310d07807f085f05d63e898e17c5c6aa76a29639f5.svg",
+      "subcategory": "Computing & Management",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--computing-management--generic-neural-elastic-search-gnes",
+      "name": "Generic Neural Elastic Search (GNES)",
+      "logo": "logos/c603fa8b15ce8559eaccc547d5af1d69d4569b1d752c456630e6dce8a3ea633a.svg",
+      "subcategory": "Computing & Management",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--computing-management--genie",
+      "name": "genie",
+      "logo": "logos/4862661826e4a245b97310f9e9597c8ab813e7a66c187e4c6441f62f0cad277c.svg",
+      "subcategory": "Computing & Management",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--computing-management--graphscope",
+      "name": "GraphScope",
+      "logo": "logos/2f60bf27e161f1859e1188282beb8572b531acf4310c97a1e1c668ca1373349a.svg",
+      "subcategory": "Computing & Management",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--computing-management--kubernetes",
+      "name": "Kubernetes",
+      "logo": "logos/e0303fdc381c96c1b4461ad1a2437c8f050cfb856fcb8710c9104367ca60f316.svg",
+      "subcategory": "Computing & Management",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--computing-management--nauta",
+      "name": "Nauta",
+      "logo": "logos/e5e712e5e108ec583e84179021d70af89d1020b60497a3fe80ad25786c2726de.svg",
+      "subcategory": "Computing & Management",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--computing-management--openshift",
+      "name": "OpenShift",
+      "logo": "logos/332f41d481fad6e5183ec7c23afac18c6a96c098d0096eff879694d07506af1c.svg",
+      "subcategory": "Computing & Management",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--computing-management--singularity",
+      "name": "Singularity",
+      "logo": "logos/f852560bd1288097ad407cbcaeeba9cd2f1397b25572e1222c7ccda88efbb33b.svg",
+      "subcategory": "Computing & Management",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--computing-management--soajs",
+      "name": "SOAJS",
+      "logo": "logos/7f6137acbc1f597480e1f5dc460d2d855bdf6085d2ec3c4e8ebd294c9a5cc38e.svg",
+      "subcategory": "Computing & Management",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--interface--apache-toree",
+      "name": "Apache Toree",
+      "logo": "logos/bb38f429e5cd394c0e81f72983db6a9b9b4ed107804d4504c3c30e4a259f323c.svg",
+      "subcategory": "Interface",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--interface--livy",
+      "name": "Livy",
+      "logo": "logos/367a10a62f9fd4d6df0713ab9a479bcc89ce003e61abf601167981f2a759cd89.svg",
+      "subcategory": "Interface",
+      "oss": true
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--interface--open-voice-interoperability",
+      "name": "Open Voice Interoperability",
+      "logo": "logos/a1a47cc28291c728280a466feded0b76e6a05eda44d0918f616097da382144e7.svg",
+      "subcategory": "Interface",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating"
+    },
+    {
+      "category": "Distributed Computing",
+      "id": "distributed-computing--interface--sparklyr",
+      "name": "sparklyr",
+      "logo": "logos/05ef8e8ef2770c6b16a4d5222f09aaf5f413f7874782c1f3f73b0d0d2add5101.svg",
+      "subcategory": "Interface",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--explainability--ai-explainability-360-toolkit",
+      "name": "AI Explainability 360 Toolkit",
+      "logo": "logos/30d98d4b12175f9d19a9ab5cb1185fbacf526991d0e6c450a11024ac004dc393.svg",
+      "subcategory": "Explainability",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--explainability--alibi",
+      "name": "ALIBI",
+      "logo": "logos/c2fdbcba2cf59d3692ac6693403a3ec09998ec15134ca6c2b65c95584d16169d.svg",
+      "subcategory": "Explainability",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--explainability--captum",
+      "name": "Captum",
+      "logo": "logos/2bf7e561bca553d905b81414413934b49a8f7d3522cc12b18d532389c0c126c1.svg",
+      "subcategory": "Explainability",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--explainability--eli5",
+      "name": "ELI5",
+      "logo": "logos/509534f3cf0335a12702855fbc94031568bb3b66260121acaad653e584a802bc.svg",
+      "subcategory": "Explainability",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--explainability--interpretml",
+      "name": "InterpretML",
+      "logo": "logos/367f1b53d734c3bb43dddc878193b04162ee0dbf00804d8a0700e5de93a3e6e6.svg",
+      "subcategory": "Explainability",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--explainability--lime",
+      "name": "LIME",
+      "logo": "logos/0b45695d72a71af3343105a18f5581b92cabf78063a602822eb05d010d97636c.svg",
+      "subcategory": "Explainability",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--explainability--lucid",
+      "name": "Lucid",
+      "logo": "logos/25b2ae765d842dd923fdd1f7f85d6ca4501b3d8f474a1778a155a67c34cd7efb.svg",
+      "subcategory": "Explainability",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--explainability--shap",
+      "name": "SHAP",
+      "logo": "logos/8b20b5c3bcaf6b02f6c739307ca589b0d235ce41bf017ad73fb0b1802c02b6fe.svg",
+      "subcategory": "Explainability",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--explainability--skater",
+      "name": "Skater",
+      "logo": "logos/f53616b19681e272bfc37752c179eae9924d1e4d4afa21cd8c720732d6cd0221.svg",
+      "subcategory": "Explainability"
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--explainability--treeinterpreter",
+      "name": "TreeInterpreter",
+      "logo": "logos/738ef4fa8e3a1cf8025e443dc0d3b1a4b7a9f71707e4870ef8dd6ad52a2de239.svg",
+      "subcategory": "Explainability",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--explainability--lit-learning-interpretability-tool",
+      "name": "LIT (Learning Interpretability Tool)",
+      "logo": "logos/a6cee90fb7c292d640e4948779e747e6c7adac91c170546a8d05f13aaa0c906b.svg",
+      "subcategory": "Explainability",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--explainability--what-if-tool",
+      "name": "What-If Tool",
+      "logo": "logos/a315a6fd721f6e8dd8e76421ddc0c907778a99e987df49bd26603ae635d0d748.svg",
+      "subcategory": "Explainability",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--adversarial--advbox",
+      "name": "AdvBox",
+      "logo": "logos/de699ce7103076e8a619ef942a9c5ecf908f8b18bf30528032026def9f0acc58.svg",
+      "subcategory": "Adversarial",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--adversarial--adversarial-robustness-toolkit",
+      "name": "Adversarial Robustness Toolkit",
+      "logo": "logos/ef9e520f54489cebf8f794fc75d2d225179d65ddd108cbd503e0a8515efe0767.svg",
+      "subcategory": "Adversarial",
+      "featured": {
+        "label": "Graduated",
+        "order": 1
+      },
+      "maturity": "graduated",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--adversarial--advertorch",
+      "name": "Advertorch",
+      "logo": "logos/cbb421e09bd0508a90b3602ae7b9193023c0bc578c78ff93c37cad8e035a1ff9.svg",
+      "subcategory": "Adversarial",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--adversarial--cleverhans",
+      "name": "CleverHans",
+      "logo": "logos/a24a8cdae69a17040dfa812b5bd686b32bcd2b5ea285838a71f5ab509f26533a.svg",
+      "subcategory": "Adversarial",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--adversarial--foolbox",
+      "name": "Foolbox",
+      "logo": "logos/dfde4384125f595c6d569c846650b5156c7f7a10493affce49b1320c7386ea16.svg",
+      "subcategory": "Adversarial",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--adversarial--garak",
+      "name": "garak",
+      "logo": "logos/a4027366b188a14b4e2be66be9b87e95c760d1690d4007ea5127278d6a2f4f17.svg",
+      "subcategory": "Adversarial",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--adversarial--pyrit",
+      "name": "PyRIT",
+      "logo": "logos/939f59c1fc9d50b295ac5057165fd1b0ad44cd0e6dec49425a481b1a70b236fd.svg",
+      "subcategory": "Adversarial",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--bias-fairness--aequitas",
+      "name": "Aequitas",
+      "logo": "logos/45dfe9babe110c93c9ff937b5176886e090f586f8703c9ee62932241ab61d1e4.svg",
+      "subcategory": "Bias & Fairness",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--bias-fairness--ai-fairness-360-toolkit",
+      "name": "AI Fairness 360 Toolkit",
+      "logo": "logos/b9ee060a23ede8270ba8ad094359e07e2bb22f7329ca85bf5062b23023a8c6f7.svg",
+      "subcategory": "Bias & Fairness",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--bias-fairness--audit-ai",
+      "name": "Audit AI",
+      "logo": "logos/569b52ad21f4083703e072b140237169510d9efa7b29b03e4e7d514ce8deef54.svg",
+      "subcategory": "Bias & Fairness",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--bias-fairness--deeplift",
+      "name": "DeepLIFT",
+      "logo": "logos/1bf89732dc74ade5270cfd4b7bccec4d0d84d366b49794636949b8ea9b7ede63.svg",
+      "subcategory": "Bias & Fairness",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--bias-fairness--fainlearn",
+      "name": "Fainlearn",
+      "logo": "logos/5b3a42a89eb3bc6cfe2d34c9d90c6ea8edd7079ec6aac63a45196fc99349e9eb.svg",
+      "subcategory": "Bias & Fairness",
+      "oss": true
+    },
+    {
+      "category": "Trusted & Responsible AI",
+      "id": "trusted-responsible-ai--bias-fairness--open-voice-trustmark",
+      "name": "Open Voice TrustMark",
+      "logo": "logos/cd62b8987afe6e9129b26860e9f65d698c2d73dee71f535a4ca86b8a43f54514.svg",
+      "subcategory": "Bias & Fairness",
+      "featured": {
+        "label": "Incubating",
+        "order": 2
+      },
+      "maturity": "incubating",
+      "oss": true
+    },
+    {
+      "category": "Notebook Environment",
+      "id": "notebook-environment--notebook-environment--apache-zeppelin",
+      "name": "Apache Zeppelin",
+      "logo": "logos/f082cc87d3d1cade4a65cfc59b80c41206438a2efffcef870f0cadc132219a45.svg",
+      "subcategory": "Notebook Environment",
+      "oss": true
+    },
+    {
+      "category": "Notebook Environment",
+      "id": "notebook-environment--notebook-environment--beakerx",
+      "name": "BeakerX",
+      "logo": "logos/137a5b1b131fa56820b9647544e86ce1acdd4518e5ecb4faae3abaddc91c01eb.svg",
+      "subcategory": "Notebook Environment",
+      "oss": true
+    },
+    {
+      "category": "Notebook Environment",
+      "id": "notebook-environment--notebook-environment--colaboratory",
+      "name": "Colaboratory",
+      "logo": "logos/338816c484095012e76bb02f933d66b13619e333c219a07dc16057ed43726d9c.svg",
+      "subcategory": "Notebook Environment",
+      "oss": true
+    },
+    {
+      "category": "Notebook Environment",
+      "id": "notebook-environment--notebook-environment--elyra",
+      "name": "Elyra",
+      "logo": "logos/9c6d206c8ac62aec0016067986e434a3483be0e90e3bb04fb541933a2b561618.svg",
+      "subcategory": "Notebook Environment",
+      "maturity": "incubation",
+      "oss": true
+    },
+    {
+      "category": "Notebook Environment",
+      "id": "notebook-environment--notebook-environment--envd",
+      "name": "envd",
+      "logo": "logos/e2e54fa19d155923193795da520093186987149628f33f77600bd70e20dd26f0.svg",
+      "subcategory": "Notebook Environment",
+      "oss": true
+    },
+    {
+      "category": "Notebook Environment",
+      "id": "notebook-environment--notebook-environment--ipython",
+      "name": "IPython",
+      "logo": "logos/64c40e347215b280d069ac5083e4b9e658ce16b5463dd35ce8ebcf6dd216e170.svg",
+      "subcategory": "Notebook Environment",
+      "oss": true
+    },
+    {
+      "category": "Notebook Environment",
+      "id": "notebook-environment--notebook-environment--jupyter-notebooks",
+      "name": "Jupyter Notebooks",
+      "logo": "logos/1c54c382425d451d38b3cb3917c2a41e13e6f68ee42d4f29c6666439bee380cb.svg",
+      "subcategory": "Notebook Environment",
+      "oss": true
+    },
+    {
+      "category": "Notebook Environment",
+      "id": "notebook-environment--notebook-environment--pixiedust",
+      "name": "PixieDust",
+      "logo": "logos/5cfea912457178336fcbe695142c2cce45e93f10c5766ebefe6adb32a21c045c.svg",
+      "subcategory": "Notebook Environment",
+      "oss": true
+    },
+    {
+      "category": "Notebook Environment",
+      "id": "notebook-environment--notebook-environment--polynote",
+      "name": "Polynote",
+      "logo": "logos/27f92aa17ff04c8383ed91c8019baa1459b99868d5547bb1c6167c3b4eef7fa2.svg",
+      "subcategory": "Notebook Environment",
+      "oss": true
+    },
+    {
+      "category": "Notebook Environment",
+      "id": "notebook-environment--notebook-environment--rmarkdown",
+      "name": "rmarkdown",
+      "logo": "logos/bad8ede220d6844ec9014392006c7d58e46c1aece5504d6387454b1dd037c7f7.svg",
+      "subcategory": "Notebook Environment",
+      "oss": true
+    },
+    {
+      "category": "Notebook Environment",
+      "id": "notebook-environment--notebook-environment--stencila",
+      "name": "Stencila",
+      "logo": "logos/f69550d1dfcf2484e54f454610981f62024549e4656583c6483a6b7c8cc55a4e.svg",
+      "subcategory": "Notebook Environment",
+      "oss": true
+    },
+    {
+      "category": "Notebook Environment",
+      "id": "notebook-environment--notebook-environment--streamlit",
+      "name": "Streamlit",
+      "logo": "logos/e47eed64c4df1ba15b55b59b2df5a90bc70fe8c63e2888fa514006dbe03f92aa.svg",
+      "subcategory": "Notebook Environment",
+      "oss": true
+    },
+    {
+      "category": "Security & Privacy",
+      "id": "security-privacy--security-privacy--differential-privacy-library",
+      "name": "Differential Privacy Library",
+      "logo": "logos/82f6f904ef8467a35320c943ce13a82a012c55e60196635f632208b20dfd8b19.svg",
+      "subcategory": "Security & Privacy",
+      "oss": true
+    },
+    {
+      "category": "Security & Privacy",
+      "id": "security-privacy--security-privacy--he-lib",
+      "name": "HE Lib",
+      "logo": "logos/4dff204108c0837a493247e6534be1f8f5ae827fae04ee734fe07a5977ea1802.svg",
+      "subcategory": "Security & Privacy",
+      "oss": true
+    },
+    {
+      "category": "Security & Privacy",
+      "id": "security-privacy--security-privacy--seal",
+      "name": "SEAL",
+      "logo": "logos/bdee913f919d0e344a7d1fdf82a2b220b7886118b5459ac55d3bf9ffa71dccb2.svg",
+      "subcategory": "Security & Privacy",
+      "oss": true
+    },
+    {
+      "category": "Security & Privacy",
+      "id": "security-privacy--security-privacy--tensorflow-privacy",
+      "name": "TensorFlow Privacy",
+      "logo": "logos/442143baaf9f82d29346c141b504d508a2ef5748db82b352f284b01c83b2b86a.svg",
+      "subcategory": "Security & Privacy",
+      "oss": true
+    },
+    {
+      "category": "Security & Privacy",
+      "id": "security-privacy--security-privacy--tf-encrypted",
+      "name": "TF Encrypted",
+      "logo": "logos/c931d80f8fee57beb572255004a22039bd960f8e941656558440fb2c382484a5.svg",
+      "subcategory": "Security & Privacy",
+      "oss": true
+    },
+    {
+      "category": "Security & Privacy",
+      "id": "security-privacy--security-privacy--presidio",
+      "name": "Presidio",
+      "logo": "logos/e5f2f670f0b78d53cacafad95817d6604b8bdb67100cf9a553259134f280192d.svg",
+      "subcategory": "Security & Privacy",
+      "oss": true
+    },
+    {
+      "category": "Security & Privacy",
+      "id": "security-privacy--security-privacy--diffprivlib",
+      "name": "diffprivlib",
+      "logo": "logos/f9f901ddceb8df12b659209a4b6d81a5ce7fc259b84e862fcad85b3b8123cff2.svg",
+      "subcategory": "Security & Privacy",
+      "oss": true
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--premier--huawei-technologies-co-ltd",
+      "name": "Huawei Technologies Co., Ltd",
+      "logo": "logos/1d6fe1286b71f4cca819ed903e2dcd763787e9df447371c2169eb9aaafe178a3.svg",
+      "subcategory": "Premier",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--premier--international-business-machines-corporation",
+      "name": "International Business Machines Corporation",
+      "logo": "logos/13712a2b4fb49436cc6982c5762c530124240df1301df412523318bdacc5b682.svg",
+      "subcategory": "Premier",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--premier--nvidia-corporation",
+      "name": "NVIDIA Corporation",
+      "logo": "logos/36ae3f77f0bcb07902095cfec2aa06dec15929a1b3ccb79557806524dbe680a3.svg",
+      "subcategory": "Premier",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--premier--zte-corporation",
+      "name": "ZTE Corporation",
+      "logo": "logos/e95aa4c9659595147c621ca128919a20c71c5db8ff14a28b4887120e861df49c.svg",
+      "subcategory": "Premier",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--advanced-micro-devices-amd",
+      "name": "Advanced Micro Devices (AMD)",
+      "logo": "logos/a155e962235fb1568eff855126eee1bff85acc1ebd55e6170b8f1abe68873b8d.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--alibaba-cloud-singapore-private-ltd",
+      "name": "Alibaba Cloud (Singapore) Private LTD",
+      "logo": "logos/1d95a459eb344935fdae2c9ad2b5f0dc6f81a40814fcb3685e052e0665f989b8.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--alipay-hangzhou-information-technology-co-ltd",
+      "name": "Alipay (Hangzhou) Information Technology Co., Ltd.",
+      "logo": "logos/65687f1fd825b8bbbf9c5050a82abed1e0291fcb4aa328ba326f354f7450171c.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--cloudera-inc",
+      "name": "Cloudera, Inc.",
+      "logo": "logos/e11bacd3d99deca4b3b1b2e09ea991b3c046b73a94ecb640138b21decd01d09e.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--databricks-inc",
+      "name": "Databricks Inc.",
+      "logo": "logos/1928a21dfc2c905638ae8e15e58253473ae10d46fc5c640730cc1eda6d2cd13c.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--dmetasoul",
+      "name": "DMetaSoul",
+      "logo": "logos/52d067e68b952a928348f17bfee6baa5a8cce497ac34b829a46140c11166a402.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--ecoflow-inc",
+      "name": "EcoFlow Inc.",
+      "logo": "logos/855c4e3918ee93f6b50a0d3fae8ed5a6cfd2c818d528549ee800754ca5b58a66.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--fujitsu-limited",
+      "name": "Fujitsu Limited",
+      "logo": "logos/c6fde1300bac9337f2c269bd1e76e8408b1a8b668d678cb9ac70402278f83c1f.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--futurewei-technologies-inc",
+      "name": "Futurewei Technologies, Inc.",
+      "logo": "logos/d624382b7013cbd617eeeb0bb8c864e2587c2a237f6ef22c335b431556ae4710.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--neo4j-inc",
+      "name": "Neo4j, Inc.",
+      "logo": "logos/9c1761edf272a2739083a0b7de3c589558bd2d4d6e9b72af8f47c2ac20d690d8.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--network-optix-inc",
+      "name": "Network Optix Inc",
+      "logo": "logos/5096ad6118153a787dd67c0f664c2b6b41158808e81268152b2461a3d3584830.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--nokia-corporation",
+      "name": "Nokia Corporation",
+      "logo": "logos/cc10e01d6af44e9d3ba5e43d9b34e60535033e9034e94dd8086f4f8b702df949.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--okahu-inc",
+      "name": "Okahu Inc",
+      "logo": "logos/89cec645f69512be4a1095d63db379b11a848408646b553673a54bac59d11950.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--posit",
+      "name": "Posit",
+      "logo": "logos/274f0081e135a5b306c9785e5224157c1ea118f2cc2342d602cf8fff194021b9.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--sas-institute-inc",
+      "name": "SAS Institute Inc.",
+      "logo": "logos/bb4d9d7885ba146c22631514e22147ecdffb94e9c3748cb7a1366e85062f980d.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--shenzhen-kaiyuan-gongchuang-technology-co-ltd",
+      "name": "Shenzhen Kaiyuan Gongchuang Technology Co., Ltd.",
+      "logo": "logos/cdad52448990c9cc3f65c469f08270ca2ec7b1be25a9f396d1302a5cf4a89d63.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--spiraldb",
+      "name": "SpiralDB",
+      "logo": "logos/1841b15b441b3293e16f7bb1f8402b3923c1e7d42abb7aa1e08f9bd0680d1c2d.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--general--union-ai",
+      "name": "Union.ai",
+      "logo": "logos/d9a240aad4506c5d43cf5352124eaa9601d6c80a2ecb0ea2021e2c60ad1b0ea8.svg",
+      "subcategory": "General",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--aidaug",
+      "name": "AIDAUG",
+      "logo": "logos/c67234a7345e4e14126de4891e19dbb43f4b4f422aeb14bb3dfda122a68f6ed7.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--ai-for-people",
+      "name": "AI for People",
+      "logo": "logos/23ad6775a572af32d6778d404df41cbd33b25bbf78cef0a1c3d9d15d6446027a.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--aivancity-school-for-technology-business-society",
+      "name": "aivancity School for Technology Business & Society",
+      "logo": "logos/cb8f9d7fef858cbcd409219729d4807aefb5b1ecaab9a1a2507bf26292ff9c1f.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--ambianic-ai",
+      "name": "Ambianic.ai",
+      "logo": "logos/b6c2ac8533bfc17af1c7a79b166bbf1b7fe5606400a2f74e59b0103d4788dce6.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--banque-de-france",
+      "name": "Banque de France",
+      "logo": "logos/2100764e5c0e6ec449a77ddcc2e14f4792c4e67c6b69d776e863682353c0e69d.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--beijing-academy-of-artificial-intelligence-aka-zhiyuan-institute",
+      "name": "Beijing Academy of Artificial Intelligence aka Zhiyuan Institute",
+      "logo": "logos/6c3bbb6342b2899c01d18bc69b2af1f237788ccd66c84701fcf3c93f7f5d6353.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--biba-bremer-institut-f\u00fcr-produktion-und-logistik-gmbh",
+      "name": "BIBA - Bremer Institut f\u00fcr Produktion und Logistik GmbH",
+      "logo": "logos/96e2c41d9714f471f2e598a751695cb8d4a384c1d1e2a7be7f314b14087fdd65.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--chaitanya-bharathi-institute-of-technology",
+      "name": "Chaitanya Bharathi Institute Of Technology",
+      "logo": "logos/b69593a78aaf03443480d7d87a1b1be59fe78a4c30f33ef059dc8cc9aea13d0b.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--china-academy-of-information-and-communications-technology-caict",
+      "name": "China Academy of Information and Communications Technology (CAICT)",
+      "logo": "logos/1c6595761f101af1f365dddead283b3c86be8c0c29790743920d5dbd89056557.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--columbia-university",
+      "name": "Columbia University",
+      "logo": "logos/875710c4662d8d5a265f36fc359b7c1935f0b00d43a93403e0c493da67496c1b.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--common-crawl-foundation",
+      "name": "Common Crawl Foundation",
+      "logo": "logos/b1cba0787cbd5b580da4bf07a051a90ee1b6c082a35c93daf70c83506261e0c8.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--eleutherai",
+      "name": "EleutherAI",
+      "logo": "logos/ee89f6384f1014ccdbe3ec79912e4f6c5d1223ce8760e6631af5c4653b378255.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--ersilia-open-source-initiative",
+      "name": "Ersilia Open Source Initiative",
+      "logo": "logos/fc601853d91e09decfc1051031a312c08d80654615558119101cd36c0c586338.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--ewha-institute-for-biomedical-law-ethics",
+      "name": "Ewha Institute for Biomedical Law & Ethics",
+      "logo": "logos/ecb50f3244bc1ce90ca321072ff208b4c5eba6e24cff0fa114851ff2c30d43d5.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--galgotias-university",
+      "name": "Galgotias University",
+      "logo": "logos/c800d176be970e0873e13f215ce583f0190fa555e2212c134a99d5bcf9578825.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--high-school-technology-services",
+      "name": "High School Technology Services",
+      "logo": "logos/b69b4434f306c9b86fefc2d35ef25f992f7b510f6b9d6a6663072e444edcd4a1.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--human-feedback-foundation",
+      "name": "Human Feedback Foundation",
+      "logo": "logos/86dfca32b46dc46625ca3167a7c43e1517732e17fa7b72839fcd75bb8a23517d.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--internlm",
+      "name": "InternLM",
+      "logo": "logos/355928dfd5b66b339c8ccc3767e749212b67768675961a6e2fa6871451b6bbe9.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--issip",
+      "name": "ISSIP",
+      "logo": "logos/cc694c40a412f19c22b327cac5f7a13f444df3f4d92b1f8482b75e1e7bc64a5d.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--ken-kennedy-institute",
+      "name": "Ken Kennedy Institute",
+      "logo": "logos/7c3526ef7b86ebb96cba7e73595279d898c3808cf2fa2bf90b0afd34ed836bba.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--montreal-ai-ethics-institute",
+      "name": "Montreal AI Ethics Institute",
+      "logo": "logos/fc3bf1d8aefafbe02ec97279f6d7f04ac7b3ef9cda466ab7c33dcb5fa6451679.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--new-york-university",
+      "name": "New York University",
+      "logo": "logos/d5453133f7a11c12a8d3b0c2b67733e8ef8562e788a0a6a6ce0bd6007e03bef4.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--nipa",
+      "name": "NIPA",
+      "logo": "logos/efb7f80c9e7153c32391d38fb0cad46b0e59698cb43c36b0cb7ce9810887e990.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--odiseia",
+      "name": "OdiseIA",
+      "logo": "logos/15352757a244235c94a27d05956d50025a73504ce5897e586eb3d762c6618448.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--one-fact-foundation",
+      "name": "One Fact Foundation",
+      "logo": "logos/aead37ee90286debc0ce4f11d9328eebaad0f1d3b9fb8d59a90289de469e0315.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--openatom-openeuler",
+      "name": "OpenAtom openEuler",
+      "logo": "logos/64be3f15e60f353bd194888bf9d0797ba47b2178f8829baddd79daf9ac53e658.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--openi",
+      "name": "OpenI",
+      "logo": "logos/d21c6fa0fc7f5af462d35507700e00833723fb1da7fd37851bd78b26cda70836.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--openuk",
+      "name": "OpenUK",
+      "logo": "logos/37f1443522ab0794ffe9bef9c0a1d4b9e6b45bee51d894aba4cd5e67454dc88e.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--penn-state-great-valley-the-pennsylvania-state-university",
+      "name": "Penn State Great Valley - The Pennsylvania State University",
+      "logo": "logos/fdc8c74bcefb13a46590bf373f556ac0209afd7be5b3e4a445f29bfc525aafef.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--pranveer-singh-institute-of-technology",
+      "name": "Pranveer Singh Institute Of Technology",
+      "logo": "logos/112049ff48972bedf032690fab636c18b809be0e1804a7b98de9e2fbcce33744.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--quantuniversity",
+      "name": "QuantUniversity",
+      "logo": "logos/e4111db11c220317205b40f3f77ae962233e66839122c12e4234f8229d020296.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--rensselaer-polytechnic-institute",
+      "name": "Rensselaer Polytechnic Institute",
+      "logo": "logos/014fdbce6146f38a201cec7df44012eacf12964f2d7dc06d29c4a97d57fe8edd.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--sahyadri-college-of-engineering-management",
+      "name": "Sahyadri College of Engineering & Management",
+      "logo": "logos/4688a10fb934890dfea28004cbe1a6c056eff617b19f6e03623644f864aae35b.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--shanghai-opensource-information-technology-association",
+      "name": "Shanghai OpenSource Information Technology Association",
+      "logo": "logos/f214d007b6a13cf8b202623cd5c263216007eff17cf1e0bf78eb9f09044f54ec.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--shenzhen-institute-of-artificial-intelligence-and-robotics-and-society",
+      "name": "Shenzhen Institute of Artificial Intelligence and Robotics and Society",
+      "logo": "logos/f68441fdc1f237109585f85e661e7cde014fd20e679e6a3ac1b7ee87fe42c254.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--the-institute-for-ethical-ai-machine-learning",
+      "name": "The Institute for Ethical AI & Machine Learning",
+      "logo": "logos/d6482596af1d894e8db760667513e001af2f7e3ca7d6dff67e3ffb7170dccbbb.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--thinkerland",
+      "name": "Thinkerland",
+      "logo": "logos/e40886104601c54446dd3f01fa8f57873ae8e715ee62735d8c28a95aaae5f83d.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--transport-for-nsw",
+      "name": "Transport for NSW",
+      "logo": "logos/a234a73ae79f32c67fb6f7d3fae59a8e074b70a62d51b9dacea7f32983697a97.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--universit\u00e9-libre-de-tunis",
+      "name": "Universit\u00e9 Libre de Tunis",
+      "logo": "logos/22a5d40258a8ccd603227560a1e1f67d121df0791e8c2730f2c469921b2606cf.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--university-of-michigan",
+      "name": "University of Michigan",
+      "logo": "logos/62208de7edd85c031fd1219b52c3a8ec13e036cc3c8af9dee31ff96e20ff3cbd.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--university-of-washington",
+      "name": "University of Washington",
+      "logo": "logos/f8afe97f7c576d7df2a53b107501edbe15e595de2a33ba280016975536dd08d2.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--velammal-college-of-engineering-and-technology",
+      "name": "velammal college of engineering and technology",
+      "logo": "logos/c9aa206355915e405a365f10c730d133bc70dcc579a56e40f207823d937047d9.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--wikimedia-deutschland-e-v",
+      "name": "Wikimedia Deutschland e. V.",
+      "logo": "logos/1bff170db6bbd702f1a07d131c2d2b5f0c15227a23143e2cffb3d039678ccef7.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--world-ethical-data-foundation",
+      "name": "World Ethical Data Foundation",
+      "logo": "logos/822520f1fdadf5ea21866ac804c699c57e9d86983f88e42d89e632469d7321f8.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "LF AI & Data Member Company",
+      "id": "lf-ai-data-member-company--associate--xprize",
+      "name": "XPRIZE",
+      "logo": "logos/d16c2a8d5f3b4def10f73db8e0eb9be98d40e519fb6e344bbabe74b77a74486f.svg",
+      "subcategory": "Associate",
+      "featured": {}
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--alipay-hangzhou-information-technology-co-ltd-hosting",
+      "name": "Alipay (Hangzhou) Information Technology Co., Ltd. (hosting)",
+      "logo": "logos/429b8b6ef0a2264f1d833a42c2ef991ed99bc1eda1773a46b77b9efb6460ae43.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--amazon-hosting",
+      "name": "Amazon (hosting)",
+      "logo": "logos/4f0cb0304dfc2f4adf11854e7f1c5ee5eeacef7a613e2c13ae77bf3db33bcedf.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--at-t-hosting",
+      "name": "AT&T (hosting)",
+      "logo": "logos/30adfd44f34e87751b3566d893ac607a26e2fcc22dde7a180f7c8b7316b8f4ef.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--baai-hosting",
+      "name": "BAAI (hosting)",
+      "logo": "logos/37b0b46828e9e62ead2b336e43afe5b71dcab955c917251b8b08949811129a44.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--baidu-hosting",
+      "name": "Baidu (hosting)",
+      "logo": "logos/f13c5d7a1663c34c7fa27c5f24bd8522ca48c4a5b831bdca44bbab8eca1e5f5a.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--basicai-hosting",
+      "name": "BasicAI(hosting)",
+      "logo": "logos/0457bdd34f1b4263a6562a0477b197092710b6b9261923490301faecc3190ec6.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--bloomberg-hosting",
+      "name": "Bloomberg (hosting)",
+      "logo": "logos/bcb5a624be7ea7b205e8f0c3da86598fe1289a6af4cbea45cb9066da0f815f47.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--data-world-hosting",
+      "name": "data.world (hosting)",
+      "logo": "logos/c6a238fa6f4a068a9b82cbfac0ceb4986369dcf077c929b9af66c9b9631da56c.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--databricks-inc-hosting",
+      "name": "Databricks Inc. (hosting)",
+      "logo": "logos/1928a21dfc2c905638ae8e15e58253473ae10d46fc5c640730cc1eda6d2cd13c.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--datakin-hosting",
+      "name": "Datakin (hosting)",
+      "logo": "logos/9b0e7396c1a0a530bf2a880484e2594b9ae7c157da0c5931f8e85f6f83b88a3d.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--didi-hosting",
+      "name": "DiDi (hosting)",
+      "logo": "logos/1e1d17c6dcd1188a0eacac3d25260065692750e5444c8048e6fd88dfcc0a8e9d.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--dmetasoul-hosting",
+      "name": "DMetaSoul (hosting)",
+      "logo": "logos/52d067e68b952a928348f17bfee6baa5a8cce497ac34b829a46140c11166a402.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--dreamworks-hosting",
+      "name": "Dreamworks (hosting)",
+      "logo": "logos/e71ceebb518460572ff21af15534190f249800486575d6bad3c9279b4d1ea709.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--emet-labs-hosting",
+      "name": "Emet Labs (hosting)",
+      "logo": "logos/bc85a51fe2cb1eecb297669cedefb4d3fb13c3d33e416890e71158d84df2ac85.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--ericsson-hosting",
+      "name": "Ericsson (hosting)",
+      "logo": "logos/33210a682187f3fe1737ae689c0161c01d552dd889641b5e8f1efd9dc085eade.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--fujitsu-limited-hosting",
+      "name": "Fujitsu Limited(hosting)",
+      "logo": "logos/c6fde1300bac9337f2c269bd1e76e8408b1a8b668d678cb9ac70402278f83c1f.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--graviti-technologies-inc-hosting",
+      "name": "GRAVITI TECHNOLOGIES INC (hosting)",
+      "logo": "logos/534fd333df5c23d2f9f8253a09ff1c52b4990678aee27cd63a6bbec75e411694.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--herron-tech-hosting",
+      "name": "Herron Tech (hosting)",
+      "logo": "logos/6f6af7b2bd582eaee16b4b07a9d5819f64999bd4dd2bed36e168ea8328abb6db.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--ibm-hosting",
+      "name": "IBM (hosting)",
+      "logo": "logos/663a541f8a4db79978a0357819cb49492f394094e275404c7eb0cfd8a978cbcc.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--intel-hosting",
+      "name": "Intel(hosting)",
+      "logo": "logos/30bd91884cb5f5dcf4b54d7b7d2ff452beb2b16967a05a7a7872a9c45a2a7b73.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--jina-ai-hosting",
+      "name": "JINA AI(hosting)",
+      "logo": "logos/7ef672a3bf4d4aff8201144e7095ca349b6395aa47a04961b1475b897f73bb32.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--labelia-labs-hosting",
+      "name": "Labelia Labs (hosting)",
+      "logo": "logos/e7647eb82060134f097c94bb18c84cb793352093fcd4977c6765088a9c39b7de.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--linkedin-hosting",
+      "name": "LinkedIn (hosting)",
+      "logo": "logos/0909792f20797c90a16911936d66bb2984c2f0bcb843ff55e6db2b8cb9a990e7.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--lyft-hosting",
+      "name": "Lyft (hosting)",
+      "logo": "logos/052397e0b8d8e98165b30c7265fc4429b343a7c57f40c1d6b45fe46adf044003.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--meta-hosting",
+      "name": "Meta (hosting)",
+      "logo": "logos/b536f39ac80d6b93477ce158e9e0f963504a407da8c35caf5ded3ac072b49176.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--microsoft-hosting",
+      "name": "Microsoft (hosting)",
+      "logo": "logos/e162af3bcb9aad4c0d07bf1ddbab90ae1999d1773bdaf8acb116af37c7ebeff3.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--okahu-hosting",
+      "name": "Okahu (hosting)",
+      "logo": "logos/ed32b5bdb48a9acacb10fb3ba39ee325fc9c122d97a4fd00b872e490cc6d0e45.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--oojek-hosting",
+      "name": "oojek (hosting)",
+      "logo": "logos/05e005a8696cb7a5782b7ee8ac8a71918a00aa00032efe8e3a04777dac6e4576.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--owkin-hosting",
+      "name": "Owkin(hosting)",
+      "logo": "logos/1ee70f21180a24212614915eb13b46a06ef1fa664d8e13bc33c032d0bd234523.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--quantumblack-labs-hosting",
+      "name": "QuantumBlack Labs (hosting)",
+      "logo": "logos/14b3b505a2ed66973eb0540e5b4d10a10fd8e1575ce8a52235dddaa31302e948.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--rstudio-hosting",
+      "name": "RStudio (hosting)",
+      "logo": "logos/033a9ef4ef6dea68e7bffbbc99d882a06bbe9c3d2ed81f39c0ca3119caa96a7c.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--samsung-hosting",
+      "name": "Samsung(hosting)",
+      "logo": "logos/dd9097fea2a53b414b636a261d9bdf1aa1164903faea2e45235677dd9d7caa67.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--tech-mahindra-hosting",
+      "name": "Tech Mahindra (hosting)",
+      "logo": "logos/edc5b43bcb374ec98f7f8e0a57779b96dcb6cedd26f9e2beff55364574e44cb8.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--tencent-hosting",
+      "name": "Tencent (hosting)",
+      "logo": "logos/2bf676199b732aedf8ed2853a2fe214cd7af82a44f84517148de19a1e39d0959.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--the-institute-for-ethical-ai-machine-learning-hosting",
+      "name": "The Institute for Ethical AI & Machine Learning (hosting)",
+      "logo": "logos/c34ea7bed52efbb26aa53209c2833fbe3cf3c0e52b8669326a426355b27609ce.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--uber-hosting",
+      "name": "Uber (hosting)",
+      "logo": "logos/a54b376634d30bbfcc9976fc84be3db30fbc4ac04248faec8ed80c092f2ae2a7.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--university-of-california-berkeley-hosting",
+      "name": "University of California Berkeley (hosting)",
+      "logo": "logos/63886ba4e1a76fa52877bd82ea0e26fa5c1ffe86fd616c330ad6cc6c3768473d.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--wework-hosting",
+      "name": "WeWork (hosting)",
+      "logo": "logos/812996e0210d9469ef187fd55e37c82e5cd953dd33092ad202bec245ff0f61ad.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--zilliz-hosting",
+      "name": "Zilliz (hosting)",
+      "logo": "logos/df3a17e596d13dc470afe94be87f9ba1edf207f4533923670d25d858c7d96b4c.svg",
+      "subcategory": "Hosting Companies"
+    },
+    {
+      "category": "Hosting Companies",
+      "id": "hosting-companies--hosting-companies--zte-hosting",
+      "name": "ZTE (hosting)",
+      "logo": "logos/6c400c2f94c45d54a042e47cb77d3d8be714be4e22b88604cad4878b020185be.svg",
+      "subcategory": "Hosting Companies"
+    }
+  ],
+  "members_category": "LF AI & Data Members"
+}

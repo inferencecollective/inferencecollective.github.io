@@ -1,0 +1,96 @@
+{
+  "labs": [
+    {
+      "id": "LangChain-Practical-Labs",
+      "title": "LangChain Practical Labs",
+      "description": "LangChain is a framework for building LLM applications. Learn to connect LLMs to tools, memory, and custom data sources.",
+      "category": "LLM",
+      "path": "/labs/LangChain-Practical-Labs.md",
+      "contributors": ["Sangam Biradar"],
+      "tags": ["LLM", "LangChain", "Python", "Agents"],
+      "image": "/images/LangChain.svg"
+    },
+    {
+      "id": "AI-native-database",
+      "title": "AI-Native Vector Database with Weaviate & Ollama",
+      "description": "Install Weaviate locally with Docker and Ollama, generate embeddings, and build semantic search workflows.",
+      "category": "Vector DB",
+      "path": "/labs/AI-native-database.md",
+      "contributors": ["Sangam Biradar"],
+      "tags": ["Vector DB", "Weaviate", "Ollama", "Embeddings"]
+    },
+    {
+      "id": "data-quality-metrics",
+      "title": "Data Quality Metrics for Large Language Models",
+      "description": "A comprehensive framework for assessing and improving the quality of training data for large language models.",
+      "category": "Data Quality",
+      "path": "/labs/data-quality-metrics.md",
+      "contributors": ["Alex Chen", "Maria Rodriguez"],
+      "tags": ["Data Quality", "Metrics", "LLM", "Assessment"]
+    },
+    {
+      "id": "ethical-synthetic-data",
+      "title": "Ethical Considerations in Synthetic Data Generation",
+      "description": "Addressing privacy, bias, and fairness concerns in the creation and use of synthetic datasets for AI training.",
+      "category": "Ethics",
+      "path": "/labs/ethical-synthetic-data.md",
+      "contributors": ["James Wilson", "Aisha Patel"],
+      "tags": ["Ethics", "Synthetic Data", "Privacy", "Fairness"]
+    },
+    {
+      "id": "llm-evaluation",
+      "title": "LLM Evaluation Framework",
+      "description": "Open source methodology for evaluating large language models across accuracy, reasoning, and domain benchmarks.",
+      "category": "Evaluation",
+      "path": "/labs/llm-evaluation.md",
+      "contributors": ["Robin Zhang"],
+      "tags": ["Evaluation", "LLM", "Benchmarks", "Methodology"]
+    },
+    {
+      "id": "reinforcement-learning",
+      "title": "Reinforcement Learning Lab",
+      "description": "Developing intelligent agents that learn optimal decision-making strategies through interaction with their environment.",
+      "category": "Reinforcement Learning",
+      "path": "/labs/reinforcement-learning.md",
+      "contributors": ["Alex Kumar", "Olivia Chen"],
+      "tags": ["Reinforcement Learning", "RL", "Agents", "Decision Making"]
+    },
+    {
+      "id": "ml-101",
+      "title": "ML 101: A Gentle Introduction",
+      "description": "Fundamental concepts of machine learning with an accompanying interactive Jupyter notebook for hands-on learning.",
+      "category": "ML Basics",
+      "path": "/labs/ml-101.md",
+      "notebook": "/notebooks/ml-101.ipynb",
+      "contributors": ["AI Data Foundation"],
+      "tags": ["Machine Learning", "Basics", "Tutorial", "Scikit-Learn"]
+    },
+    {
+      "id": "data-science-libraries",
+      "title": "Data Science & ML Core Libraries Architecture",
+      "description": "Comprehensive guide to modern Python data science libraries: NumPy, Pandas, Scikit-learn, XGBoost, LightGBM, CatBoost, CV, PyTorch, and Keras 3 with Pele architecture diagrams.",
+      "category": "ML Basics",
+      "path": "/labs/data-science-libraries.md",
+      "contributors": ["Sangam Biradar", "AI Data Foundation"],
+      "tags": ["Data Science", "Python", "PyTorch", "GBDT", "Architecture"]
+    },
+    {
+      "id": "numpy-in-depth",
+      "title": "NumPy in Depth: Memory, Strides & Tensor Contractions",
+      "description": "Master NumPy from the metal up: contiguous C memory buffers, strides, zero-copy views, SIMD vectorization, broadcasting algebra, and transformer self-attention with np.einsum.",
+      "category": "ML Basics",
+      "path": "/labs/numpy-in-depth.md",
+      "contributors": ["Sangam Biradar", "AI Data Foundation"],
+      "tags": ["NumPy", "Python", "SIMD", "Einsum", "Memory Architecture", "Tensors"]
+    },
+    {
+      "id": "before-gpu-engineering",
+      "title": "Before GPU Engineering: Hardware Architecture, Memory Physics & The Roofline Model",
+      "description": "Deconstruct GPU engineering from first principles: silicon die allocation, memory hierarchy latencies, arithmetic intensity, warp execution, and why LLM decoding is memory-bound.",
+      "category": "Hardware & Performance",
+      "path": "/labs/before-gpu-engineering.md",
+      "contributors": ["Sangam Biradar", "AI Data Foundation"],
+      "tags": ["GPU", "CUDA", "Hardware", "Memory Hierarchy", "Roofline Model", "vLLM"]
+    }
+  ]
+}

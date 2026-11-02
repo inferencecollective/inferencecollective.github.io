@@ -1,74 +1,94 @@
 <div data-content-library>
   <!-- AI Data Foundation Workshop Header -->
-  <section class="kube-library-header">
-    <div class="kube-library-container">
-      <span class="kube-kicker">Interactive Practice</span>
-      <h1>
-        Less theory. <span>More hands-on understanding.</span>
+  <section class="kube-library-header relative overflow-hidden bg-[#070A0F] border-b border-slate-800/80">
+    <div class="kube-library-container max-w-7xl mx-auto px-4 py-16 sm:py-20 sm:px-6 lg:px-8 relative z-10">
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-4">
+        Interactive Practice &middot; Terminal First
+      </span>
+      <h1 class="text-4xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+        Less theory.
+        <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">More hands-on understanding.</span>
       </h1>
-      <p class="kube-library-intro">
+      <p class="mt-4 text-lg text-slate-300 max-w-3xl leading-relaxed">
         Hands-on technical tutorials for artificial intelligence engineers. Run local models with Ollama, connect Weaviate vector databases, orchestrate LangChain agent workflows, and evaluate benchmarks.
       </p>
-      <div class="kube-library-links">
-        <a href="#featured">Browse {length(@labs)} self-paced labs &darr;</a>
-        <a href="/roadmap">View editorial roadmap &rarr;</a>
-        <a href="/blog">Read engineering notes &rarr;</a>
+      <div class="mt-8 flex flex-wrap gap-4 text-sm font-semibold">
+        <a href="#featured" class="kube-button">
+          Browse {length(@labs)} self-paced labs &darr;
+        </a>
+        <a href="/roadmap" class="kube-button kube-button-outline">
+          View editorial roadmap &rarr;
+        </a>
+        <a
+          href="/blog"
+          class="text-slate-400 hover:text-white transition-colors flex items-center gap-1.5 px-3 py-2"
+        >
+          Read engineering notes &rarr;
+        </a>
       </div>
     </div>
   </section>
 
   <!-- Labs Catalog Section -->
-  <div class="kube-library-section">
-    <div class="kube-library-container">
-      <div class="kube-library-toolbar" id="featured">
+  <div class="kube-library-section py-12">
+    <div class="kube-library-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8" id="featured">
         <div>
           <span class="kube-kicker">Self-Paced Runbooks</span>
-          <h2>Choose your next lab</h2>
+          <h2 class="text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-1">
+            Choose your next lab
+          </h2>
         </div>
-        <div class="kube-library-search" data-library-controls>
-          <label for="lab-library-search">Filter labs by title, topic, or command</label>
+        <div class="w-full md:w-80" data-library-controls>
+          <label for="lab-library-search" class="sr-only">Filter labs by title, topic, or command</label>
           <input
             id="lab-library-search"
             type="search"
             data-library-search
             placeholder="Search LangChain, Weaviate, RAG, Ollama…"
             autocomplete="off"
+            class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 py-2.5 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/40"
           />
         </div>
       </div>
 
-      <p class="kube-library-count" data-library-count>
+      <p class="text-xs font-mono text-slate-500 mb-6" data-library-count>
         {length(@labs)} of {length(@labs)} shown
       </p>
 
-      <div class="kube-labs-grid">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <%= for lab <- @labs do %>
-          <article class="kube-lab-card glass-card" data-library-card>
-            <div class="kube-lab-card-meta">
-              <span class="kube-label">{lab["category"]}</span>
-              <span class="text-xs font-mono text-slate-400">&gt;_ terminal</span>
+          <article
+            class="p-6 rounded-2xl border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xs hover:shadow-md hover:border-emerald-500/40 transition-all flex flex-col group"
+            data-library-card
+          >
+            <div class="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800/80">
+              <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">{lab[
+                "category"
+              ]}</span>
+              <span class="text-xs font-mono text-slate-400 dark:text-slate-500">&gt;_ terminal</span>
             </div>
-            <h3>
+            <h3 class="text-lg font-bold mt-4 mb-2 text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
               <a href={~p"/labs/#{lab["id"]}"}>
                 {lab["title"]}
               </a>
             </h3>
-            <p>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4 flex-1">
               {lab["description"]}
             </p>
-            <div class="kube-tag-list mb-4">
+            <div class="flex flex-wrap gap-1.5 mb-5">
               <%= for tag <- lab["tags"] || [] do %>
-                <span class="kube-tag">{tag}</span>
+                <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">{tag}</span>
               <% end %>
             </div>
-            <div class="kube-lab-card-footer pt-4 border-t border-slate-100 [data-theme=dark]:border-slate-800 flex items-center justify-between mt-auto">
-              <span class="text-xs text-slate-500">By {Enum.join(
+            <div class="pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between mt-auto text-xs">
+              <span class="text-slate-500">By {Enum.join(
                 lab["contributors"] || ["ADF"],
                 ", "
               )}</span>
               <a
                 href={~p"/labs/#{lab["id"]}"}
-                class="text-sm font-bold text-violet-600 [data-theme=dark]:text-violet-400 hover:underline"
+                class="font-bold text-emerald-600 dark:text-emerald-400 hover:underline"
               >
                 Open Lab &rarr;
               </a>
@@ -82,21 +102,21 @@
       </p>
 
       <!-- Good Practice Notice -->
-      <div class="kube-library-practice mt-12 p-6 rounded-2xl border border-violet-200 bg-violet-50/50 [data-theme=dark]:border-violet-950 [data-theme=dark]:bg-violet-950/20 flex flex-col md:flex-row items-center gap-4">
-        <div class="w-10 h-10 rounded-full bg-violet-600 text-white flex items-center justify-center font-bold text-lg shrink-0">
+      <div class="mt-12 p-6 rounded-2xl border border-emerald-500/20 bg-emerald-50/50 dark:border-emerald-900/40 dark:bg-emerald-950/20 flex flex-col md:flex-row items-center gap-4">
+        <div class="w-10 h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-lg shrink-0">
           !
         </div>
-        <div class="text-sm text-slate-700 [data-theme=dark]:text-slate-300">
-          <strong class="font-bold block mb-0.5 text-slate-900 [data-theme=dark]:text-white">A Good Lab Habit</strong>
-          Always inspect code snippets before running them locally. Use isolated environments like Python virtualenvs (`python -m venv .venv`) or disposable Docker containers to keep your dependencies clean.
+        <div class="text-sm text-slate-700 dark:text-slate-300">
+          <strong class="font-bold block mb-0.5 text-slate-900 dark:text-white">A Good Lab Habit</strong>
+          Always inspect code snippets before running them locally. Use isolated environments like Python virtualenvs (<code class="px-1.5 py-0.5 rounded bg-white dark:bg-slate-900 font-mono text-xs">python -m venv .venv</code>) or disposable Docker containers to keep your dependencies clean.
         </div>
       </div>
 
       <!-- Community Contribution Footer -->
-      <div class="kube-library-footer mt-12 pt-8 border-t border-slate-200 [data-theme=dark]:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-6">
         <div>
           <span class="kube-kicker">Open Source</span>
-          <h2 class="text-xl font-bold text-slate-900 [data-theme=dark]:text-white mt-1">
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white mt-1">
             Have an AI lab or notebook exercise to contribute?
           </h2>
           <p class="text-sm text-slate-500 mt-1">

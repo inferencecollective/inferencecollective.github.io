@@ -1,0 +1,19 @@
+{
+  "lab": "03_tfdata_cnn",
+  "has_tf": false,
+  "test_accuracy": 0.9333,
+  "test_loss": 0.2685,
+  "pipeline_batch_size": 32,
+  "epochs": 35,
+  "input_shape": [
+    28,
+    28,
+    1
+  ],
+  "num_train_samples": 240,
+  "num_test_samples": 60,
+  "classes": [
+    "Circle",
+    "Square"
+  ]
+}

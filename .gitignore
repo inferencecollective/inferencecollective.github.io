@@ -36,5 +36,7 @@ npm-debug.log
 /assets/node_modules/
 node_modules/
 /_site/
+/outputs/
 .DS_Store
+/.mix/
 

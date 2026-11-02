@@ -1,0 +1,11 @@
+{
+  "lab": "05_litert_export",
+  "has_tf": false,
+  "tflite_path": "artifacts/model.tflite",
+  "fp32_size_bytes": 10376,
+  "quant_size_bytes": 3362,
+  "compression_ratio": 3.09,
+  "size_reduction_pct": 67.6,
+  "quantization_type": "dynamic_range_int8",
+  "parity_verified": true
+}

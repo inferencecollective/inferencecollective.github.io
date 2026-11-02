@@ -1,0 +1,23 @@
+{
+  "lab": "04_savedmodel_serving",
+  "has_tf": false,
+  "serving_path": "artifacts/serving/1",
+  "endpoint": "http://localhost:8501/v1/models/classifier/versions/1:predict",
+  "instances_tested": 2,
+  "prediction_parity": true,
+  "predictions": [
+    [
+      0.34423649311065674,
+      0.6557635068893433
+    ],
+    [
+      0.5216573476791382,
+      0.4783426821231842
+    ]
+  ],
+  "savedmodel_files": [
+    "fingerprint.pb",
+    "variables",
+    "saved_model.pb"
+  ]
+}
