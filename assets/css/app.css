@@ -2963,3 +2963,46 @@ main { min-width: 0; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* A shared reading width and spacing rhythm for the complete homepage. */
+.kube-home { --home-width: 76rem; }
+.kube-home .max-w-7xl, .kube-home .kube-section-container, .kube-home .kube-hero-container { max-width: var(--home-width); }
+.kube-home > section { scroll-margin-top: 6rem; }
+.kube-home > section:not(.kube-home-hero):not(.kube-start-section) { padding-block: 3.5rem; }
+.kube-home .kube-section-container { padding: 3.5rem 2rem; }
+.kube-home .kube-hero-container { padding: 4.5rem 2rem; }
+.kube-home .kube-hero-grid { gap: 3rem; }
+.kube-home .kube-hero-grid > div { min-width: 0; }
+.kube-home .kube-home-copy h1 { font-size: clamp(2.5rem, 4.8vw, 4rem); }
+.kube-home .kube-home-map-content { margin-top: 1.25rem; }
+.kube-home .kube-home-section-heading { gap: 2rem; margin-bottom: 2rem; }
+.kube-home .kube-home-section-heading > p { max-width: 31rem; font-size: 0.9375rem; line-height: 1.7; }
+.kube-home h2 { text-wrap: balance; line-height: 1.2; }
+.kube-home .kube-home-section-heading h2 { font-size: 1.875rem; }
+.kube-home .kube-learning-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.kube-home .kube-learning-card { min-width: 0; padding: 1.5rem; }
+.kube-home .kube-learning-card h3 { margin-top: 0.875rem; }
+.kube-home .kube-learning-card p { margin-bottom: 1.25rem; }
+.kube-home .kube-labs-grid, .kube-home .kube-blog-grid { gap: 1.25rem; }
+.kube-home .kube-lab-card-footer { gap: 1rem; align-items: flex-start; }
+.kube-home .kube-lab-card-footer a { flex-shrink: 0; }
+.kube-home .kube-home-search { margin-top: 1.5rem; }
+.kube-home-model-scroll table { min-width: 52rem; }
+.kube-home-jumpnav { display: flex; align-items: center; gap: 1.5rem; max-width: var(--home-width); margin: auto; padding: 1rem 2rem; overflow-x: auto; scrollbar-width: thin; border-bottom: 1px solid #1e293b; }
+.kube-home-jumpnav span { font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.1em; color: #94a3b8; }
+.kube-home-jumpnav a { display: inline-flex; align-items: center; min-height: 44px; flex-shrink: 0; font-size: 0.8125rem; font-weight: 600; color: #cbd5e1; }
+.kube-home-jumpnav a:hover { color: #6ee7b7; }
+@media (min-width: 1200px) { .kube-home .kube-learning-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 639px) {
+  .kube-home > section:not(.kube-home-hero):not(.kube-start-section) { padding-block: 2.5rem; }
+  .kube-home .kube-section-container { padding: 2.5rem 1rem; }
+  .kube-home .kube-hero-container { padding: 2.5rem 1rem; }
+  .kube-home .kube-home-copy h1 { font-size: clamp(2.3rem, 9.5vw, 3rem); }
+  .kube-home .kube-home-copy > p { font-size: 1rem; line-height: 1.7; }
+  .kube-home .kube-hero-grid { gap: 2rem; }
+  .kube-home .kube-learning-grid { grid-template-columns: minmax(0, 1fr); }
+  .kube-home .kube-learning-card { padding: 1.25rem; }
+  .kube-home .kube-home-section-heading { gap: 0.75rem; margin-bottom: 1.5rem; }
+  .kube-home .kube-home-section-heading h2, .kube-home h2.text-3xl { font-size: 1.65rem; }
+  .kube-home-jumpnav { gap: 1.25rem; padding: 0.5rem 1rem; }
+}

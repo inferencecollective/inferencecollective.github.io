@@ -53,10 +53,40 @@ defmodule Mix.Tasks.Aidatafoundation.Export do
 
     # Render 404.html
     write_404(output)
+    fingerprint_pages(output)
 
     Mix.shell().info(
       "==> Successfully exported #{length(PublicPages.paths())} pages to #{output}!"
     )
+  end
+
+  # The exporter runs in dev during Pages builds, where ~p emits stable asset
+  # URLs. Resolve the digest manifest explicitly so cached CSS/JS cannot outlive
+  # the HTML that depends on it.
+  defp fingerprint_pages(output) do
+    manifest = output |> Path.join("cache_manifest.json") |> File.read!() |> Jason.decode!()
+    assets = Map.fetch!(manifest, "latest")
+
+    for asset <- ["assets/css/app.css", "assets/js/app.js"] do
+      digested = Map.fetch!(assets, asset)
+
+      unless File.regular?(Path.join(output, digested)),
+        do: Mix.raise("Missing asset: #{digested}")
+    end
+
+    for page <- Path.wildcard(Path.join(output, "**/*.html")) do
+      html =
+        Regex.replace(~r/(href|src)="\/(assets\/[^"?]+)"/, File.read!(page), fn full,
+                                                                                attr,
+                                                                                asset ->
+          case Map.fetch(assets, asset) do
+            {:ok, digested} -> ~s(#{attr}="/#{digested}")
+            :error -> full
+          end
+        end)
+
+      File.write!(page, html)
+    end
   end
 
   defp write_page(output, path) do
