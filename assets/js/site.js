@@ -219,7 +219,10 @@ export function initMobileNav() {
   if (!toggleBtn || !menu) return;
 
   const setOpen = (open) => {
+    const wasOpen = toggleBtn.getAttribute("aria-expanded") === "true";
     toggleBtn.setAttribute("aria-expanded", String(open));
+    document.querySelector("main")?.toggleAttribute("inert", open);
+    document.querySelector("footer")?.toggleAttribute("inert", open);
     toggleBtn.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
     if (open) {
       menu.classList.remove("hidden");
@@ -227,12 +230,14 @@ export function initMobileNav() {
       if (iconOpen) iconOpen.classList.add("hidden");
       if (iconClose) iconClose.classList.remove("hidden");
       document.body.classList.add("overflow-hidden");
+      if (!wasOpen) menu.querySelector("a")?.focus();
     } else {
       menu.classList.add("hidden");
       if (overlay) overlay.classList.add("hidden");
       if (iconOpen) iconOpen.classList.remove("hidden");
       if (iconClose) iconClose.classList.add("hidden");
       document.body.classList.remove("overflow-hidden");
+      if (wasOpen) toggleBtn.focus();
     }
   };
 
@@ -253,14 +258,23 @@ export function initMobileNav() {
     });
 
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && toggleBtn.getAttribute("aria-expanded") === "true") {
+      if (toggleBtn.getAttribute("aria-expanded") !== "true") return;
+      if (e.key === "Tab") {
+        const links = [...menu.querySelectorAll("a[href], button:not([disabled])")];
+        const targets = [toggleBtn, ...links];
+        const index = targets.indexOf(document.activeElement);
+        const next = e.shiftKey ? index - 1 : index + 1;
+        e.preventDefault();
+        targets[(next + targets.length) % targets.length].focus();
+      }
+      if (e.key === "Escape") {
         setOpen(false);
         toggleBtn.focus();
       }
     });
 
     window.addEventListener("resize", () => {
-      if (window.innerWidth >= 1024 && toggleBtn.getAttribute("aria-expanded") === "true") {
+      if (window.innerWidth >= 1200 && toggleBtn.getAttribute("aria-expanded") === "true") {
         setOpen(false);
       }
     });
