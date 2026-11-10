@@ -15,5 +15,10 @@ defmodule AiDataFoundation.WorkshopNotebooks do
   end
 
   defp revision,
-    do: Application.get_env(:ai_data_foundation, :notebook_revision, "codex/ml-workshop-tracks")
+    do:
+      Application.get_env(
+        :ai_data_foundation,
+        :notebook_revision,
+        "a9d027304edd80e29197f6718497ab7c00affd9b"
+      )
 end
