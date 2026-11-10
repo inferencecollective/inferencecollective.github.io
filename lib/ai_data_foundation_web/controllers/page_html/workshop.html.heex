@@ -1,0 +1,108 @@
+<div class="workshop-reader" data-workshop={@track["id"]}>
+  <section class="workshop-hero">
+    <div class="workshop-container">
+      <a class="workshop-back" href="/workshops">&larr; Workshop tracks</a>
+      <p class="workshop-eyebrow">{@track["level"]} / ~{@track["minutes"]} minutes / CPU</p>
+      <h1>{@track["title"]}</h1><p class="workshop-lede">{@track["description"]}</p>
+      <div class="workshop-facts">
+        <span>Python 3.11–3.13</span><span>No GPU required</span><span>No API keys</span>
+      </div>
+    </div>
+  </section>
+  <div class="workshop-container workshop-layout">
+    <aside class="workshop-sidebar" aria-label="Workshop navigation">
+      <p class="workshop-eyebrow">Your workshop</p><a href="#setup">00 / Set up your environment</a>
+      <a :for={{step, index} <- Enum.with_index(@track["steps"], 1)} href={"#step-#{index}"}>0{index} / {step[
+        "title"
+      ]}</a>
+      <a href="#finish">Finish / Show your work</a>
+      <div data-workshop-progress hidden>
+        <label for="workshop-progress">Your progress</label><progress
+          id="workshop-progress"
+          value="0"
+          max={length(@track["steps"])}
+        ></progress><p data-workshop-count role="status" aria-live="polite"></p><small>Saved on this browser when storage is available.</small>
+      </div>
+    </aside>
+    <div class="workshop-main kube-markdown">
+      <section id="setup" class="workshop-panel">
+        <p class="workshop-eyebrow">00 / Get ready</p><h2>Set up your environment</h2>
+        <p>
+          <strong>What you need:</strong> {@track["prerequisites"]} Install Git and Python 3.11–3.13 before starting. All commands below run on your machine; the website does not execute Python.
+        </p>
+        <h3>1. Get the code</h3><pre><code>{"git clone https://github.com/inferencecollective/inferencecollective.github.io.git\ncd inferencecollective.github.io"}</code></pre>
+        <h3>2. Create an isolated environment</h3>
+        <details open>
+          <summary>macOS / Linux</summary><pre><code>{"python3 -m venv .venv\nsource .venv/bin/activate\npython -m pip install --upgrade pip\npython -m pip install -r requirements/workshops/#{@track["id"]}.txt"}</code></pre>
+        </details>
+        <details>
+          <summary>Windows PowerShell</summary><pre><code>{"py -3.12 -m venv .venv\n.venv\\Scripts\\python.exe -m pip install --upgrade pip\n.venv\\Scripts\\python.exe -m pip install -r requirements/workshops/#{@track["id"]}.txt"}</code></pre><p>
+            Use <code>.venv\Scripts\python.exe</code>
+            in place of <code>python</code>
+            in every command below. Activation is optional.
+          </p>
+        </details>
+        <h3>3. Check your setup</h3><pre><code>{"python -m labs.workshop #{@track["id"]} --check"}</code></pre>
+        <p>
+          Run these commands from the repository root. The check reports missing packages before you start. Each lab uses included sample data; no accounts or downloaded models are needed.
+        </p>
+        <details>
+          <summary>Stuck on setup?</summary><ul>
+            <li>
+              <strong>No matching package distribution:</strong>
+              check <code>python --version</code>
+              and recreate the environment with Python 3.11–3.13.
+            </li><li>
+              <strong>No module named labs:</strong>
+              change into the cloned repository and use <code>python -m</code>
+              rather than running the file directly.
+            </li><li>
+              <strong>Missing dependency:</strong>
+              install the track requirements with the same Python interpreter you use to run the lab.
+            </li><li>
+              <strong>Plot window does not appear:</strong>
+              open the saved PNG in <code>outputs/</code>. Workshop runs use a noninteractive plotting backend.
+            </li>
+          </ul>
+        </details>
+      </section>
+      <section
+        :for={{step, index} <- Enum.with_index(@track["steps"], 1)}
+        id={"step-#{index}"}
+        class="workshop-panel"
+      >
+        <p class="workshop-eyebrow">0{index} / ~{step["minutes"]} minutes</p><h2>
+          {step["title"]}
+        </h2>
+        <div class="workshop-step-links">
+          <a href={~p"/labs/#{step["guide"]}"}>Read the full guide &rarr;</a><a href={"https://github.com/inferencecollective/inferencecollective.github.io/blob/main/#{String.replace(step["module"], ".", "/")}.py"}>Inspect source &nearr;</a>
+        </div>
+        <h3>Run the lab</h3><pre><code>{"python -m labs.workshop #{@track["id"]} --step #{index}"}</code></pre>
+        <div class="workshop-result">
+          <strong>What you should see</strong><p>{step["outcome"]}</p>
+        </div>
+        <h3>Make a change</h3><p>{step["challenge"]}</p>
+        <label class="workshop-complete" data-workshop-control hidden><input
+          type="checkbox"
+          data-workshop-step={index}
+        /> I ran the lab, inspected the output, and tried the exercise</label>
+        <a
+          class="workshop-next"
+          href={if index < length(@track["steps"]), do: "#step-#{index + 1}", else: "#finish"}
+        >Next step &darr;</a>
+      </section>
+      <section id="finish" class="workshop-panel">
+        <p class="workshop-eyebrow">Finish / Show your work</p><h2>
+          Turn the run into understanding.
+        </h2><p>
+          Share one output, the parameter you changed, and what you learned. Keep the source change and output together so a teammate can reproduce your result.
+        </p><p>To rerun the whole track:</p><pre><code>{"python -m labs.workshop #{@track["id"]}"}</code></pre><a
+          class="kube-button"
+          href="/workshops"
+        >Choose your next track &rarr;</a><p>
+          Continue exploring in the <a href="/labs">complete lab library</a>.
+        </p>
+      </section>
+    </div>
+  </div>
+</div>

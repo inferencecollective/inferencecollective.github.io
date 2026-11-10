@@ -3,7 +3,7 @@ defmodule AiDataFoundationWeb.PageControllerTest do
 
   test "GET / renders home page", %{conn: conn} do
     conn = get(conn, ~p"/")
-    assert html_response(conn, 200) =~ "Defend your AI"
+    assert html_response(conn, 200) =~ "Build your skills"
     assert html_response(conn, 200) =~ "Featured Security Labs"
     assert html_response(conn, 200) =~ "Open Weight Model Benchmarks"
     assert html_response(conn, 200) =~ "Qwen 32B"

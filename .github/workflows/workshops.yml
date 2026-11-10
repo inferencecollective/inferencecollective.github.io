@@ -1,0 +1,57 @@
+name: Verify runnable workshops
+
+on:
+  pull_request:
+    paths:
+      - 'labs/**'
+      - 'data/**'
+      - 'requirements/workshops/**'
+      - 'priv/static/aidatafoundation/data/workshops.json'
+      - 'tests/test_workshops.py'
+      - '.github/workflows/workshops.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'labs/**'
+      - 'data/**'
+      - 'requirements/workshops/**'
+      - 'priv/static/aidatafoundation/data/workshops.json'
+      - 'tests/test_workshops.py'
+      - '.github/workflows/workshops.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  workshop:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        track: [ml-foundations, pytorch, vision]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    env:
+      MPLBACKEND: Agg
+      OMP_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements/workshops/${{ matrix.track }}.txt
+      - name: Install track dependencies
+        run: python -m pip install -r requirements/workshops/${{ matrix.track }}.txt pytest
+      - name: Verify catalog and runner behavior
+        run: python -m pytest tests/test_workshops.py
+      - name: Check environment
+        run: python -m labs.workshop ${{ matrix.track }} --check
+      - name: Execute the complete track
+        run: python -m labs.workshop ${{ matrix.track }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: workshop-${{ matrix.track }}-${{ matrix.os }}
+          path: outputs/
+          if-no-files-found: error

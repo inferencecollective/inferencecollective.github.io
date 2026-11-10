@@ -20,6 +20,8 @@ defmodule AiDataFoundationWeb.Router do
     get "/", PageController, :home
     get "/tools", PageController, :tools
     get "/models", PageController, :models
+    get "/workshops", PageController, :workshops
+    get "/workshops/:id", PageController, :workshop
     get "/labs", PageController, :labs
     get "/labs/:id", PageController, :lab
     get "/blog", PageController, :blog

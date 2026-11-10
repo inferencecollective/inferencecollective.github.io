@@ -41,6 +41,29 @@ defmodule AiDataFoundationWeb.PageController do
     )
   end
 
+  def workshops(conn, _params) do
+    render(conn, :workshops,
+      page_title: "ML Engineering Workshops · Inference Collective",
+      tracks: Foundation.workshops()
+    )
+  end
+
+  def workshop(conn, %{"id" => id}) do
+    case Foundation.workshop(id) do
+      nil ->
+        conn
+        |> put_status(:not_found)
+        |> put_view(html: AiDataFoundationWeb.ErrorHTML)
+        |> render(:"404")
+
+      track ->
+        render(conn, :workshop,
+          page_title: track["title"] <> " · Inference Collective Workshops",
+          track: track
+        )
+    end
+  end
+
   def labs(conn, _params) do
     render(conn, :labs,
       page_title: "Hands-on AI & LLM Labs · AI Data Foundation",
