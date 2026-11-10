@@ -30,7 +30,7 @@ Use an Apple silicon Mac, macOS 14+, and native arm64 Python 3.11–3.13. In the
 python -m pip install "mlx>=0.32,<0.33" "numpy>=2.1,<3" "matplotlib>=3.10,<4" "ipykernel>=6.29,<8"
 ```
 
-Open `mlx.ipynb` in VS Code or your existing Jupyter application and select that Python environment as the kernel. **Restart the kernel and Run All** to reproduce the workshop. A remote kernel uses the remote machine's hardware, not your browser's Mac. Shared editing remains available through the companion Livebook workshop.
+Open `mlx.ipynb` in VS Code or your existing Jupyter application and select that Python environment as the kernel. **Restart the kernel and Run All** to reproduce the workshop. A remote kernel uses the remote machine's hardware, not your browser's Mac.
 ''')
 code('''
 import json

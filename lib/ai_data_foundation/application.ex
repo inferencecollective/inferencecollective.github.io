@@ -12,7 +12,6 @@ defmodule AiDataFoundation.Application do
       {DNSCluster,
        query: Application.get_env(:ai_data_foundation, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: AiDataFoundation.PubSub},
-      AiDataFoundation.WorkshopPresence,
       # Start a worker by calling: AiDataFoundation.Worker.start_link(arg)
       # {AiDataFoundation.Worker, arg},
       # Start to serve requests, typically the last entry

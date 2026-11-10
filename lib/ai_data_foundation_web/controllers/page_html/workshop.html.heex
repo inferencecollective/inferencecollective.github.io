@@ -15,9 +15,7 @@
   </section>
   <div class="workshop-container workshop-layout">
     <aside class="workshop-sidebar" aria-label="Workshop navigation">
-      <p class="workshop-eyebrow">Your workshop</p><a href={
-        if @track["id"] == "mlx", do: "#mlx-notebook-launch", else: "#livebook-launch"
-      }>Launch interactive notebook</a><a href="#setup">00 / Set up your environment</a>
+      <p class="workshop-eyebrow">Your workshop</p><a href="#notebook-launch">Open notebook or Google Colab</a><a href="#setup">00 / Set up your environment</a>
       <a :for={{step, index} <- Enum.with_index(@track["steps"], 1)} href={"#step-#{index}"}>0{index} / {step[
         "title"
       ]}</a>
@@ -31,65 +29,44 @@
       </div>
     </aside>
     <div class="workshop-main kube-markdown">
-      <section :if={@track["id"] == "mlx"} id="mlx-notebook-launch" class="workshop-panel">
-        <p class="workshop-eyebrow">Recommended / MLX notebook</p><h2>
-          Train, predict, and measure in mlx.ipynb
-        </h2>
+      <section id="notebook-launch" class="workshop-panel">
+        <p class="workshop-eyebrow">Interactive notebook</p><h2>Run this workshop your way</h2>
         <p>
-          A self-contained workshop for your Mac: learn autograd, save a model, run inference, and compare compiled execution with plots and reproducible reports.
+          Download {@track["id"]}.ipynb for VS Code or Jupyter, or open a compatible track in Google Colab.
         </p>
         <div class="workshop-step-links">
           <a
-            id="download-mlx-ipynb"
+            id="download-notebook"
             class="kube-button"
-            href="/aidatafoundation/notebooks/mlx.ipynb"
-            download="mlx.ipynb"
-          >Download mlx.ipynb &darr;</a>
+            href={WorkshopNotebooks.download_url(@track["id"])}
+            download={@track["id"] <> ".ipynb"}
+          >Download {@track["id"]}.ipynb &darr;</a>
           <a
-            href="https://github.com/inferencecollective/inferencecollective.github.io/blob/main/priv/static/aidatafoundation/notebooks/mlx.ipynb"
-            target="_blank"
-            rel="noopener"
-          >Preview on GitHub &nearr;</a>
-        </div>
-        <p>
-          Open the notebook in VS Code or Jupyter with a native arm64 Python kernel on Apple silicon. Install its environment from the repository:
-        </p>
-        <pre><code>python -m pip install -r requirements/workshops/mlx-notebook.txt</code></pre>
-        <p>
-          Select that environment as your kernel, restart, and Run All. It uses synthetic data and needs no model downloads or API keys. Use Livebook below when you want a shared editing session.
-        </p>
-      </section>
-      <section id="livebook-launch" class="workshop-panel">
-        <p class="workshop-eyebrow">Interactive notebook</p><h2>
-          {if @track["id"] == "mlx",
-            do: "Collaborate with Livebook",
-            else: "Open this workshop in Livebook"}
-        </h2>
-        <p>
-          Run the exercises in a notebook with Python cells, explanations, and outputs. Use your own Livebook instance, or join your group's shared server.
-        </p>
-        <div class="workshop-step-links">
-          <a
-            id="launch-livebook"
-            class="kube-button"
-            href={WorkshopNotebooks.launch_url(@track["id"])}
-            target="_blank"
-            rel="noopener"
-          >Open in Livebook &nearr;</a>
-          <a id="download-livebook" href={WorkshopNotebooks.download_url(@track["id"])} download>Download .livemd notebook</a>
-          <a
-            :if={WorkshopNotebooks.room_url(@track["id"])}
-            id="join-live-room"
+            :if={WorkshopNotebooks.colab_url(@track["id"])}
+            id="open-colab"
             class="kube-button kube-button-outline"
-            href={WorkshopNotebooks.room_url(@track["id"])}
-          >Start a live workshop room &rarr;</a>
+            href={WorkshopNotebooks.colab_url(@track["id"])}
+            target="_blank"
+            rel="noopener"
+          >Open in Google Colab &nearr;</a>
+          <a
+            id="preview-notebook"
+            href={WorkshopNotebooks.preview_url(@track["id"])}
+            target="_blank"
+            rel="noopener"
+          >Preview notebook on GitHub &nearr;</a>
         </div>
-        <p :if={is_nil(WorkshopNotebooks.room_url(@track["id"]))}>
-          Live workshop rooms are not enabled on this site yet. You can still open or download the notebook.
+        <p :if={@track["id"] != "mlx"}>
+          In Colab, run the setup cell first, then run the exercises in order. Save a copy in your Drive to keep changes; share that copy with your group. Colab shares notebook content, while runtime state and files belong to each participant.
         </p>
-        <p :if={@track["id"] == "mlx"} class="workshop-result">
-          For MLX, run Livebook on Apple silicon with macOS 14+. A cloud Linux notebook cannot use your Mac's Metal GPU.
-        </p>
+        <div :if={@track["id"] == "mlx"} class="workshop-result">
+          <strong>MLX: run locally on Apple silicon</strong>
+          <p>
+            Open mlx.ipynb in VS Code or Jupyter with native arm64 Python on macOS 14+. This notebook targets your Mac's CPU or Metal GPU, so it is not offered for a hosted Colab runtime.
+          </p>
+          <pre><code>python -m pip install -r requirements/workshops/mlx-notebook.txt</code></pre>
+          <p>Select that environment as your kernel, restart, and Run All.</p>
+        </div>
       </section>
       <section id="setup" class="workshop-panel">
         <p class="workshop-eyebrow">00 / Get ready</p><h2>Set up your environment</h2>

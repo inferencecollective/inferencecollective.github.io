@@ -4,7 +4,7 @@ Use MLX to train a small model and inspect how compilation affects execution on 
 
 ## Recommended: mlx.ipynb
 
-[Download the self-contained MLX notebook](/aidatafoundation/notebooks/mlx.ipynb). It includes training and held-out evaluation, saving and reloading weights for inference, compiled execution benchmarks, and plots. Open it in VS Code or Jupyter on an Apple silicon Mac with a native Python kernel. From this repository, install `requirements/workshops/mlx-notebook.txt`; then restart the kernel and Run All. The Livebook version remains available for shared editing.
+[Download the self-contained MLX notebook](/aidatafoundation/notebooks/mlx.ipynb). It includes training and held-out evaluation, saving and reloading weights for inference, compiled execution benchmarks, and plots. Open it in VS Code or Jupyter on an Apple silicon Mac with a native Python kernel. From this repository, install `requirements/workshops/mlx-notebook.txt`; then restart the kernel and Run All.
 
 ## Requirements and setup
 
