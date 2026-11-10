@@ -2,7 +2,7 @@ import Config
 
 config :ai_data_foundation,
   notebook_revision:
-    System.get_env("WORKSHOP_NOTEBOOK_REVISION", "a9d027304edd80e29197f6718497ab7c00affd9b")
+    System.get_env("WORKSHOP_NOTEBOOK_REVISION", "f340de06d6a2c7bfadd2d6401c2aa905f4c724a6")
 
 # config/runtime.exs is executed for all environments, including
 # during releases. It is executed after compilation and before the

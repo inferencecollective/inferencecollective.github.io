@@ -19,6 +19,6 @@ defmodule AiDataFoundation.WorkshopNotebooks do
       Application.get_env(
         :ai_data_foundation,
         :notebook_revision,
-        "a9d027304edd80e29197f6718497ab7c00affd9b"
+        "f340de06d6a2c7bfadd2d6401c2aa905f4c724a6"
       )
 end
