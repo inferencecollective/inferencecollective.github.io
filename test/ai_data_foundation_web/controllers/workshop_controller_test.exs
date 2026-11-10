@@ -34,6 +34,13 @@ defmodule AiDataFoundationWeb.WorkshopControllerTest do
 
   test "MLX setup shows its hardware requirement and omits Windows commands", %{conn: conn} do
     document = conn |> get("/workshops/mlx") |> html_response(200) |> LazyHTML.from_document()
+
+    assert LazyHTML.query(
+             document,
+             "#download-mlx-ipynb[href='/aidatafoundation/notebooks/mlx.ipynb'][download='mlx.ipynb']"
+           )
+           |> Enum.any?()
+
     assert LazyHTML.query(document, "#mlx-device-setup") |> Enum.any?()
 
     refute LazyHTML.query(document, "#setup code")

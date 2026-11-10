@@ -2,6 +2,10 @@
 
 Use MLX to train a small model and inspect how compilation affects execution on your Mac. Follow the [guided workshop](/workshops/mlx) for setup, progress tracking, and exercises.
 
+## Recommended: mlx.ipynb
+
+[Download the self-contained MLX notebook](/aidatafoundation/notebooks/mlx.ipynb). It includes training and held-out evaluation, saving and reloading weights for inference, compiled execution benchmarks, and plots. Open it in VS Code or Jupyter on an Apple silicon Mac with a native Python kernel. From this repository, install `requirements/workshops/mlx-notebook.txt`; then restart the kernel and Run All. The Livebook version remains available for shared editing.
+
 ## Requirements and setup
 
 This track targets Apple silicon Macs running macOS 14 or later with native arm64 Python 3.11–3.13. It uses the installed MLX package and generates small synthetic arrays locally. No model download or API key is needed. Linux and Windows learners can use the other [workshop tracks](/workshops).
