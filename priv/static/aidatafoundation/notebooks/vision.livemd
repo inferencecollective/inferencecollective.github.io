@@ -1,0 +1,104 @@
+<!-- livebook:{"default_language":"python"} -->
+
+# Prepare images for machine learning
+
+```elixir
+Mix.install([{:pythonx, "~> 0.4.9"}, {:kino_pythonx, "~> 0.1.0"}])
+```
+
+```pyproject.toml
+[project]
+name = "inference-collective-vision"
+version = "0.1.0"
+requires-python = "==3.12.*"
+dependencies = ["Pillow>=11,<13"]
+```
+
+## Before you run
+
+Build a visual preprocessing workflow: preserve geometry, inspect transformations, and understand what filters remove.
+
+Prerequisites: Basic Python. No GPU or deep learning framework required.
+
+Evaluate the setup and Python cells in order. The first Python cell downloads a small, explicit set of lab files and sample data from published commit `a9c6139d8d9ff9e6aae8b7b28d41e7f796639a95`. Every file is SHA-256 checked before execution. This needs network access the first time. Outputs stay in a temporary directory on the notebook runtime machine until you save them elsewhere.
+
+For collaboration, open this notebook once on a shared, authenticated Livebook server and give your group the same session URL. Separate imports create independent notebooks. Only invite people you trust to edit and execute code in that runtime.
+
+## Prepare your workspace
+
+```python
+import hashlib
+import os
+import sys
+import tempfile
+from pathlib import Path
+from urllib.request import urlopen
+
+workshop_root = Path(tempfile.mkdtemp(prefix="ic-vision-"))
+_workshop_assets = {'data/scene-01.png': 'e253ae1a671cbea1e62ede19bfd732de73340c44b4033ac60bfa80438d7b0f6e', 'data/scene-02.png': '54ed088987a5e31cae3e8b3fa184a82eabae8eec30ab306d9c3b83c57ab80186', 'labs/lab01_resize_crop.py': '68c46fbb92b1d62106ad1329bbc4df592058549cdf1e643254a1edf051d61c30', 'labs/lab02_enhance_filters.py': '0e94a042aef97efdc085d7205d8b55e75767e81dc0de7ca21bf36199e4ab35e7'}
+for _relative, _expected in _workshop_assets.items():
+    _url = "https://raw.githubusercontent.com/inferencecollective/inferencecollective.github.io/a9c6139d8d9ff9e6aae8b7b28d41e7f796639a95/" + _relative
+    with urlopen(_url, timeout=30) as _response:
+        _payload = _response.read()
+    if hashlib.sha256(_payload).hexdigest() != _expected:
+        raise RuntimeError("Source verification failed: " + _relative)
+    _target = workshop_root / _relative
+    _target.parent.mkdir(parents=True, exist_ok=True)
+    _target.write_bytes(_payload)
+(workshop_root / "labs/__init__.py").touch()
+os.environ["MPLBACKEND"] = "Agg"
+sys.path.insert(0, str(workshop_root))
+# Re-evaluating setup must import the new copies, not cached lab modules.
+for _name in list(sys.modules):
+    if _name == "labs" or _name.startswith("labs."):
+        del sys.modules[_name]
+print("Workshop files verified. Outputs:", workshop_root / "outputs")
+```
+
+## 1. Resize without distorting geometry
+
+Inspect `labs/lab01_resize_crop.py` in your downloaded workspace before running.
+
+```python
+import runpy
+runpy.run_module('labs.lab01_resize_crop', run_name="__main__")
+print("Inspect outputs in", workshop_root / "outputs")
+```
+
+**Expected output:** outputs/01-resize-comparison.png comparing resize, crop, and thumbnail operations.
+
+**Try it:** Choose a target aspect ratio for an image classifier. Explain which transformation preserves the important features.
+
+## 2. Compare enhancements and filters
+
+Inspect `labs/lab02_enhance_filters.py` in your downloaded workspace before running.
+
+```python
+import runpy
+runpy.run_module('labs.lab02_enhance_filters', run_name="__main__")
+print("Inspect outputs in", workshop_root / "outputs")
+```
+
+**Expected output:** outputs/02-enhancement-grid.png comparing contrast, blur, sharpness, and edge filters.
+
+**Try it:** Increase blur and compare fine details. Describe when preprocessing would remove information needed by the model.
+
+## Inspect and keep your outputs
+
+```python
+_output_files = sorted((workshop_root / "outputs").glob("*")) if (workshop_root / "outputs").exists() else []
+for _file in _output_files:
+    print(_file.name)
+    if _file.suffix == ".json":
+        print(_file.read_text())
+```
+
+Copy any output files you want to keep out of the temporary runtime directory. For image outputs, use the Python cell below to preview the first saved PNG.
+
+```python
+from PIL import Image
+_png_files = list((workshop_root / "outputs").glob("*.png"))
+Image.open(_png_files[0]) if _png_files else "No PNG outputs yet. Run the model or image lab first."
+```
+
+Share one result, the parameter you changed, and your explanation with your group.

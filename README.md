@@ -26,6 +26,10 @@
 ---
 </div>
 
+## Collaborative notebooks with Livebook
+
+Every workshop includes a downloadable Livebook notebook and a launch button. A running Phoenix server also provides shared workshop rooms with participant presence, progress, help requests, and embedded sessions from a configured authenticated Livebook server. The static GitHub Pages site keeps notebook launch/download available; live rooms require server hosting. See [Livebook setup and deployment](docs/LIVEBOOK-WORKSHOPS.md).
+
 ## Guided ML engineering workshops
 
 Start at `/workshops` for four tracks: **ML foundations**, **PyTorch**, **image preprocessing**, and **MLX on Apple silicon**. The first three are CPU friendly; MLX uses Metal GPU or CPU on a compatible Mac. Each pairs runnable source with expected outputs and an extension exercise. No API key is required. Use Python 3.11–3.13 and run commands from the repository root.

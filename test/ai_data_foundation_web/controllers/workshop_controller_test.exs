@@ -18,6 +18,8 @@ defmodule AiDataFoundationWeb.WorkshopControllerTest do
       document =
         conn |> get("/workshops/#{track["id"]}") |> html_response(200) |> LazyHTML.from_document()
 
+      assert LazyHTML.query(document, "#launch-livebook") |> Enum.any?()
+      assert LazyHTML.query(document, "#download-livebook[download]") |> Enum.any?()
       assert LazyHTML.query(document, "#setup pre code") |> Enum.any?()
       assert LazyHTML.query(document, "#finish") |> Enum.any?()
 

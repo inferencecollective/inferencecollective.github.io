@@ -15,7 +15,7 @@
   </section>
   <div class="workshop-container workshop-layout">
     <aside class="workshop-sidebar" aria-label="Workshop navigation">
-      <p class="workshop-eyebrow">Your workshop</p><a href="#setup">00 / Set up your environment</a>
+      <p class="workshop-eyebrow">Your workshop</p><a href="#livebook-launch">Launch interactive notebook</a><a href="#setup">00 / Set up your environment</a>
       <a :for={{step, index} <- Enum.with_index(@track["steps"], 1)} href={"#step-#{index}"}>0{index} / {step[
         "title"
       ]}</a>
@@ -29,6 +29,36 @@
       </div>
     </aside>
     <div class="workshop-main kube-markdown">
+      <section id="livebook-launch" class="workshop-panel">
+        <p class="workshop-eyebrow">Interactive notebook</p><h2>
+          Open this workshop in Livebook
+        </h2>
+        <p>
+          Run the exercises in a notebook with Python cells, explanations, and outputs. Use your own Livebook instance, or join your group's shared server.
+        </p>
+        <div class="workshop-step-links">
+          <a
+            id="launch-livebook"
+            class="kube-button"
+            href={WorkshopNotebooks.launch_url(@track["id"])}
+            target="_blank"
+            rel="noopener"
+          >Open in Livebook &nearr;</a>
+          <a id="download-livebook" href={WorkshopNotebooks.download_url(@track["id"])} download>Download .livemd notebook</a>
+          <a
+            :if={WorkshopNotebooks.room_url(@track["id"])}
+            id="join-live-room"
+            class="kube-button kube-button-outline"
+            href={WorkshopNotebooks.room_url(@track["id"])}
+          >Start a live workshop room &rarr;</a>
+        </div>
+        <p :if={is_nil(WorkshopNotebooks.room_url(@track["id"]))}>
+          Live workshop rooms are not enabled on this site yet. You can still open or download the notebook.
+        </p>
+        <p :if={@track["id"] == "mlx"} class="workshop-result">
+          For MLX, run Livebook on Apple silicon with macOS 14+. A cloud Linux notebook cannot use your Mac's Metal GPU.
+        </p>
+      </section>
       <section id="setup" class="workshop-panel">
         <p class="workshop-eyebrow">00 / Get ready</p><h2>Set up your environment</h2>
         <p>

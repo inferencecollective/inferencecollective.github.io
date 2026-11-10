@@ -35,9 +35,9 @@ defmodule AiDataFoundationWeb.Layouts do
 
   def app(assigns) do
     ~H"""
-    <main id="main-content" class="flex-1">
+    <div class="flex-1">
       {render_slot(@inner_block)}
-    </main>
+    </div>
 
     <.flash_group flash={@flash} />
     """
