@@ -26,6 +26,10 @@
 ---
 </div>
 
+## MLX notebook
+
+Use [mlx.ipynb](priv/static/aidatafoundation/notebooks/mlx.ipynb) for a standalone Apple silicon workshop: autograd, held-out evaluation, saved weights, inference, compiled execution measurements, and plots. Install `requirements/workshops/mlx-notebook.txt`, open the notebook in VS Code or Jupyter, and select that environment as the kernel. Restart and Run All to reproduce it. The workshop page offers the notebook as the primary MLX download; Livebook remains available for collaboration.
+
 ## Collaborative notebooks with Livebook
 
 Every workshop includes a downloadable Livebook notebook and a launch button. A running Phoenix server also provides shared workshop rooms with participant presence, progress, help requests, and embedded sessions from a configured authenticated Livebook server. The static GitHub Pages site keeps notebook launch/download available; live rooms require server hosting. See [Livebook setup and deployment](docs/LIVEBOOK-WORKSHOPS.md).
