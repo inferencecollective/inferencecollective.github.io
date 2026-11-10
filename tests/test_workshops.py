@@ -42,3 +42,16 @@ def test_invalid_step_is_rejected():
     with pytest.raises(SystemExit) as error:
         workshop.main(['vision', '--step', '0'])
     assert error.value.code == 2
+
+
+def test_mlx_rejects_other_platforms_before_import(capsys):
+    with patch.object(workshop.sys, 'version_info', (3, 12)), patch.object(workshop.platform, 'system', return_value='Windows'), patch.object(workshop.importlib.util, 'find_spec') as find:
+        assert workshop.main(['mlx', '--check']) == 1
+        find.assert_not_called()
+    assert 'Apple silicon' in capsys.readouterr().err
+
+
+def test_mlx_preflight_reports_backend_failure(capsys):
+    with patch.object(workshop.sys, 'version_info', (3, 12)), patch.object(workshop.platform, 'system', return_value='Darwin'), patch.object(workshop.platform, 'machine', return_value='arm64'), patch.object(workshop.platform, 'mac_ver', return_value=('14.0', (), '')), patch.object(workshop.importlib.util, 'find_spec', return_value=object()), patch.object(workshop.subprocess, 'run', return_value=subprocess.CompletedProcess([], 1, '', 'Metal unavailable')):
+        assert workshop.main(['mlx', '--check', '--device', 'gpu']) == 1
+    assert '--device cpu' in capsys.readouterr().err

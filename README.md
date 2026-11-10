@@ -28,7 +28,7 @@
 
 ## Guided ML engineering workshops
 
-Start at `/workshops` for three CPU-friendly tracks: **ML foundations**, **PyTorch**, and **image preprocessing**. Each pairs runnable source with expected outputs and an extension exercise. No GPU or API key is required. Use Python 3.11–3.13 and run commands from the repository root.
+Start at `/workshops` for four tracks: **ML foundations**, **PyTorch**, **image preprocessing**, and **MLX on Apple silicon**. The first three are CPU friendly; MLX uses Metal GPU or CPU on a compatible Mac. Each pairs runnable source with expected outputs and an extension exercise. No API key is required. Use Python 3.11–3.13 and run commands from the repository root.
 
 ```bash
 python3 -m venv .venv
@@ -40,6 +40,8 @@ python -m labs.workshop ml-foundations
 ```
 
 For Windows PowerShell, create the environment with `py -3.12 -m venv .venv` and use `.venv\Scripts\python.exe` instead of `python`. Change `ml-foundations` to `pytorch` or `vision` in both the requirements path and runner command to choose another track. Requirements use bounded compatible versions; they are not an exact environment lock.
+
+For Apple silicon Macs running macOS 14+ with native arm64 Python, install `requirements/workshops/mlx.txt` and run `python -m labs.workshop mlx --check`, then `python -m labs.workshop mlx`. Use `--device cpu` or `--device gpu` to select a backend explicitly. The MLX labs save a regression report and a warmed, synchronized compilation benchmark as JSON; they do not assume compilation is always faster. See `/labs/mlx-apple-silicon` for explanations and official documentation.
 
 The website and runner share `priv/static/aidatafoundation/data/workshops.json`. To contribute a track, add its requirements and catalog entry with existing source modules, guide IDs, expected outcomes, and extension prompts. Run `python -m pytest tests/test_workshops.py` and `mix precommit` before submitting. For a live workshop, reserve 10 minutes for setup, pair learners for each exercise, and close with a demo of an output and a parameter change. Checkboxes record self-reported progress in browser storage; they do not verify execution.
 

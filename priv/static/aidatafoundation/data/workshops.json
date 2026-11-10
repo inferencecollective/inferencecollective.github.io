@@ -92,6 +92,37 @@
           "challenge": "Increase blur and compare fine details. Describe when preprocessing would remove information needed by the model."
         }
       ]
+    },
+    {
+      "id": "mlx",
+      "title": "Run MLX on your Mac",
+      "level": "Apple silicon",
+      "minutes": 60,
+      "hardware": "Apple silicon \u00b7 Metal / CPU",
+      "platform": "apple-silicon",
+      "description": "Train with autograd and measure compiled execution using MLX on Apple silicon. Start small, inspect outputs, and choose the CPU or Metal GPU.",
+      "prerequisites": "An Apple silicon Mac running macOS 14+ with native arm64 Python 3.11\u20133.13. Basic Python arrays and gradients.",
+      "packages": [
+        "mlx"
+      ],
+      "steps": [
+        {
+          "title": "Train with MLX autograd",
+          "module": "labs.lab01_mlx_autograd",
+          "guide": "mlx-apple-silicon",
+          "minutes": 20,
+          "outcome": "outputs/mlx-autograd.json with the selected device, falling loss, and learned slope near 2.5 and intercept near -0.8.",
+          "challenge": "Change the learning rate in labs/lab01_mlx_autograd.py. Compare the final loss and learned parameters, then retry with --device cpu."
+        },
+        {
+          "title": "Measure compiled execution",
+          "module": "labs.lab02_mlx_compile",
+          "guide": "mlx-apple-silicon",
+          "minutes": 25,
+          "outcome": "outputs/mlx-compile.json with output agreement, warm execution medians, and an observed timing ratio on your selected device.",
+          "challenge": "Change the input shape in labs/lab02_mlx_compile.py. Compare warm timings on CPU and Metal separately. Explain why compilation is not always faster."
+        }
+      ]
     }
   ]
 }

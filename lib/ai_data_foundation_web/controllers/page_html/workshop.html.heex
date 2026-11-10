@@ -2,10 +2,14 @@
   <section class="workshop-hero">
     <div class="workshop-container">
       <a class="workshop-back" href="/workshops">&larr; Workshop tracks</a>
-      <p class="workshop-eyebrow">{@track["level"]} / ~{@track["minutes"]} minutes / CPU</p>
+      <p class="workshop-eyebrow">
+        {@track["level"]} / ~{@track["minutes"]} minutes / {@track["hardware"] || "CPU"}
+      </p>
       <h1>{@track["title"]}</h1><p class="workshop-lede">{@track["description"]}</p>
       <div class="workshop-facts">
-        <span>Python 3.11–3.13</span><span>No GPU required</span><span>No API keys</span>
+        <span>Python 3.11–3.13</span><span>{if @track["platform"] == "apple-silicon",
+          do: "Apple silicon Mac · macOS 14+",
+          else: "No GPU required"}</span><span>No API keys</span>
       </div>
     </div>
   </section>
@@ -33,15 +37,34 @@
         <h3>1. Get the code</h3><pre><code>{"git clone https://github.com/inferencecollective/inferencecollective.github.io.git\ncd inferencecollective.github.io"}</code></pre>
         <h3>2. Create an isolated environment</h3>
         <details open>
-          <summary>macOS / Linux</summary><pre><code>{"python3 -m venv .venv\nsource .venv/bin/activate\npython -m pip install --upgrade pip\npython -m pip install -r requirements/workshops/#{@track["id"]}.txt"}</code></pre>
+          <summary>
+            {if @track["platform"] == "apple-silicon",
+              do: "macOS · native arm64 Python",
+              else: "macOS / Linux"}
+          </summary><pre><code>{"python3 -m venv .venv\nsource .venv/bin/activate\npython -m pip install --upgrade pip\npython -m pip install -r requirements/workshops/#{@track["id"]}.txt"}</code></pre>
         </details>
-        <details>
+        <details :if={@track["platform"] != "apple-silicon"}>
           <summary>Windows PowerShell</summary><pre><code>{"py -3.12 -m venv .venv\n.venv\\Scripts\\python.exe -m pip install --upgrade pip\n.venv\\Scripts\\python.exe -m pip install -r requirements/workshops/#{@track["id"]}.txt"}</code></pre><p>
             Use <code>.venv\Scripts\python.exe</code>
             in place of <code>python</code>
             in every command below. Activation is optional.
           </p>
         </details>
+        <div
+          :if={@track["platform"] == "apple-silicon"}
+          class="workshop-result"
+          id="mlx-device-setup"
+        >
+          <strong>Choose your MLX device</strong>
+          <p>
+            The default selects Metal GPU when available, otherwise CPU. Check or run a specific device with:
+          </p>
+          <pre><code>python -m labs.workshop mlx --check --device gpu
+python -m labs.workshop mlx --device cpu</code></pre>
+          <p>
+            Use native arm64 Python. If the Metal check fails, try CPU. Other platforms can follow the ML foundations, PyTorch, and vision tracks.
+          </p>
+        </div>
         <h3>3. Check your setup</h3><pre><code>{"python -m labs.workshop #{@track["id"]} --check"}</code></pre>
         <p>
           Run these commands from the repository root. The check reports missing packages before you start. Each lab uses included sample data; no accounts or downloaded models are needed.
