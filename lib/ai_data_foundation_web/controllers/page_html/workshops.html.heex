@@ -7,7 +7,7 @@
       A clear path from your first command to a working result. Choose a track, run the code, inspect the output, and make it your own.
     </p>
     <div class="workshop-facts">
-      <span>CPU friendly</span><span>Included datasets</span><span>No API keys</span><span>Self paced or instructor led</span>
+      <span>CPU &amp; Apple silicon tracks</span><span>Included datasets</span><span>No API keys</span><span>Self paced or instructor led</span>
     </div>
   </div>
 </section>
@@ -31,7 +31,8 @@
       <h3><a href={~p"/workshops/#{track["id"]}"}>{track["title"]}</a></h3>
       <p>{track["description"]}</p>
       <div class="workshop-meta">
-        ~{track["minutes"]} min · {length(track["steps"])} guided labs · CPU
+        ~{track["minutes"]} min · {length(track["steps"])} guided labs · {track["hardware"] ||
+          "CPU"}
       </div>
       <ol class="workshop-preview">
         <li :for={step <- track["steps"]}>{step["title"]}</li>

@@ -1,0 +1,2 @@
+# Apple silicon, native arm64 Python 3.11–3.13, macOS 14+
+mlx>=0.32,<0.33

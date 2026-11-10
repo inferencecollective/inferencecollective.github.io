@@ -347,7 +347,7 @@
     },
     {
       "id": "pillow-complete-guide",
-      "title": "Complete Pillow Guide \u2014 Python Image Processing, Examples and Labs",
+      "title": "Complete Pillow Guide — Python Image Processing, Examples and Labs",
       "description": "Master raster image processing in Python with Pillow: open/save across PNG/JPEG/WebP, proportional resizing with contain, fit and pad, RGBA alpha compositing, spatial filters and ImageEnhance, ImageDraw typography, EXIF normalization, batch processing, and defensive upload validation.",
       "category": "Computer Vision",
       "path": "/labs/pillow-complete-guide.md",
@@ -515,6 +515,23 @@
         "Embeddings",
         "EarlyStopping",
         "Serialization"
+      ]
+    },
+    {
+      "id": "mlx-apple-silicon",
+      "title": "MLX on Apple Silicon",
+      "description": "Train a small regression model and benchmark compiled MLX operations with explicit evaluation and device selection.",
+      "category": "MLX",
+      "path": "/labs/mlx-apple-silicon.md",
+      "contributors": [
+        "Inference Collective"
+      ],
+      "tags": [
+        "MLX",
+        "Apple silicon",
+        "Metal",
+        "Autograd",
+        "Compilation"
       ]
     }
   ]

@@ -30,6 +30,15 @@ defmodule AiDataFoundationWeb.WorkshopControllerTest do
     end
   end
 
+  test "MLX setup shows its hardware requirement and omits Windows commands", %{conn: conn} do
+    document = conn |> get("/workshops/mlx") |> html_response(200) |> LazyHTML.from_document()
+    assert LazyHTML.query(document, "#mlx-device-setup") |> Enum.any?()
+
+    refute LazyHTML.query(document, "#setup code")
+           |> LazyHTML.text()
+           |> String.contains?("py -3.12")
+  end
+
   test "unknown workshop returns 404", %{conn: conn} do
     conn = get(conn, "/workshops/missing")
     assert conn.status == 404
