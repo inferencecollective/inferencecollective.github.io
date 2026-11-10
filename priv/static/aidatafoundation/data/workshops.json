@@ -1,0 +1,97 @@
+{
+  "tracks": [
+    {
+      "id": "ml-foundations",
+      "title": "From messy data to your first model",
+      "level": "Start here",
+      "minutes": 90,
+      "description": "Clean a real-shaped dataset, build a leakage-safe pipeline, and measure what your model actually learns.",
+      "prerequisites": "Basic Python. No ML experience required.",
+      "packages": [
+        "numpy",
+        "pandas",
+        "scikit-learn",
+        "matplotlib"
+      ],
+      "steps": [
+        {
+          "title": "Inspect and clean data",
+          "module": "labs.lab01_clean_data",
+          "guide": "pandas-complete-guide",
+          "minutes": 25,
+          "outcome": "A CSV quality report with row counts, invalid dates, and missing amounts.",
+          "challenge": "Add a check for duplicate order IDs. Explain why dropping every incomplete row can bias your dataset."
+        },
+        {
+          "title": "Train a tabular pipeline",
+          "module": "labs.lab03_tabular_pipeline",
+          "guide": "scikit-learn-complete-guide",
+          "minutes": 40,
+          "outcome": "outputs/03-sklearn-precision-recall.png and .svg, plus a classification report.",
+          "challenge": "Compare average precision with the printed prevalence baseline. Change the split seed and explain the variation."
+        }
+      ]
+    },
+    {
+      "id": "pytorch",
+      "title": "Build and debug a neural network",
+      "level": "Intermediate",
+      "minutes": 90,
+      "description": "Follow tensors through autograd, train a nonlinear classifier, and inspect learning curves on your CPU.",
+      "prerequisites": "Python arrays and basic train/test splits. Complete ML foundations first if these are new.",
+      "packages": [
+        "numpy",
+        "pandas",
+        "matplotlib",
+        "torch"
+      ],
+      "steps": [
+        {
+          "title": "Learn tensors and autograd",
+          "module": "labs.lab01_tensors_autograd",
+          "guide": "pytorch-complete-guide",
+          "minutes": 30,
+          "outcome": "outputs/01-tensors-autograd.png showing regression fit, loss, parameters, and gradients.",
+          "challenge": "Double the learning rate. Does the loss still converge? Compare the learned slope and intercept with the target."
+        },
+        {
+          "title": "Train a nonlinear classifier",
+          "module": "labs.lab02_mlp_classification",
+          "guide": "pytorch-complete-guide",
+          "minutes": 40,
+          "outcome": "outputs/02-mlp-classification.png with decision boundaries and test accuracy.",
+          "challenge": "Reduce the hidden layer size. Compare test accuracy and training loss, and identify signs of underfitting."
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "title": "Prepare images for machine learning",
+      "level": "Beginner",
+      "minutes": 60,
+      "description": "Build a visual preprocessing workflow: preserve geometry, inspect transformations, and understand what filters remove.",
+      "prerequisites": "Basic Python. No GPU or deep learning framework required.",
+      "packages": [
+        "Pillow"
+      ],
+      "steps": [
+        {
+          "title": "Resize without distorting geometry",
+          "module": "labs.lab01_resize_crop",
+          "guide": "pillow-complete-guide",
+          "minutes": 20,
+          "outcome": "outputs/01-resize-comparison.png comparing resize, crop, and thumbnail operations.",
+          "challenge": "Choose a target aspect ratio for an image classifier. Explain which transformation preserves the important features."
+        },
+        {
+          "title": "Compare enhancements and filters",
+          "module": "labs.lab02_enhance_filters",
+          "guide": "pillow-complete-guide",
+          "minutes": 25,
+          "outcome": "outputs/02-enhancement-grid.png comparing contrast, blur, sharpness, and edge filters.",
+          "challenge": "Increase blur and compare fine details. Describe when preprocessing would remove information needed by the model."
+        }
+      ]
+    }
+  ]
+}

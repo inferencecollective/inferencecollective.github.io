@@ -1,8 +1,11 @@
+import {initWorkshops} from "./workshops";
+
 // Progressive enhancements for AI Data Foundation (matching kubedaily.com)
 
 export function initSite() {
   // Mobile responsive navigation drawer toggle
   initMobileNav();
+  initWorkshops();
 
   // Reading-width preference persists across visits.
   const readingToggle = document.querySelector('[data-reading-toggle]');

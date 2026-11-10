@@ -119,6 +119,10 @@ defmodule AiDataFoundation.Foundation do
     end
   end
 
+  def workshops, do: read_json("data/workshops.json")["tracks"]
+
+  def workshop(id), do: Enum.find(workshops(), &(&1["id"] == id))
+
   @doc "Finds a specific lab by id"
   def lab(id) do
     Enum.find(labs(), &(&1["id"] == id))
@@ -503,7 +507,7 @@ defmodule AiDataFoundation.Foundation do
     relative_path = item["path"] || item["file"] || ""
     clean_path = String.trim_leading(relative_path, "/")
 
-    "https://github.com/aidatafoundation/aidatafoundation.github.io/blob/main/priv/static/aidatafoundation/#{clean_path}"
+    "https://github.com/inferencecollective/inferencecollective.github.io/blob/main/priv/static/aidatafoundation/#{clean_path}"
   end
 
   # Helpers

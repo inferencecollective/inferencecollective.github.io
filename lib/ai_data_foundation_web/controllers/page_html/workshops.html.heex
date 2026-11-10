@@ -1,0 +1,71 @@
+<section class="workshop-hero">
+  <div class="workshop-container">
+    <a href="/labs" class="workshop-back">&larr; All engineering labs</a>
+    <p class="workshop-eyebrow">Inference Collective / Workshop tracks</p>
+    <h1>Learn by building.<br /><span>Keep what you create.</span></h1>
+    <p class="workshop-lede">
+      A clear path from your first command to a working result. Choose a track, run the code, inspect the output, and make it your own.
+    </p>
+    <div class="workshop-facts">
+      <span>CPU friendly</span><span>Included datasets</span><span>No API keys</span><span>Self paced or instructor led</span>
+    </div>
+  </div>
+</section>
+<section class="workshop-container workshop-section" aria-labelledby="tracks-title">
+  <div class="workshop-section-heading">
+    <div>
+      <p class="workshop-eyebrow">01 / Choose your outcome</p><h2 id="tracks-title">
+        Your next working project
+      </h2>
+    </div><p>Times include setup and practice. Take the time you need.</p>
+  </div>
+  <div class="workshop-grid">
+    <article
+      :for={{track, index} <- Enum.with_index(@tracks, 1)}
+      class="workshop-card"
+      id={"track-#{track["id"]}"}
+    >
+      <div class="workshop-card-top">
+        <span class="workshop-number">0{index}</span><span class="workshop-badge">{track["level"]}</span>
+      </div>
+      <h3><a href={~p"/workshops/#{track["id"]}"}>{track["title"]}</a></h3>
+      <p>{track["description"]}</p>
+      <div class="workshop-meta">
+        ~{track["minutes"]} min · {length(track["steps"])} guided labs · CPU
+      </div>
+      <ol class="workshop-preview">
+        <li :for={step <- track["steps"]}>{step["title"]}</li>
+      </ol>
+      <a class="kube-button" href={~p"/workshops/#{track["id"]}"}>Start this track &rarr;</a>
+      <small>Prerequisites: {track["prerequisites"]}</small>
+    </article>
+  </div>
+</section>
+<section class="workshop-container workshop-section workshop-how" aria-labelledby="how-title">
+  <div>
+    <p class="workshop-eyebrow">02 / A repeatable way to learn</p><h2 id="how-title">
+      Run. Inspect. Change. Explain.
+    </h2><p>
+      Every track pairs existing source code with a concrete output and an extension exercise. Use the full guides whenever you need more background.
+    </p>
+  </div>
+  <ol>
+    <li>
+      <strong>Set up once</strong><span>Choose macOS/Linux or Windows commands. Install only the packages your track needs.</span>
+    </li><li>
+      <strong>Build something observable</strong><span>Run one lab at a time. Compare the report or image with the expected outcome.</span>
+    </li><li>
+      <strong>Make it your own</strong><span>Change a parameter, rerun, and explain what changed before moving on.</span>
+    </li>
+  </ol>
+</section>
+<section class="workshop-container workshop-section workshop-callout">
+  <div>
+    <p class="workshop-eyebrow">Bring your team</p><h2>Run this as a workshop.</h2><p>
+      Allow 10 minutes for setup, pair up for the labs, and close with a short demo. Progress stays in each participant’s browser when storage is available.
+    </p>
+  </div><a
+    class="kube-button kube-button-outline"
+    href="https://github.com/inferencecollective/inferencecollective.github.io/tree/main/labs"
+  >Explore the source &nearr;</a>
+</section>

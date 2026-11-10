@@ -26,6 +26,23 @@
 ---
 </div>
 
+## Guided ML engineering workshops
+
+Start at `/workshops` for three CPU-friendly tracks: **ML foundations**, **PyTorch**, and **image preprocessing**. Each pairs runnable source with expected outputs and an extension exercise. No GPU or API key is required. Use Python 3.11–3.13 and run commands from the repository root.
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements/workshops/ml-foundations.txt
+python -m labs.workshop ml-foundations --check
+python -m labs.workshop ml-foundations --step 1
+python -m labs.workshop ml-foundations
+```
+
+For Windows PowerShell, create the environment with `py -3.12 -m venv .venv` and use `.venv\Scripts\python.exe` instead of `python`. Change `ml-foundations` to `pytorch` or `vision` in both the requirements path and runner command to choose another track. Requirements use bounded compatible versions; they are not an exact environment lock.
+
+The website and runner share `priv/static/aidatafoundation/data/workshops.json`. To contribute a track, add its requirements and catalog entry with existing source modules, guide IDs, expected outcomes, and extension prompts. Run `python -m pytest tests/test_workshops.py` and `mix precommit` before submitting. For a live workshop, reserve 10 minutes for setup, pair learners for each exercise, and close with a demo of an output and a parameter change. Checkboxes record self-reported progress in browser storage; they do not verify execution.
+
 ## 📌 What You'll Find
 
 | Section | Focus & Capabilities | Direct Link |
