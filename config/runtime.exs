@@ -1,5 +1,14 @@
 import Config
 
+config :ai_data_foundation,
+  livebook_url: System.get_env("LIVEBOOK_URL"),
+  workshop_live_url: System.get_env("WORKSHOP_LIVE_URL"),
+  notebook_base_url:
+    System.get_env(
+      "WORKSHOP_NOTEBOOK_BASE_URL",
+      "https://inferencecollective.github.io/aidatafoundation/notebooks"
+    )
+
 # config/runtime.exs is executed for all environments, including
 # during releases. It is executed after compilation and before the
 # system starts, so it is typically used to load production configuration

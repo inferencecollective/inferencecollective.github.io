@@ -6,5 +6,7 @@ defmodule AiDataFoundationWeb.PageHTML do
   """
   use AiDataFoundationWeb, :html
 
+  alias AiDataFoundation.WorkshopNotebooks
+
   embed_templates "page_html/*"
 end

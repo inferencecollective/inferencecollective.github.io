@@ -21,6 +21,7 @@ defmodule AiDataFoundationWeb.Router do
     get "/tools", PageController, :tools
     get "/models", PageController, :models
     get "/workshops", PageController, :workshops
+    live "/workshops/:id/room", WorkshopRoomLive
     get "/workshops/:id", PageController, :workshop
     get "/labs", PageController, :labs
     get "/labs/:id", PageController, :lab
