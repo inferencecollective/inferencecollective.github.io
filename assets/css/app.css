@@ -3063,3 +3063,6 @@ main { min-width: 0; }
 @media(max-width:900px){.workshop-grid{grid-template-columns:1fr}.workshop-layout{grid-template-columns:1fr;gap:24px}.workshop-sidebar{position:static;border-bottom:1px solid #cbd5e1;padding-bottom:24px}.workshop-how{gap:32px}.workshop-section-heading{align-items:start;flex-direction:column}}
 @media(max-width:600px){.workshop-container{padding-inline:16px}.workshop-panel{padding:20px}.workshop-how{grid-template-columns:1fr}.workshop-callout{align-items:start;flex-direction:column}.workshop-hero{padding-block:32px 48px}}
 @media(prefers-reduced-motion:reduce){.workshop-card{transition:none}.workshop-card:hover{transform:none}}
+
+.workshop-main a.kube-button{text-decoration:none}
+.workshop-main a.kube-button:not(.kube-button-outline){background:#047857;color:#fff}
