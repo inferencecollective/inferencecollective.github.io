@@ -18,9 +18,10 @@ defmodule AiDataFoundationWeb.WorkshopControllerTest do
       document =
         conn |> get("/workshops/#{track["id"]}") |> html_response(200) |> LazyHTML.from_document()
 
-      assert LazyHTML.query(document, "#launch-livebook") |> Enum.any?()
-      assert LazyHTML.query(document, "#download-livebook[download]") |> Enum.any?()
+      assert LazyHTML.query(document, "#notebook-launch") |> Enum.any?()
+      assert LazyHTML.query(document, "#download-notebook[download]") |> Enum.any?()
       assert LazyHTML.query(document, "#setup pre code") |> Enum.any?()
+      assert LazyHTML.query(document, "#open-colab") |> Enum.any?() == (track["id"] != "mlx")
       assert LazyHTML.query(document, "#finish") |> Enum.any?()
 
       for {step, index} <- Enum.with_index(track["steps"], 1) do
@@ -37,7 +38,7 @@ defmodule AiDataFoundationWeb.WorkshopControllerTest do
 
     assert LazyHTML.query(
              document,
-             "#download-mlx-ipynb[href='/aidatafoundation/notebooks/mlx.ipynb'][download='mlx.ipynb']"
+             "#download-notebook[href='/aidatafoundation/notebooks/mlx.ipynb'][download='mlx.ipynb']"
            )
            |> Enum.any?()
 

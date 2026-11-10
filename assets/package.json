@@ -1,0 +1,8 @@
+{
+  "name": "inference-collective-browser-vendor",
+  "private": true,
+  "description": "Tracks the upstream package used for the vendored KaTeX browser files.",
+  "dependencies": {
+    "katex": "0.18.2"
+  }
+}

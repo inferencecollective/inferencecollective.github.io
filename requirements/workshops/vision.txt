@@ -1,2 +1,2 @@
 # Python 3.11–3.13; CPU workshop dependencies
-Pillow>=11,<13
+Pillow>=13.0,<14

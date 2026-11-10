@@ -39,7 +39,22 @@ jobs:
             pages-v3-${{ runner.os }}-
 
       - name: Install dependencies
-        run: mix deps.get
+        run: |
+          mix local.hex --force
+          mix deps.get
+
+      - name: Audit Elixir dependencies
+        run: mix hex.audit
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Audit browser dependencies and verify vendored files
+        run: |
+          npm ci --ignore-scripts --prefix assets
+          npm audit --prefix assets
+          node scripts/check_vendor_katex.mjs
 
       - name: Setup asset build tools
         run: mix assets.setup
